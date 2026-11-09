@@ -1,0 +1,141 @@
+{
+  "validated_at_utc": "2026-11-09T20:15:53.147308+00:00",
+  "validated_at_chicago": "2026-11-09T14:15:53.147308-06:00",
+  "scope": "S01-S10 current working tree, including pre-existing uncommitted deliverables",
+  "overall": "qualified_pass_with_three_reproduced_defects_and_acceptance_gaps",
+  "implementation_files_modified": false,
+  "checks": {
+    "python_version": "3.15.2",
+    "lint": "passed",
+    "format": "passed",
+    "default_pytest": {
+      "passed": 71,
+      "skipped": 4
+    },
+    "postgresql_integration_pytest": {
+      "passed": 75,
+      "skipped": 0,
+      "database": "disposable Docker PostgreSQL 16"
+    },
+    "terraform_mock_tests": {
+      "passed": 14,
+      "failed": 0
+    },
+    "terraform_validate": "passed",
+    "terraform_fmt": "passed",
+    "terraform_real_plan_exit_code": 0,
+    "terraform_real_plan": "No changes",
+    "shell_syntax": "passed",
+    "manifest_replay_byte_identical": true,
+    "aqs_chicago_replay_byte_identical": true,
+    "test_database_removed": true
+  },
+  "segment_status": {
+    "S01": {
+      "status": "partial",
+      "reason": "Scaffold passes; all four owner reviews pending; shared configuration defects remain"
+    },
+    "S02": {
+      "status": "pass",
+      "reason": "14 Terraform tests and fresh real no-change plan; prior Spark smoke reviewed; status/cost docs stale"
+    },
+    "S03": {
+      "status": "pass",
+      "reason": "296-cell saved manifest reproduces exactly; source snapshot is June 2026"
+    },
+    "S04": {
+      "status": "partial",
+      "reason": "Original report has one snapshot; audit adds hourly observed timestamp changes but budget/cadence decision and report need completion"
+    },
+    "S05": {
+      "status": "pass",
+      "reason": "All PostgreSQL migrations, replay, keys and collector integration tests pass"
+    },
+    "S06": {
+      "status": "pass",
+      "reason": "Fresh cloud SQL/GCS verification: 233 matched, 63 skipped, zero mismatches"
+    },
+    "S07": {
+      "status": "pass_with_live_sql_limit",
+      "reason": "Full national local load/rerun, exact Chicago replay and current GCS hashes pass; direct live SQL counts not refreshed"
+    },
+    "S08": {
+      "status": "needs_fixes",
+      "reason": "13 unattended hourly captures verified; F1/F2 reproduced; simulated outage recovery tested locally, not deployed"
+    },
+    "S09": {
+      "status": "pass_with_live_sql_limit",
+      "reason": "Recorded backfill/rerun, fresh integration tests and live scheduled runs pass; full live SQL/source check not repeated"
+    },
+    "S10": {
+      "status": "pass_default_configuration_with_defect",
+      "reason": "Fresh cloud reconciliation passes for 233 files / 907024502 rows; custom raw prefix fails (F3)"
+    }
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "P2",
+      "path": "ingestion/purpleair_poll.py",
+      "line": 280,
+      "title": "Late reports can replace the current sensor-history location",
+      "reproduced": true
+    },
+    {
+      "id": "F2",
+      "priority": "P2",
+      "path": "ingestion/purpleair_poll.py",
+      "line": 463,
+      "title": "PurpleAir silently ignores documented environment overrides",
+      "reproduced": true
+    },
+    {
+      "id": "F3",
+      "priority": "P2",
+      "path": "ingestion/epa_stage.py",
+      "line": 197,
+      "title": "Staging rejects the custom raw prefix accepted by downloading",
+      "reproduced": true
+    }
+  ],
+  "epa_cloud_verifications": [
+    {
+      "execution": "aq-epa-download-rp9q2",
+      "result": {
+        "actual_zip_bytes": 6716684039,
+        "listed_gcs_objects": 233,
+        "matched_nonempty": 233,
+        "mismatches": [],
+        "selected": 296,
+        "skipped": 63,
+        "verified_at_utc": "2026-11-09T20:13:47.827173+00:00",
+        "version_rows": 233
+      }
+    },
+    {
+      "execution": "aq-epa-stage-vxzf9",
+      "result": {
+        "matched": 233,
+        "mismatches": [],
+        "selected": 233,
+        "staged_rows": 907024502,
+        "verified_at_utc": "2026-11-09T20:13:47.432378+00:00"
+      }
+    }
+  ],
+  "limits": [
+    "Full CSV bytes were not all downloaded/recounted; all 233 metadata/count records and two actual ZIP samples were checked.",
+    "Direct production SQL rechecks for AQS, PurpleAir and AirNow were unavailable with current credentials; worker impersonation was denied.",
+    "No new Spark job, points-consuming PurpleAir pilot, or production outage drill was performed.",
+    "Owner reviews were not inferred or recorded on anyone\u2019s behalf."
+  ],
+  "report": "s01_s10_report.txt",
+  "evidence_sha256": {
+    "airnow_live_runs.json": "844bdcc08a2b9da81c39215c415bdb747bc7757d7df4497244f3e3ba707ef4e3",
+    "cloud_storage.json": "cae3d117a7e049cdb7fb87af01c233686224d2fd2fb58edf32420567181bf3c7",
+    "epa_cloud_verification.json": "8e5090163f03b71121bd88055ad396d1041f1a93332e4c95598ddfbf740758a6",
+    "local_extra.json": "bf98623689118bc0eac0dc6bdf2dd692d2ff72fdb9a23f802434832209cc389f",
+    "regressions.json": "69bace7191de7f77e430d6116bb060e77f14fb6479bfbf32d304b55e094e14b5",
+    "s01_s10_report.txt": "e4116770a1c8798485a1d7fb3320254eca1f8d0118406b6d48d7168bdf897ffc"
+  }
+}

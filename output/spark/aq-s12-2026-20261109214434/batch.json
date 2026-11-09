@@ -1,0 +1,88 @@
+{
+  "createTime": "2026-11-09T21:44:38.228866Z",
+  "creator": "liu0220@uchicago.edu",
+  "environmentConfig": {
+    "executionConfig": {
+      "authenticationConfig": {},
+      "networkTags": [
+        "aq-spark"
+      ],
+      "serviceAccount": "aq-spark@final-team-514205.iam.gserviceaccount.com",
+      "stagingBucket": "final-team-514205-aq-spark-scratch",
+      "subnetworkUri": "projects/final-team-514205/regions/us-central1/subnetworks/aq-spark",
+      "ttl": "1800s"
+    },
+    "peripheralsConfig": {
+      "sparkHistoryServerConfig": {}
+    }
+  },
+  "labels": {
+    "goog-dataproc-batch-id": "aq-s12-2026-20261109214434",
+    "goog-dataproc-batch-uuid": "ce196e32-3f30-49b7-9fa8-d063f8fb11e1",
+    "goog-dataproc-drz-resource-uuid": "batch-ce196e32-3f30-49b7-9fa8-d063f8fb11e1",
+    "goog-dataproc-location": "us-central1"
+  },
+  "name": "projects/final-team-514205/locations/us-central1/batches/aq-s12-2026-20261109214434",
+  "operation": "projects/final-team-514205/regions/us-central1/operations/68feb1eb-96fa-3ecf-9af2-6f701822a5d0",
+  "pysparkBatch": {
+    "args": [
+      "--manifest=manifest.json",
+      "--output=gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214434/result"
+    ],
+    "fileUris": [
+      "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214434/manifest.json"
+    ],
+    "mainPythonFileUri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214434/run_epa.py",
+    "pythonFileUris": [
+      "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214434/epa_spark.zip"
+    ]
+  },
+  "runtimeConfig": {
+    "containerImage": "us-central1-docker.pkg.dev/final-team-514205/air-quality/spark-python315@sha256:22bfeeadd8de25752a45e9617e3e4820b73870835e573f3d921af24efb96103b",
+    "properties": {
+      "spark:spark.app.name": "projects/final-team-514205/locations/us-central1/batches/aq-s12-2026-20261109214434",
+      "spark:spark.dataproc.autotuning.cohortId": "ce196e32-3f30-49b7-9fa8-d063f8fb11e1",
+      "spark:spark.dataproc.engine": "default",
+      "spark:spark.dataproc.lightningEngine.runtime": "default",
+      "spark:spark.dataproc.scaling.version": "2",
+      "spark:spark.driver.cores": "4",
+      "spark:spark.driver.memory": "9600m",
+      "spark:spark.driverEnv.TZ": "UTC",
+      "spark:spark.dynamicAllocation.enabled": "false",
+      "spark:spark.dynamicAllocation.executorAllocationRatio": "0.3",
+      "spark:spark.executor.cores": "4",
+      "spark:spark.executor.instances": "2",
+      "spark:spark.executor.memory": "9600m",
+      "spark:spark.executorEnv.TZ": "UTC",
+      "spark:spark.sql.adaptive.enabled": "true",
+      "spark:spark.sql.shuffle.partitions": "64"
+    },
+    "version": "2.2.90"
+  },
+  "runtimeInfo": {
+    "approximateUsage": {
+      "acceleratorType": "UNSPECIFIED",
+      "milliDcuSeconds": "717000",
+      "shuffleStorageGbSeconds": "72000"
+    },
+    "cohortInfo": {
+      "cohort": "ce196e32-3f30-49b7-9fa8-d063f8fb11e1"
+    },
+    "outputUri": "gs://final-team-514205-aq-spark-scratch/google-cloud-dataproc-metainfo/e1b72e76-61ee-4461-8676-e141ccab2c80/jobs/srvls-batch-ce196e32-3f30-49b7-9fa8-d063f8fb11e1/driveroutput",
+    "propertiesInfo": {}
+  },
+  "state": "FAILED",
+  "stateHistory": [
+    {
+      "state": "PENDING",
+      "stateStartTime": "2026-11-09T21:44:38.228866Z"
+    },
+    {
+      "state": "RUNNING",
+      "stateStartTime": "2026-11-09T21:45:49.350978Z"
+    }
+  ],
+  "stateMessage": "Google Cloud Dataproc Agent reports job failure. If logs are available, they can be found at:\nhttps://console.cloud.google.com/dataproc/batches/us-central1/aq-s12-2026-20261109214434?project=final-team-514205\ngcloud dataproc batches wait 'aq-s12-2026-20261109214434' --region 'us-central1' --project 'final-team-514205'\nhttps://console.cloud.google.com/storage/browser/final-team-514205-aq-spark-scratch/google-cloud-dataproc-metainfo/e1b72e76-61ee-4461-8676-e141ccab2c80/jobs/srvls-batch-ce196e32-3f30-49b7-9fa8-d063f8fb11e1/\ngs://final-team-514205-aq-spark-scratch/google-cloud-dataproc-metainfo/e1b72e76-61ee-4461-8676-e141ccab2c80/jobs/srvls-batch-ce196e32-3f30-49b7-9fa8-d063f8fb11e1/driveroutput.*",
+  "stateTime": "2026-11-09T21:46:35.060958Z",
+  "uuid": "ce196e32-3f30-49b7-9fa8-d063f8fb11e1"
+}

@@ -1,0 +1,202 @@
+S01-S10 VALIDATION — NOVEMBER 9, 2026
+
+Verdict: the deployed default pipeline passes its automated checks and EPA
+reconciliation, but S01-S10 should not receive an unconditional sign-off.
+Three reproducible implementation defects and several acceptance/documentation
+gaps remain. This validation did not modify implementation files.
+
+Scope: the current working tree, including changes and untracked deliverables
+that were already present at the start. Acceptance criteria came from
+plan/PROJECT_SEGMENTS.md. Cloud checks used project final-team-514205.
+
+CHECKS COMPLETED
+
+- Python 3.15.2; ruff lint and format passed (32 Python files).
+- Default pytest: 71 passed, 4 skipped because integration flags were absent.
+- Full pytest against disposable Docker PostgreSQL 16: 75 passed, zero skipped.
+  This exercised migrations and replay, EPA locking/version/progress state,
+  PurpleAir deduplication/late arrivals/outage recovery, and AirNow revisions,
+  withdrawals, stale retrieval protection, and transaction rollback.
+- Terraform format and schema validation passed; 14 mock-provider tests passed.
+- Fresh real Terraform plan exited 0: no changes or configuration drift.
+  Terraform was available at /private/tmp/air-quality-terraform/terraform;
+  the unqualified make infra-check command initially failed because it was not
+  on PATH. Provider execution required normal host access beyond the sandbox.
+- infra/smoke.sh passed bash syntax checking. The previous successful cloud
+  Spark smoke evidence was reviewed; a new Spark batch was not submitted.
+- Saved EPA catalog reproduced manifest.csv byte-for-byte: 296 cells,
+  233 nonempty, 63 empty, zero missing, 907,024,502 listed rows.
+- Full saved AQS ZIPs were parsed and loaded into a fresh local schema:
+  20,994 unique sites, 370,090 unique monitors, zero orphan monitors,
+  33 advisory-flagged monitors. Repeating the monitor load did not update rows.
+  The regenerated 100-row Chicago PM2.5 report matched the saved CSV exactly.
+- Two saved EPA ZIPs were decompressed and recounted with CRC checking:
+  hourly_81102_1990: 17,353 rows; hourly_42101_2026: 368,027 rows.
+  Both match the catalog and have 24 columns.
+- Independent live GCS inspection found 233 raw objects/generations and 233
+  staged objects/generations. All source generations, MD5 metadata, and row
+  counts matched. Raw bytes: 6,716,684,039. Staged CSV bytes: 218,661,382,349.
+- Fresh read-only cloud SQL/GCS verification jobs both succeeded:
+  aq-epa-download-rp9q2: 233 matched, 63 skipped, 233 version rows, no mismatches.
+  aq-epa-stage-vxzf9: 233 matched, 907,024,502 staged rows, no mismatches.
+  Both emitted verification results at approximately 20:13:47 UTC.
+- PurpleAir live logs/raw files show two manual captures plus one scheduled
+  capture in every UTC hour from 08:00 through 20:00 on November 9: 13 scheduled
+  captures, 130-131 sensors each. Across adjacent snapshots there were 1,794
+  changed report timestamps, 29 repeated reports, no backwards timestamps,
+  and a median positive timestamp difference of 3,600 seconds. These are
+  differences between sampled reports, not measurements of native device
+  cadence. Repeated reports are expected and the second manual run logged
+  29 duplicates rather than inserting them.
+- Latest inspected AirNow run aq-airnow-collect-kczwn succeeded, covering
+  November 6 19:00 through November 9 18:00 UTC: 2,321 source observations,
+  32 inserts, 2,289 unchanged, zero revisions/withdrawals, no errors. The prior
+  scheduled run also succeeded. GCS had 160 immutable AirNow snapshots;
+  three sampled files passed content hashes, parsing, and unique-key checks.
+  This snapshot count includes changed national source files and is not an
+  observation or hour count.
+- Current AirNow source hashes match its saved build-source evidence. The EPA
+  downloader's recorded code hashes match; .dockerignore and settings.yaml
+  differ from its earlier build, consistent with later collector additions.
+- The disposable local PostgreSQL container, schemas, and test volume were
+  removed after validation. No production observations were written by the
+  validation. Existing collector schedules continued their normal operation.
+
+REPRODUCIBLE IMPLEMENTATION FINDINGS
+
+F1 — P2 — Late PurpleAir metadata can corrupt the current history interval.
+Location: ingestion/purpleair_poll.py:280-287.
+The history branch compares an incoming report with the current interval's
+start, rather than the sensor's latest accepted report. Reproduction:
+  00:00 report: latitude 41.9;
+  02:00 report: latitude 41.9;
+  late 01:00 report: latitude 42.0.
+pa_sensor correctly retains 41.9 at 02:00, but the open pa_sensor_history row
+becomes 42.0 starting at 01:00. Downstream SCD2/location joins can therefore
+use the wrong location after 02:00. The existing test only exercises a late
+report older than the current interval start and misses this ordering.
+Required correction: prevent older reports from replacing current metadata;
+if late history is reconstructed, bound it by the next known report. Add this
+ordering to regression coverage.
+
+F2 — P2 — PurpleAir ignores the documented environment configuration contract.
+Location: ingestion/purpleair_poll.py:460-465 and 484-495.
+AIR_QUALITY_PURPLEAIR_MAX_AGE_SECONDS=123 still yields max_age=900;
+AIR_QUALITY_PURPLEAIR_STALE_AFTER_SECONDS=456 still yields stale_after=600;
+AIR_QUALITY_GCS_RAW_PURPLEAIR_PREFIX=custom/raw/pa still writes raw/purpleair.
+These values are read straight from YAML, and .env is loaded afterward.
+This silently defeats documented runtime configuration and quality thresholds.
+Required correction: resolve CLI > environment > YAML consistently, loading
+local environment values before resolution; verify all supported scalars.
+
+F3 — P2 — S10 rejects the custom raw prefix supported by S06.
+Location: ingestion/epa_stage.py:197-199.
+S06 accepts gcs.raw_epa_prefix / AIR_QUALITY_GCS_RAW_EPA_PREFIX, but S10 hardcodes
+raw/epa in its source-path check. A valid recorded URI such as
+gs://test/custom/epa/2026/hourly_42101_2026.zip fails immediately with
+"Unexpected raw EPA object path". This does not affect today's default paths.
+Required correction: use the same configured raw prefix and retain bucket,
+filename, generation, size, and checksum validation. Cover the nondefault
+prefix across the downloader-to-stager handoff.
+
+SEGMENT DISPOSITION
+
+S01 — Technical scaffold passes; acceptance remains partial.
+  Contracts and configuration exist, but all four owner reviews remain marked
+  Pending in docs/data_contracts.md:269-274. F2/F3 also violate the shared
+  configuration convention. No owner approval is inferred from passing tests.
+
+S02 — Pass for deployed infrastructure.
+  Fourteen Terraform tests and a fresh no-change real plan pass. Existing cloud
+  Spark smoke evidence records 1,000 rows with ID sum 499,500. The resource/cost
+  documentation needs updating for the enabled collectors and known CSV size.
+
+S03 — Pass for the saved catalog scope.
+  Full 1990-2026 by eight-group grid and totals reproduce exactly. Catalog
+  entries are dated June 25, 2026; these are not observations through November.
+
+S04 — Partial: original acceptance report needs a multi-snapshot update.
+  docs/purpleair_feasibility.md reports one snapshot and measured cost of
+  1,053 points; it does not establish a series of distinct reports at the
+  chosen interval. This audit supplies observed hourly changes in
+  cloud_storage.json, but does not remeasure points consumption or establish
+  native two-minute reporting cadence. The hourly whole-area selection is
+  explicitly a provisional three-day discovery test. Final sensor selection,
+  budget horizon, and the S16 completeness rule still require a documented
+  decision. The report's "30 days through Dec 11" wording also needs updating
+  to the actual dates rather than assuming 30 days spans that deadline.
+
+S05 — Pass for schema and integration behavior.
+  All migrations apply and replay in PostgreSQL 16. Key uniqueness, revision
+  archival, and collector transactions pass. Existing cloud migration/grant
+  evidence is corroborated by working collectors and fresh EPA SQL checks.
+
+S06 — Pass for the deployed default configuration and full saved manifest.
+  Fresh cloud SQL/GCS verification confirms all 233 nonempty ZIPs, 63 skipped
+  empty entries, checksums/generations, and zero mismatches. Existing full-run
+  rerun evidence and unchanged live object generations support idempotency.
+
+S07 — Pass for parser/load/replay and saved cloud artifacts.
+  Full national listings load and rerun locally; 100 Chicago PM2.5 rows match
+  the saved output. Live GCS generations/hashes match the load evidence.
+  Fresh direct production SQL counts were not queried in this session.
+
+S08 — Running, but needs fixes before full sign-off.
+  Thirteen consecutive unattended hourly captures are now confirmed. Local
+  database tests verify duplicate handling and recovery after a logged
+  simulated HTTP outage. F1 and F2 remain. No deployed simulated-outage drill
+  was found in the inspected evidence; no production outage was induced.
+  Current logs and raw samples show no observed backwards reports, so the
+  reproduction does not establish that F1 has already affected cloud data.
+
+S09 — Pass for recorded acceptance plus current operational checks.
+  Saved 72-hour backfill/replay and source-to-SQL reconciliation document
+  2,359 initial observations and zero rerun inserts. Revision and withdrawal
+  behavior passed the fresh local integration test. The latest two cloud runs
+  succeed and sampled raw files reconcile to their hashes. Fresh full direct
+  AirNow SQL/source reconciliation was not rerun in this session.
+
+S10 — Pass for today's default-path data; F3 remains a configuration defect.
+  Fresh cloud verification matches every downloaded file and all 907,024,502
+  recorded rows. Independent GCS metadata checks and two actual ZIP recounts
+  agree. The entire 218.7 GB CSV collection was not downloaded/recounted again.
+
+DOCUMENTATION GAPS
+
+- README.md:65 says all schedules remain paused. Live state has PurpleAir and
+  AirNow ENABLED, with only live-sync PAUSED. docs/infra.md also presents old
+  placeholder/scheduler and four-test status as current.
+- docs/infra.md still leaves staging storage unmeasured; S10 now provides its
+  measured size. Its example execution assumptions predate hourly PurpleAir.
+- README.md has no dedicated S04/S08 handoff sections, although their runbooks
+  exist. docs/purpleair_poll.md only records the two manual runs, while this
+  audit adds the available unattended-hour evidence.
+
+LIMITS AND FOLLOW-UP ORDER
+
+1. Fix F1 before relying on pa_sensor_history for warehouse/location joins.
+2. Fix F2/F3 and add focused regression tests for their documented behavior.
+3. Update S04/S08 evidence, the S16 cadence/completeness decision, and stale
+   README/infrastructure status. Record actual owner reviews for S01.
+4. A full fresh production SQL review for S07/S08/S09 requires an already
+   authorized SQL identity or an appropriate read-only verifier. The active
+   operator is not a Cloud SQL IAM database user and cannot impersonate the
+   workers (iam.serviceAccounts.getAccessToken was denied). No credentials,
+   IAM grants, passwords, or production schema were changed. S06/S10 were
+   independently rechecked through their existing --verify-only job paths.
+
+Evidence files in this directory:
+  regressions.json — concrete outputs from all three defect reproductions.
+  local_extra.json — full AQS local SQL validation and EPA sample recounts.
+  cloud_storage.json — live GCS inventory/reconciliation and PurpleAir samples.
+  epa_cloud_verification.json — fresh deployed SQL/GCS verifier outputs.
+  airnow_live_runs.json — latest two structured cloud run summaries.
+  validation_summary.json — machine-readable dispositions and check results.
+
+Primary source semantics checked:
+  AirNow hourly format, UTC hours, preliminary status, and 72-hour refresh:
+  https://docs.airnowapi.org/docs/HourlyAQObsFactSheet.pdf
+  EPA PM2.5 advisory method-code mapping:
+  https://aqs.epa.gov/aqsweb/airdata/Data_Advisory_PM25_88101_Pregen_Files.pdf
+  PurpleAir field definitions, including server-receipt last_seen:
+  https://community.purpleair.com/t/api-fields-descriptions/4652

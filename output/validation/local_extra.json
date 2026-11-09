@@ -1,0 +1,30 @@
+{
+  "sites": [
+    20994,
+    20994
+  ],
+  "monitors": [
+    370090,
+    370090,
+    33
+  ],
+  "orphan_monitors": 0,
+  "identical_monitor_rerun_did_not_update_rows": true,
+  "staging_recounts": [
+    {
+      "sample": "sample_81102_1990.zip",
+      "rows": 17353,
+      "csv_bytes": 4376177,
+      "columns": 24,
+      "csv_md5": "7c543f32d5a904e179fa21d2fa554784"
+    },
+    {
+      "sample": "sample_42101_2026.zip",
+      "rows": 368027,
+      "csv_bytes": 94251151,
+      "columns": 24,
+      "csv_md5": "213c661ba80714d90d6d4ddf6bef43da"
+    }
+  ],
+  "catalog_sha256": "815afb5445d66d1762caecfc5a5c4072640d7d2548638bb3c90c0ad43bdb814b"
+}

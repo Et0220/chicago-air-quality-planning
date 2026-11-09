@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2026-11-09T19:42:28.596088Z",
+    "execution": "aq-airnow-collect-kczwn",
+    "run_id": "c3bc75a1-83ea-4047-81dd-6ab40019c4d6",
+    "status": "succeeded",
+    "start_hour_utc": "2026-11-06T19:00:00+00:00",
+    "end_hour_utc": "2026-11-09T18:00:00+00:00",
+    "totals": {
+      "inserted": 32,
+      "observations": 2321,
+      "raw_created": 8,
+      "revised": 0,
+      "stale": 0,
+      "unchanged": 2289,
+      "withdrawn": 0
+    },
+    "errors": []
+  },
+  {
+    "timestamp": "2026-11-09T18:42:52.193138Z",
+    "execution": "aq-airnow-collect-74l2w",
+    "run_id": "06fa3de9-2a11-457f-94a5-ade2af8102fb",
+    "status": "succeeded",
+    "start_hour_utc": "2026-11-06T18:00:00+00:00",
+    "end_hour_utc": "2026-11-09T17:00:00+00:00",
+    "totals": {
+      "inserted": 31,
+      "observations": 2321,
+      "raw_created": 7,
+      "revised": 0,
+      "stale": 0,
+      "unchanged": 2290,
+      "withdrawn": 0
+    },
+    "errors": []
+  }
+]

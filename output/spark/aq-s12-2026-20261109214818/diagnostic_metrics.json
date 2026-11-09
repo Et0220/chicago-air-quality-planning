@@ -1,0 +1,429 @@
+{
+  "completed_at_utc": "2026-11-09T21:57:16.517896+00:00",
+  "elapsed_seconds": 421.08,
+  "exception_reasons": [
+    {
+      "count": 3579,
+      "reason": "invalid_local_standard_time"
+    },
+    {
+      "count": 3579,
+      "reason": "invalid_gmt_hour"
+    }
+  ],
+  "input_fingerprint": "1a3d0149883b1c104d131de96c49ef5fa7cc09db404d7986dd5df606222b15a5",
+  "output_bytes": 501535499,
+  "parquet_files": [
+    {
+      "bytes": 3202011,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42101/part-00000-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 4122044,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42101/part-00004-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 3868786,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42101/part-00005-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 8546184,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42101/part-00009-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 3238722,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42101/part-00010-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 3656966,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42101/part-00013-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 10757088,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42401/part-00000-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 6908339,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42401/part-00001-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 7016153,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42401/part-00006-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 7554993,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42401/part-00007-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 6298089,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42401/part-00012-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 6622740,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42401/part-00014-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 7734938,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42401/part-00015-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 8227162,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42602/part-00000-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 7032832,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42602/part-00001-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 7003052,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42602/part-00003-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 8097618,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42602/part-00005-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 5902108,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42602/part-00006-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 7282646,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42602/part-00008-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 6573244,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42602/part-00010-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 8067935,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=42602/part-00011-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 15923262,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=44201/part-00002-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 18443681,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=44201/part-00003-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 18283007,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=44201/part-00004-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 17380850,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=44201/part-00006-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 17823242,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=44201/part-00007-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 32135077,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=44201/part-00013-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 15689366,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=44201/part-00014-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 17002378,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=81102/part-00000-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 8333264,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=81102/part-00002-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 7902749,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=81102/part-00003-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 6979504,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=81102/part-00006-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 9383976,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=81102/part-00009-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 5309657,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=81102/part-00010-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 6686326,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=81102/part-00015-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 16199531,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88101/part-00001-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 15094312,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88101/part-00005-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 18780665,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88101/part-00008-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 20238245,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88101/part-00009-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 17150051,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88101/part-00010-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 18874686,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88101/part-00011-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 17394943,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88101/part-00012-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 18482583,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88101/part-00015-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 3526065,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88502/part-00005-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 3280189,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88502/part-00006-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 2584059,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88502/part-00007-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 2502606,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88502/part-00009-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 6566180,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88502/part-00012-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 3252370,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88502/part-00014-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    },
+    {
+      "bytes": 2619025,
+      "uri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result/data/year=2026/pollutant=88502/part-00015-2a06ffc4-6a69-4c7a-8d99-aa0023ee2ae5.c000.snappy.parquet"
+    }
+  ],
+  "pollutants": [
+    {
+      "advisory_rows": 0,
+      "negative_measurement_rows": 251,
+      "null_measurement_rows": 0,
+      "pollutant": 44201,
+      "rows": 1906626,
+      "year": 2026
+    },
+    {
+      "advisory_rows": 14137,
+      "negative_measurement_rows": 50243,
+      "null_measurement_rows": 0,
+      "pollutant": 88101,
+      "rows": 1976283,
+      "year": 2026
+    },
+    {
+      "advisory_rows": 0,
+      "negative_measurement_rows": 4658,
+      "null_measurement_rows": 0,
+      "pollutant": 42101,
+      "rows": 368027,
+      "year": 2026
+    },
+    {
+      "advisory_rows": 0,
+      "negative_measurement_rows": 7597,
+      "null_measurement_rows": 0,
+      "pollutant": 42602,
+      "rows": 805803,
+      "year": 2026
+    },
+    {
+      "advisory_rows": 0,
+      "negative_measurement_rows": 6668,
+      "null_measurement_rows": 0,
+      "pollutant": 81102,
+      "rows": 850829,
+      "year": 2026
+    },
+    {
+      "advisory_rows": 0,
+      "negative_measurement_rows": 58664,
+      "null_measurement_rows": 0,
+      "pollutant": 42401,
+      "rows": 741160,
+      "year": 2026
+    },
+    {
+      "advisory_rows": 0,
+      "negative_measurement_rows": 9700,
+      "null_measurement_rows": 0,
+      "pollutant": 88502,
+      "rows": 335702,
+      "year": 2026
+    }
+  ],
+  "python_version": "3.15.2",
+  "retirement_reason": "Diagnostic run found 3579 valid hourly-duration samples beginning at :26. Corrected normalization preserves exact timestamps and uses an explicit UTC-hour key; rerun required before publication.",
+  "runtime_metadata_redacted": true,
+  "sources": [
+    {
+      "csv_bytes": 94251151,
+      "csv_columns": 24,
+      "csv_md5": "213c661ba80714d90d6d4ddf6bef43da",
+      "duplicate_rows": 0,
+      "input_generation": "1794260674682848",
+      "input_rows": 368027,
+      "input_uri": "gs://final-team-514205-aq-spark-scratch/s12/inputs/2026/carbon_monoxide/g1794209874367445.csv",
+      "listed_rows": 368027,
+      "output_rows": 368027,
+      "pollutant": "carbon_monoxide",
+      "raw_generation": "1794204679268300",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_42101_2026.zip",
+      "rejected_rows": 0,
+      "stage_generation": "1794209874367445",
+      "stage_uri": "gs://final-team-514205-air-quality/staging/epa/42101/2026/hourly_42101_2026__g1794204679268300.csv",
+      "staged_rows": 368027,
+      "year": 2026
+    },
+    {
+      "csv_bytes": 209622882,
+      "csv_columns": 24,
+      "csv_md5": "0e4eb89b9f3c446c8a9423353d3d78c9",
+      "duplicate_rows": 0,
+      "input_generation": "1794260675331299",
+      "input_rows": 805803,
+      "input_uri": "gs://final-team-514205-aq-spark-scratch/s12/inputs/2026/nitrogen_dioxide/g1794212690094738.csv",
+      "listed_rows": 805803,
+      "output_rows": 805803,
+      "pollutant": "nitrogen_dioxide",
+      "raw_generation": "1794207225995670",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_42602_2026.zip",
+      "rejected_rows": 0,
+      "stage_generation": "1794212690094738",
+      "stage_uri": "gs://final-team-514205-air-quality/staging/epa/42602/2026/hourly_42602_2026__g1794207225995670.csv",
+      "staged_rows": 805803,
+      "year": 2026
+    },
+    {
+      "csv_bytes": 434211946,
+      "csv_columns": 24,
+      "csv_md5": "0fa88eadbf0baedba6d73348dc19dcaf",
+      "duplicate_rows": 0,
+      "input_generation": "1794260675770939",
+      "input_rows": 1906626,
+      "input_uri": "gs://final-team-514205-aq-spark-scratch/s12/inputs/2026/ozone/g1794212683494992.csv",
+      "listed_rows": 1906626,
+      "output_rows": 1906626,
+      "pollutant": "ozone",
+      "raw_generation": "1794208085552157",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_44201_2026.zip",
+      "rejected_rows": 0,
+      "stage_generation": "1794212683494992",
+      "stage_uri": "gs://final-team-514205-air-quality/staging/epa/44201/2026/hourly_44201_2026__g1794208085552157.csv",
+      "staged_rows": 1906626,
+      "year": 2026
+    },
+    {
+      "csv_bytes": 243367426,
+      "csv_columns": 24,
+      "csv_md5": "10f1cc482cb0b2a7a09968b6d7cf0b26",
+      "duplicate_rows": 0,
+      "input_generation": "1794260676090944",
+      "input_rows": 850829,
+      "input_uri": "gs://final-team-514205-aq-spark-scratch/s12/inputs/2026/pm10/g1794212704591566.csv",
+      "listed_rows": 850829,
+      "output_rows": 850829,
+      "pollutant": "pm10",
+      "raw_generation": "1794207232223758",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_81102_2026.zip",
+      "rejected_rows": 0,
+      "stage_generation": "1794212704591566",
+      "stage_uri": "gs://final-team-514205-air-quality/staging/epa/81102/2026/hourly_81102_2026__g1794207232223758.csv",
+      "staged_rows": 850829,
+      "year": 2026
+    },
+    {
+      "csv_bytes": 577611814,
+      "csv_columns": 24,
+      "csv_md5": "8d4c8ad1e59c1b252fc68036a88f8bce",
+      "duplicate_rows": 0,
+      "input_generation": "1794260676398836",
+      "input_rows": 1979862,
+      "input_uri": "gs://final-team-514205-aq-spark-scratch/s12/inputs/2026/pm25_frm_fem/g1794212714448894.csv",
+      "listed_rows": 1979862,
+      "output_rows": 1976283,
+      "pollutant": "pm25_frm_fem",
+      "raw_generation": "1794208098896826",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_88101_2026.zip",
+      "rejected_rows": 3579,
+      "stage_generation": "1794212714448894",
+      "stage_uri": "gs://final-team-514205-air-quality/staging/epa/88101/2026/hourly_88101_2026__g1794208098896826.csv",
+      "staged_rows": 1979862,
+      "year": 2026
+    },
+    {
+      "csv_bytes": 96966278,
+      "csv_columns": 24,
+      "csv_md5": "05b53810183456497c0427541d09365a",
+      "duplicate_rows": 0,
+      "input_generation": "1794260676711140",
+      "input_rows": 335702,
+      "input_uri": "gs://final-team-514205-aq-spark-scratch/s12/inputs/2026/pm25_non_frm_fem/g1794209874304113.csv",
+      "listed_rows": 335702,
+      "output_rows": 335702,
+      "pollutant": "pm25_non_frm_fem",
+      "raw_generation": "1794204681356835",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_88502_2026.zip",
+      "rejected_rows": 0,
+      "stage_generation": "1794209874304113",
+      "stage_uri": "gs://final-team-514205-air-quality/staging/epa/88502/2026/hourly_88502_2026__g1794204681356835.csv",
+      "staged_rows": 335702,
+      "year": 2026
+    },
+    {
+      "csv_bytes": 176277272,
+      "csv_columns": 24,
+      "csv_md5": "f4ea64c1bf00e51d64b49598ca1c389a",
+      "duplicate_rows": 0,
+      "input_generation": "1794260677016493",
+      "input_rows": 741160,
+      "input_uri": "gs://final-team-514205-aq-spark-scratch/s12/inputs/2026/sulfur_dioxide/g1794212722096204.csv",
+      "listed_rows": 741160,
+      "output_rows": 741160,
+      "pollutant": "sulfur_dioxide",
+      "raw_generation": "1794208102871034",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_42401_2026.zip",
+      "rejected_rows": 0,
+      "stage_generation": "1794212722096204",
+      "stage_uri": "gs://final-team-514205-air-quality/staging/epa/42401/2026/hourly_42401_2026__g1794208102871034.csv",
+      "staged_rows": 741160,
+      "year": 2026
+    }
+  ],
+  "spark_properties": {
+    "spark.driver.cores": "4",
+    "spark.driver.memory": "9600m",
+    "spark.driver.memoryOverhead": "3840m",
+    "spark.dynamicAllocation.enabled": "false",
+    "spark.executor.cores": "4",
+    "spark.executor.instances": "2",
+    "spark.executor.memory": "9600m",
+    "spark.executor.memoryOverhead": "3840m",
+    "spark.sql.adaptive.enabled": "true",
+    "spark.sql.shuffle.partitions": "64"
+  },
+  "spark_version": "3.5.3",
+  "status": "verified",
+  "year": 2026
+}

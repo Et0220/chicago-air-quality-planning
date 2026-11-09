@@ -1,0 +1,164 @@
+{
+  "verified_at_utc": "2026-11-09T20:12:37.110806+00:00",
+  "epa": {
+    "manifest_cells": 296,
+    "nonempty": 233,
+    "raw_objects": 233,
+    "raw_generations": 233,
+    "raw_bytes": 6716684039,
+    "staged_objects": 233,
+    "staged_generations": 233,
+    "staged_rows": 907024502,
+    "staged_bytes": 218661382349,
+    "mismatches": []
+  },
+  "aqs": [
+    {
+      "name": "raw/aqs/aqs_monitors/e8325216d4ec5df462a23c201e6ffa1176b2fce363c9f6b0e3f18ce6ad958525.zip",
+      "generation": "1794204166716088",
+      "bytes": 6919360,
+      "metadata_rows": "370090",
+      "local_sha256_matches": true
+    },
+    {
+      "name": "raw/aqs/aqs_sites/56b322f6a3d5368d055bce53d0988275c0b27fbcced3d57a6ce8f2e2b539e15a.zip",
+      "generation": "1794204166286269",
+      "bytes": 1018314,
+      "metadata_rows": "20994",
+      "local_sha256_matches": true
+    }
+  ],
+  "purpleair": {
+    "snapshots": 15,
+    "sensor_counts": [
+      131,
+      131,
+      131,
+      130,
+      130,
+      130,
+      130,
+      130,
+      130,
+      130,
+      131,
+      131,
+      130,
+      130,
+      131
+    ],
+    "consecutive_duplicate_reports": 29,
+    "distinct_report_deltas": 1794,
+    "nonpositive_distinct_deltas": 0,
+    "median_positive_delta_seconds": 3600.0,
+    "first_snapshot": {
+      "name": "raw/purpleair/dt=2026-11-09/hh=07/purpleair_20261109T073930Z_e5edcce9.json",
+      "generation": "1794209971355170",
+      "snapshot_time": 1794209950,
+      "sensor_count": 131,
+      "fields": [
+        "sensor_index",
+        "last_seen",
+        "location_type",
+        "latitude",
+        "longitude",
+        "humidity",
+        "pm2.5_cf_1_a",
+        "pm2.5_cf_1_b"
+      ],
+      "max_age_seconds": 900,
+      "api_version": "V1.2.3-1.1.45",
+      "null_rate": {
+        "sensor_index": 0.0,
+        "last_seen": 0.0,
+        "location_type": 0.0,
+        "latitude": 0.0,
+        "longitude": 0.0,
+        "humidity": 0.06870229007633588,
+        "pm2.5_cf_1_a": 0.007633587786259542,
+        "pm2.5_cf_1_b": 0.0
+      },
+      "age_median_s": 72,
+      "age_p90_s": 113,
+      "ab_gap_median": 0.7999999999999998,
+      "ab_gap_p90": 4.1
+    },
+    "last_snapshot": {
+      "name": "raw/purpleair/dt=2026-11-09/hh=20/purpleair_20261109T200247Z_b6f2080c.json",
+      "generation": "1794254569093434",
+      "snapshot_time": 1794254533,
+      "sensor_count": 131,
+      "fields": [
+        "sensor_index",
+        "last_seen",
+        "location_type",
+        "latitude",
+        "longitude",
+        "humidity",
+        "pm2.5_cf_1_a",
+        "pm2.5_cf_1_b"
+      ],
+      "max_age_seconds": 900,
+      "api_version": "V1.2.3-1.1.45",
+      "null_rate": {
+        "sensor_index": 0.0,
+        "last_seen": 0.0,
+        "location_type": 0.0,
+        "latitude": 0.0,
+        "longitude": 0.0,
+        "humidity": 0.07633587786259542,
+        "pm2.5_cf_1_a": 0.007633587786259542,
+        "pm2.5_cf_1_b": 0.0
+      },
+      "age_median_s": 55,
+      "age_p90_s": 107,
+      "ab_gap_median": 0.5999999999999996,
+      "ab_gap_p90": 2.9
+    },
+    "raw_hours": {
+      "hh=07": 2,
+      "hh=08": 1,
+      "hh=09": 1,
+      "hh=10": 1,
+      "hh=11": 1,
+      "hh=12": 1,
+      "hh=13": 1,
+      "hh=14": 1,
+      "hh=15": 1,
+      "hh=16": 1,
+      "hh=17": 1,
+      "hh=18": 1,
+      "hh=19": 1,
+      "hh=20": 1
+    }
+  },
+  "airnow": {
+    "raw_snapshots": 160,
+    "sample_checks": [
+      {
+        "name": "raw/airnow/dt=2026-11-06/hh=07/HourlyAQObs_2026110607_70d7356cbdb3ff92774948ff71cd59c7d7738bd8b320ea4e2fbdbc8edb2547c2.dat",
+        "hour": "2026-11-06T07:00:00+00:00",
+        "observations": 39,
+        "sites": 26,
+        "sha256_matches": true,
+        "duplicate_keys": 0
+      },
+      {
+        "name": "raw/airnow/dt=2026-11-09/hh=04/HourlyAQObs_2026110904_ed111c4547f08268e90a39e658a83ab7df0c000c90949d44181652af0ac27ed0.dat",
+        "hour": "2026-11-09T04:00:00+00:00",
+        "observations": 33,
+        "sites": 24,
+        "sha256_matches": true,
+        "duplicate_keys": 0
+      },
+      {
+        "name": "raw/airnow/dt=2026-11-09/hh=18/HourlyAQObs_2026110918_f4fcc0d0326da336ad48e86b1065b151899342693fc3695fab1e5c33480c2963.dat",
+        "hour": "2026-11-09T18:00:00+00:00",
+        "observations": 32,
+        "sites": 24,
+        "sha256_matches": true,
+        "duplicate_keys": 0
+      }
+    ]
+  }
+}

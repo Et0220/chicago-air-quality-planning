@@ -1,0 +1,38 @@
+{
+  "late_metadata_history": {
+    "outcomes_new_dup_late": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "sensor_latitude": 41.9,
+    "current_history_latitude": 42.0,
+    "latest_report": "2026-11-09 02:00:00+00:00",
+    "current_history_start": "2026-11-09 01:00:00+00:00",
+    "consistent": false
+  },
+  "purpleair_env_overrides": {
+    "requested_max_age": 123,
+    "actual_max_age": 900,
+    "requested_stale_after": 456,
+    "actual_stale_after": 600,
+    "requested_prefix": "custom/raw/pa",
+    "actual_prefix": "raw/purpleair"
+  },
+  "custom_epa_prefix": {
+    "raw_uri": "gs://test/custom/epa/2026/hourly_42101_2026.zip",
+    "error": "Unexpected raw EPA object path: hourly_42101_2026.zip"
+  }
+}

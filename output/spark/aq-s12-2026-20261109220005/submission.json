@@ -1,0 +1,16 @@
+{
+  "batch": "aq-s12-2026-20261109220005",
+  "bucket": "final-team-514205-air-quality",
+  "curated_prefix": "curated/epa_hourly",
+  "image": "us-central1-docker.pkg.dev/final-team-514205/air-quality/spark-python315@sha256:22bfeeadd8de25752a45e9617e3e4820b73870835e573f3d921af24efb96103b",
+  "input_fingerprint": "b41da3c9052101018033920074f5c91567c054d8ee40b3a5ebda94c35c49a873",
+  "lock_generation": "1794261606080996",
+  "output": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109220005/result",
+  "prior_commit_generation": "0",
+  "project": "final-team-514205",
+  "region": "us-central1",
+  "runtime": "2.2",
+  "scratch": "final-team-514205-aq-spark-scratch",
+  "status": "published",
+  "year": 2026
+}

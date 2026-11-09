@@ -1,0 +1,76 @@
+{
+  "checked_at_utc": "2026-11-09T22:22:59.366551+00:00",
+  "python_requirement": "3.15",
+  "local_python": "3.15.2",
+  "local_spark": "3.5.3",
+  "prior_review": "output/validation/s01_s10_report.txt",
+  "prior_findings": {
+    "F1": "fix and regression already present in working tree",
+    "F2": "fix and regression already present in working tree",
+    "F3": "fix and regression already present in working tree"
+  },
+  "cloud_deployment_of_prior_fixes": "Rebuilt/deployed as confirmed by user; live job image digests match configuration and follow-up Terraform plan reports No changes",
+  "terraform": {
+    "mock_tests_passed": 14,
+    "full_plan": "No changes",
+    "change": "one repository-scoped Artifact Registry Reader binding for aq-spark",
+    "followup_full_plan": "No changes"
+  },
+  "image_build": {
+    "id": "1e7a033e-7338-4cf1-85f9-77574c5af3bf",
+    "status": "SUCCESS",
+    "image": "us-central1-docker.pkg.dev/final-team-514205/air-quality/spark-python315@sha256:22bfeeadd8de25752a45e9617e3e4820b73870835e573f3d921af24efb96103b",
+    "base_image": "python:3.15-slim@sha256:65a65fc7b30b06cb6df4930fd4650697cb23f4c2698ab81fc87e4b031bc36928",
+    "base_digest_evidence": "Original Cloud Build log; Dockerfile now pins the same digest; no runtime rebuild required"
+  },
+  "pytest": {
+    "passed": 95,
+    "skipped": 4,
+    "spark_and_control_tests": 20,
+    "python": "3.15.2",
+    "java_home_unset": "Persistent Java 17 automatically discovered",
+    "missing_java": {
+      "passed": 88,
+      "skipped": 11,
+      "errors": 0
+    }
+  },
+  "lint": "passed",
+  "format": "passed",
+  "scope": "S11 plus 2026 pilot, report, and runbook; 1990-2025 deferred by user",
+  "real_data_timestamp_finding": {
+    "monitor_key": "06-073-0077-88101-03",
+    "rows": 3579,
+    "minute": 26,
+    "resolution": "preserve exact sample begin time; explicit observed_hour_utc key and is_hour_aligned flag"
+  },
+  "pilot": {
+    "status": "published",
+    "batch": "aq-s12-2026-20261109221230",
+    "python_version": "3.15.2",
+    "spark_version": "3.5.3",
+    "input_rows": 6988009,
+    "output_rows": 6988009,
+    "rejected_rows": 0,
+    "duplicate_rows": 0,
+    "parquet_files": 50,
+    "parquet_bytes": 514136327,
+    "non_hour_aligned_rows": 3579,
+    "elapsed_seconds": 388.551,
+    "compute_and_shuffle_usd_estimate": 0.091756
+  },
+  "replay": {
+    "status": "unchanged",
+    "year": 2026,
+    "input_fingerprint": "d9374e0588249bcc6392609f6efeb330c8fc0fc0e60f023bb874e98bdf18b6b7"
+  },
+  "runtime_metadata_protection": "Resource-property allowlist; prior generated authentication metadata sanitized locally and in GCS",
+  "followup_checked_at_utc": "2026-11-09T22:37:03.666333+00:00",
+  "deployed_images": {
+    "aq-purpleair-poll": "us-central1-docker.pkg.dev/final-team-514205/air-quality/purpleair-poll@sha256:3a9a8ae90fde05c4cbc5cf6cd7c3876b9b82fa4f445347e72aff6121e4a3e040",
+    "aq-epa-stage": "us-central1-docker.pkg.dev/final-team-514205/air-quality/epa-stage@sha256:05bfa53fd53a7ffbe7a03313fce287ff6cb5e80efcf10357e24c1644ef4344a7"
+  },
+  "local_java_home": "/Users/peter_liu/Library/Java/JavaVirtualMachines/temurin-17.0.21.jdk/Contents/Home",
+  "followup_cleanup": "output/spark/aq-s12-2026-20261109220005/cleanup.json",
+  "followup_verification": "output/spark/review_verification.json"
+}

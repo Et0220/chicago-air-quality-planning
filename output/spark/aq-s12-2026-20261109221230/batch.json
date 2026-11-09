@@ -1,0 +1,87 @@
+{
+  "createTime": "2026-11-09T22:12:32.695134Z",
+  "creator": "liu0220@uchicago.edu",
+  "environmentConfig": {
+    "executionConfig": {
+      "authenticationConfig": {},
+      "networkTags": [
+        "aq-spark"
+      ],
+      "serviceAccount": "aq-spark@final-team-514205.iam.gserviceaccount.com",
+      "stagingBucket": "final-team-514205-aq-spark-scratch",
+      "subnetworkUri": "projects/final-team-514205/regions/us-central1/subnetworks/aq-spark",
+      "ttl": "1800s"
+    },
+    "peripheralsConfig": {
+      "sparkHistoryServerConfig": {}
+    }
+  },
+  "labels": {
+    "goog-dataproc-batch-id": "aq-s12-2026-20261109221230",
+    "goog-dataproc-batch-uuid": "7eef4dea-42fd-4396-8fbd-067e7bbfc5e4",
+    "goog-dataproc-drz-resource-uuid": "batch-7eef4dea-42fd-4396-8fbd-067e7bbfc5e4",
+    "goog-dataproc-location": "us-central1"
+  },
+  "name": "projects/final-team-514205/locations/us-central1/batches/aq-s12-2026-20261109221230",
+  "operation": "projects/final-team-514205/regions/us-central1/operations/0fd7b209-e6c5-338e-9216-bffe028343ff",
+  "pysparkBatch": {
+    "args": [
+      "--manifest=manifest.json",
+      "--output=gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109221230/result"
+    ],
+    "fileUris": [
+      "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109221230/manifest.json"
+    ],
+    "mainPythonFileUri": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109221230/run_epa.py",
+    "pythonFileUris": [
+      "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109221230/epa_spark.zip"
+    ]
+  },
+  "runtimeConfig": {
+    "containerImage": "us-central1-docker.pkg.dev/final-team-514205/air-quality/spark-python315@sha256:22bfeeadd8de25752a45e9617e3e4820b73870835e573f3d921af24efb96103b",
+    "properties": {
+      "spark:spark.app.name": "projects/final-team-514205/locations/us-central1/batches/aq-s12-2026-20261109221230",
+      "spark:spark.dataproc.autotuning.cohortId": "7eef4dea-42fd-4396-8fbd-067e7bbfc5e4",
+      "spark:spark.dataproc.engine": "default",
+      "spark:spark.dataproc.lightningEngine.runtime": "default",
+      "spark:spark.dataproc.scaling.version": "2",
+      "spark:spark.driver.cores": "4",
+      "spark:spark.driver.memory": "9600m",
+      "spark:spark.driverEnv.TZ": "UTC",
+      "spark:spark.dynamicAllocation.enabled": "false",
+      "spark:spark.dynamicAllocation.executorAllocationRatio": "0.3",
+      "spark:spark.executor.cores": "4",
+      "spark:spark.executor.instances": "2",
+      "spark:spark.executor.memory": "9600m",
+      "spark:spark.executorEnv.TZ": "UTC",
+      "spark:spark.sql.adaptive.enabled": "true",
+      "spark:spark.sql.shuffle.partitions": "64"
+    },
+    "version": "2.2.90"
+  },
+  "runtimeInfo": {
+    "approximateUsage": {
+      "acceleratorType": "UNSPECIFIED",
+      "milliDcuSeconds": "5042900",
+      "shuffleStorageGbSeconds": "506400"
+    },
+    "cohortInfo": {
+      "cohort": "7eef4dea-42fd-4396-8fbd-067e7bbfc5e4"
+    },
+    "outputUri": "gs://final-team-514205-aq-spark-scratch/google-cloud-dataproc-metainfo/0bd52094-e2bc-42d4-9c87-ee97cdf0f96e/jobs/srvls-batch-7eef4dea-42fd-4396-8fbd-067e7bbfc5e4/driveroutput",
+    "propertiesInfo": {}
+  },
+  "state": "SUCCEEDED",
+  "stateHistory": [
+    {
+      "state": "PENDING",
+      "stateStartTime": "2026-11-09T22:12:32.695134Z"
+    },
+    {
+      "state": "RUNNING",
+      "stateStartTime": "2026-11-09T22:13:43.363516Z"
+    }
+  ],
+  "stateTime": "2026-11-09T22:20:46.085977Z",
+  "uuid": "7eef4dea-42fd-4396-8fbd-067e7bbfc5e4"
+}

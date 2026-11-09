@@ -1,0 +1,17 @@
+{
+  "batch": "aq-s12-2026-20261109214818",
+  "bucket": "final-team-514205-air-quality",
+  "curated_prefix": "curated/epa_hourly",
+  "image": "us-central1-docker.pkg.dev/final-team-514205/air-quality/spark-python315@sha256:22bfeeadd8de25752a45e9617e3e4820b73870835e573f3d921af24efb96103b",
+  "input_fingerprint": "1a3d0149883b1c104d131de96c49ef5fa7cc09db404d7986dd5df606222b15a5",
+  "lock_generation": "1794260898971441",
+  "output": "gs://final-team-514205-aq-spark-scratch/s12/runs/aq-s12-2026-20261109214818/result",
+  "prior_commit_generation": "0",
+  "project": "final-team-514205",
+  "region": "us-central1",
+  "retirement_reason": "Diagnostic run found 3579 valid hourly-duration samples beginning at :26. Corrected normalization preserves exact timestamps and uses an explicit UTC-hour key; rerun required before publication.",
+  "runtime": "2.2",
+  "scratch": "final-team-514205-aq-spark-scratch",
+  "status": "diagnostic_retired",
+  "year": 2026
+}

@@ -1,0 +1,5 @@
+**
+!spark/
+!spark/Dockerfile
+!spark/cloudbuild.yaml
+!.gcloudignore.spark

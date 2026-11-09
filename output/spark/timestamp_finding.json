@@ -1,0 +1,12 @@
+{
+  "scope": "diagnostic, not published",
+  "batch": "aq-s12-2026-20261109214818",
+  "python_version": "3.15.2",
+  "spark_version": "3.5.3",
+  "rows_examined": 6988009,
+  "valid_hourly_samples_wrongly_quarantined": 3579,
+  "monitor_key": "06-073-0077-88101-03",
+  "sampling_minute": 26,
+  "fix": "Preserve exact observed_at_utc; use observed_hour_utc for deduplication and expose is_hour_aligned",
+  "reference": "https://aqs.epa.gov/aqsweb/airdata/FileFormats.html"
+}
