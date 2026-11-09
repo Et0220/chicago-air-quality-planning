@@ -1,0 +1,40 @@
+# Non-secret defaults only. AIR_QUALITY_* environment variables take precedence.
+project:
+  timezone: America/Chicago
+  history_start_year: 1990
+  area: chicago_metro
+
+gcs:
+  raw_epa_prefix: raw/epa
+  staging_epa_prefix: staging/epa
+  curated_epa_prefix: curated/epa_hourly
+  raw_purpleair_prefix: raw/purpleair
+  raw_airnow_prefix: raw/airnow
+
+epa:
+  catalog_url: https://aqs.epa.gov/aqsweb/airdata/download_files.html
+  hourly_groups:
+    ozone: "44201"
+    sulfur_dioxide: "42401"
+    carbon_monoxide: "42101"
+    nitrogen_dioxide: "42602"
+    pm25_frm_fem: "88101"
+    pm25_non_frm_fem: "88502"
+    pm10: "81102"
+    lead: LEAD
+
+purpleair:
+  target_poll_seconds: 120
+  fields:
+    - last_seen
+    - latitude
+    - longitude
+    - location_type
+    - pm2.5_cf_1_a
+    - pm2.5_cf_1_b
+    - humidity
+  outdoor_only: true
+
+airnow:
+  product: HourlyAQObs
+  revision_lookback_hours: 72
