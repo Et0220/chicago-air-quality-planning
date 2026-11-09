@@ -72,3 +72,35 @@ Cost scales with the number of sensors returned. If the affordable cadence is to
 3. Re-measure the balance after the first day of polling and adjust.
 
 Caveat for S16: polling hourly yields about one reading per sensor-hour, so a minimum-completeness rule for hourly averages (e.g. a share of the hour's expected readings) cannot be met. Either define completeness for the chosen cadence (e.g. at least 2 of 4 readings at 15 min) or cut the sensor count to afford a 10-15 min cadence. Decide this before S08.
+
+## Live pilot across repeated captures (added by hand, 2026-11-09)
+
+The sections above come from one call. The S08 poller has since stored the raw
+response of every call under `raw/purpleair/`; this section measures those 17
+captures (07:39 to 21:30 UTC, same bounding box, 8 columns, `max_age` 900 s).
+It is not produced by `purpleair_check.py`: regenerating that report replaces
+the file, so re-add this section afterwards.
+
+| Measure | Result |
+| --- | --- |
+| Captures analysed | 17 (3 manual, 14 scheduled hourly) |
+| Sensors per capture | 130 to 131; 132 distinct overall, 130 present in every capture |
+| Distinct `last_seen` values in one capture | 76 to 87 across about 130 sensors (sensors do not report in lockstep) |
+| Report age at snapshot | median 52 to 97 s; p90 106 to 139 s; max 119 to 829 s |
+| Rows with a null `humidity` | 7.1% |
+| Rows with a null `pm2.5_cf_1_a` | 0.8% (`pm2.5_cf_1_b` and location fields never null) |
+| Distinct (sensor, report time) pairs | 2,189 of 2,218 rows |
+
+**Reporting cadence.** Two manual calls 93 s apart (07:39:30 and 07:41:03)
+returned 102 sensors with a new report time and 29 repeats, so most sensors
+report about every 2 minutes. Across the 14 hourly captures no (sensor,
+report time) pair repeats; the 29 repeats all come from that 93 s pair.
+
+**Points cost at the selected interval.** Measured 1,053 points per call
+(first section). The selected interval is 60 min (`target_poll_seconds: 3600`):
+24 calls/day = 25,272 points/day = 758,160 points per 30 days, inside the
+80% budget rule. The 72-hour test costs about 76,000 points.
+
+**Limit of this evidence.** Hourly polling samples one report per sensor per
+hour. The 2-minute and 10 to 15 minute cadences do not fit the points budget
+for the whole box, as the scenario tables show.

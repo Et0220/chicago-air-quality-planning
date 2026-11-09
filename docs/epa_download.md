@@ -159,14 +159,13 @@ cross-connection locks, idempotency, and downstream state resets. It removes
 the schema afterward. The integration case passed against the project's
 PostgreSQL 16 instance using a temporary administrator that was then deleted.
 
-S10 should read only `catalog_status='listed_nonempty' AND
-download_state='downloaded'`, and open `raw_uri` at the recorded
-`raw_generation`. It must retain version lineage and independently validate
-ZIP contents while staging. The catalog's approximate bytes and listed rows
-are separate from measured transfer size and subsequent validated row counts.
-When updating staging state, S10 must condition its update on the same
-`raw_generation` it read, so completion of an old version cannot mark a newly
-downloaded version as staged.
+S10 reads only `catalog_status='listed_nonempty' AND
+download_state='downloaded'`, opens `raw_uri` at the recorded
+`raw_generation`, and independently validates ZIP contents while staging.
+Its SQL update is conditioned on the same raw generation, so completion of an
+old version cannot mark a newly downloaded version as staged. The catalog's
+listed rows remain separate from the measured and validated CSV counts. See
+[the S10 staging results](epa_stage.md).
 
 GCS resumable writes and generation conditions follow the
 [BlobWriter reference](https://docs.cloud.google.com/python/docs/reference/storage/latest/google.cloud.storage.fileio.BlobWriter).

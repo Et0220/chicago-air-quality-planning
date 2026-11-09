@@ -189,12 +189,12 @@ def current_entry(conn, file_id: int) -> StageEntry:
     return StageEntry(*row)
 
 
-def _raw_blob(bucket, entry: StageEntry):
+def _raw_blob(bucket, entry: StageEntry, raw_prefix: str):
     prefix = f"gs://{bucket.name}/"
     if not entry.raw_uri.startswith(prefix):
         raise ValueError(f"Raw URI points outside data bucket: {entry.file_name}")
     name = entry.raw_uri[len(prefix) :]
-    expected = f"raw/epa/{entry.year}/{entry.file_name}"
+    expected = f"{raw_prefix}/{entry.year}/{entry.file_name}"
     if name != expected:
         raise ValueError(f"Unexpected raw EPA object path: {entry.file_name}")
     blob = bucket.blob(name, generation=int(entry.raw_generation))
@@ -204,12 +204,14 @@ def _raw_blob(bucket, entry: StageEntry):
     return blob
 
 
-def stage_object(bucket, entry: StageEntry, prefix: str, run_id: uuid.UUID):
+def stage_object(
+    bucket, entry: StageEntry, prefix: str, run_id: uuid.UUID, raw_prefix: str
+):
     name = stage_name(entry, prefix)
     existing = bucket.get_blob(name)
     if reusable(existing, entry):
         return int(existing.metadata["csv_rows"]), "reused", existing
-    raw = _raw_blob(bucket, entry)
+    raw = _raw_blob(bucket, entry, raw_prefix)
     with tempfile.TemporaryDirectory(prefix="epa-stage-") as directory:
         zip_path = Path(directory) / entry.file_name
         raw.download_to_filename(str(zip_path), timeout=120)
@@ -282,13 +284,17 @@ def mark_failed(conn, entry: StageEntry, run_id: uuid.UUID) -> None:
     conn.commit()
 
 
-def stage_one(conn, bucket, entry: StageEntry, prefix: str, run_id: uuid.UUID):
+def stage_one(
+    conn, bucket, entry: StageEntry, prefix: str, run_id: uuid.UUID, raw_prefix: str
+):
     with State(conn).lock(entry):
         current = current_entry(conn, entry.ingest_file_id)
         if current.raw_generation != entry.raw_generation:
             raise ValueError(f"Source version changed: {entry.file_name}")
         try:
-            rows, action, blob = stage_object(bucket, current, prefix, run_id)
+            rows, action, blob = stage_object(
+                bucket, current, prefix, run_id, raw_prefix
+            )
             update_stage(conn, current, rows, run_id)
         except Exception:
             mark_failed(conn, current, run_id)
@@ -315,13 +321,13 @@ def stage_one(conn, bucket, entry: StageEntry, prefix: str, run_id: uuid.UUID):
         }
 
 
-def _work(entries, bucket_name, project, prefix, run_id):
+def _work(entries, bucket_name, project, prefix, run_id, raw_prefix):
     results = []
     with db.connect() as conn:
         bucket = storage.Client(project=project).bucket(bucket_name)
         for entry in entries:
             try:
-                result = stage_one(conn, bucket, entry, prefix, run_id)
+                result = stage_one(conn, bucket, entry, prefix, run_id, raw_prefix)
             except Exception as exc:
                 conn.rollback()
                 result = {
@@ -425,6 +431,12 @@ def main(argv=None):
         ).strip("/")
         if not prefix or ".." in prefix.split("/"):
             raise ValueError("Invalid staging EPA prefix")
+        raw_prefix = (
+            os.getenv("AIR_QUALITY_GCS_RAW_EPA_PREFIX")
+            or settings["gcs"]["raw_epa_prefix"]
+        ).strip("/")
+        if not raw_prefix or ".." in raw_prefix.split("/"):
+            raise ValueError("Invalid raw EPA object prefix")
         with db.connect() as conn:
             entries = load_entries(conn, args.years, pollutants)
             for entry in entries:
@@ -456,6 +468,7 @@ def main(argv=None):
                 {
                     "bucket": bucket_name,
                     "prefix": prefix,
+                    "raw_prefix": raw_prefix,
                     "cloud_run_execution": os.getenv("CLOUD_RUN_EXECUTION"),
                     "concurrency": args.concurrency,
                 },
@@ -470,6 +483,7 @@ def main(argv=None):
                         project,
                         prefix,
                         run_id,
+                        raw_prefix,
                     )
                     for index in range(min(args.concurrency, len(entries)))
                 ]

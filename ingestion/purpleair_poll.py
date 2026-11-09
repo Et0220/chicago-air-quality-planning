@@ -256,6 +256,10 @@ def store_readings(
     )
     current = {row[0]: tuple(row[1:]) for row in cur.fetchall()}
 
+    # Newest report already stored per sensor. A location change may only be
+    # applied by a report newer than this; a late report must not rewrite the
+    # interval that newer reports already established.
+    newest = dict(previous)
     inserted = duplicates = late = 0
     for r in sorted(readings, key=lambda x: (x.sensor_id, x.report_ts)):
         cur.execute(
@@ -277,7 +281,9 @@ def store_readings(
                 (r.sensor_id, r.report_ts, r.latitude, r.longitude, r.is_outdoor),
             )
             current[r.sensor_id] = (r.latitude, r.longitude, r.is_outdoor, r.report_ts)
-        elif _changed(old, r) and r.report_ts > old[3]:
+        elif _changed(old, r) and r.report_ts > max(
+            old[3], newest.get(r.sensor_id, old[3])
+        ):
             lat = r.latitude if r.latitude is not None else old[0]
             lon = r.longitude if r.longitude is not None else old[1]
             cur.execute(CLOSE_HISTORY, (r.report_ts, r.sensor_id))
@@ -285,6 +291,7 @@ def store_readings(
                 OPEN_HISTORY, (r.sensor_id, r.report_ts, lat, lon, r.is_outdoor)
             )
             current[r.sensor_id] = (lat, lon, r.is_outdoor, r.report_ts)
+        newest[r.sensor_id] = max(newest.get(r.sensor_id, r.report_ts), r.report_ts)
         cur.execute(
             INSERT_READING,
             (
@@ -447,6 +454,16 @@ def window_closed(stop_after: str | None, now: datetime) -> bool:
     return now >= cutoff
 
 
+def _setting(cli: int | None, env_suffix: str, section: dict, key: str) -> int:
+    """Resolve CLI flag > AIR_QUALITY_* environment > settings.yaml (positive int)."""
+    name = f"AIR_QUALITY_{env_suffix}"
+    raw = cli if cli is not None else os.environ.get(name) or section[key]
+    value = int(raw)
+    if value <= 0:
+        raise ValueError(f"{name if cli is None else key} must be positive")
+    return value
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--db", action="store_true", help="write to Cloud SQL/Postgres")
@@ -457,12 +474,26 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--stale-after", type=int)
     args = parser.parse_args(argv)
 
+    pa.load_env()
     settings = yaml.safe_load((ROOT / "config/settings.yaml").read_text())
     section = settings["purpleair"]
     fields = ["sensor_index", *section["fields"]]
-    max_age = args.max_age or int(section["max_age_seconds"])
-    stale_after = args.stale_after or int(section["stale_after_seconds"])
-    pa.load_env()
+    max_age = _setting(
+        args.max_age, "PURPLEAIR_MAX_AGE_SECONDS", section, "max_age_seconds"
+    )
+    stale_after = _setting(
+        args.stale_after,
+        "PURPLEAIR_STALE_AFTER_SECONDS",
+        section,
+        "stale_after_seconds",
+    )
+    poll_seconds = _setting(
+        None, "PURPLEAIR_TARGET_POLL_SECONDS", section, "target_poll_seconds"
+    )
+    raw_prefix = (
+        os.environ.get("AIR_QUALITY_GCS_RAW_PURPLEAIR_PREFIX")
+        or settings["gcs"]["raw_purpleair_prefix"]
+    ).strip("/")
     if window_closed(os.environ.get(STOP_AFTER_VAR), datetime.now(UTC)):
         print(f"poll skipped: {STOP_AFTER_VAR} has passed; no request made")
         return 0
@@ -485,14 +516,14 @@ def main(argv: list[str] | None = None) -> int:
         "fields": fields,
         "max_age_seconds": max_age,
         "stale_after_seconds": stale_after,
-        "poll_seconds": section["target_poll_seconds"],
+        "poll_seconds": poll_seconds,
         "bbox": pa.BBOX,
     }
     with db.connect() if args.db else nullcontext(None) as conn:
         stats = poll(
             conn,
             fetch,
-            raw_prefix=settings["gcs"]["raw_purpleair_prefix"],
+            raw_prefix=raw_prefix,
             bucket=bucket,
             local_dir=args.raw_dir,
             stale_after=stale_after,

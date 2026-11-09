@@ -115,3 +115,21 @@ def test_verify_lists_catalog_row_mismatch():
     assert report["matched"] == 1
     assert len(report["mismatches"]) == 1
     assert "3 vs 2" in report["mismatches"][0]
+
+
+def test_raw_blob_honours_custom_raw_prefix():
+    from ingestion.epa_stage import _raw_blob
+
+    entry = _entry(raw_uri="gs://bucket/custom/raw/2024/hourly_88101_2024.zip")
+    bucket = SimpleNamespace(name="bucket")
+    with pytest.raises(ValueError, match="Unexpected raw EPA object path"):
+        _raw_blob(bucket, entry, "raw/epa")
+
+    class Blob:
+        size, md5_hash = 100, base64.b64encode(bytes(16)).decode()
+
+        def reload(self):
+            pass
+
+    bucket.blob = lambda name, generation: Blob()
+    assert _raw_blob(bucket, entry, "custom/raw")

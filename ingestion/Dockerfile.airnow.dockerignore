@@ -1,0 +1,8 @@
+**
+!ingestion/
+!ingestion/Dockerfile.airnow
+!ingestion/requirements-airnow.txt
+!ingestion/db.py
+!ingestion/airnow_collect.py
+!config/
+!config/settings.yaml

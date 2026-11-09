@@ -1,0 +1,7 @@
+# Direct runtime dependencies pinned for the S09 image.
+PyYAML==6.0.3
+pg8000==1.31.6
+sqlparse==0.6.1
+google-cloud-storage==3.17.1
+cloud-sql-python-connector[pg8000]==1.23.0
+requests==2.34.2

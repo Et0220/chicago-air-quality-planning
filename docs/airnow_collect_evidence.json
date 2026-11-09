@@ -1,0 +1,182 @@
+{
+  "segment": "S09",
+  "status": "complete",
+  "recorded_at_utc": "2026-11-09T07:44:59.897931+00:00",
+  "project_id": "final-team-514205",
+  "region": "us-central1",
+  "job": "aq-airnow-collect",
+  "image": "us-central1-docker.pkg.dev/final-team-514205/air-quality/airnow-collect@sha256:f84e200ca2663eb3710406e841851ecf00ef32673552601d8cc9ed48d555d785",
+  "build_id": "c5362d1a-1537-42f4-88d4-a9caabeed7e5",
+  "build_status": "SUCCESS",
+  "build_source": {
+    "bucket": "final-team-514205-aq-spark-scratch",
+    "generation": "1794209731085887",
+    "object": "build-source/1794209730.895508-9c3bd21e9b07490eb014dc0932602669.tgz"
+  },
+  "build_source_verification": {
+    "sha256": {
+      "ingestion/db.py": "ab831b1f8796f16fb93af587edaeb7a71990bd4c82261180e4667a082b644f46",
+      "ingestion/airnow_collect.py": "e706d4224a8c8d75475469d5bac8ac6752815a478ccfe4b28192ff073218b112",
+      "ingestion/cloudbuild-airnow.yaml": "c683597335f32765147e81d1774f5fd7ae1682f0030b41ada90e558250652c9a",
+      "ingestion/Dockerfile.airnow.dockerignore": "ed904f7197ad0f862767cee340d77dc10f7c8e8bd998f0a578d7ee8c6bb75a49",
+      "ingestion/Dockerfile.airnow": "cb439613950813b1b78ee939cdc832df4fd748a5c4935f2875661c54eea8e811",
+      "ingestion/requirements-airnow.txt": "b775c01c81e57174c92911428833fafb09c7fda56d3314d4c27192a3c1649407",
+      "config/settings.yaml": "53fa75ba24e81fa658b10e124b7203e25ef038b5c3238323de9369be7c2a33ae"
+    },
+    "matches_current_files": {
+      "ingestion/db.py": true,
+      "ingestion/airnow_collect.py": true,
+      "ingestion/cloudbuild-airnow.yaml": true,
+      "ingestion/Dockerfile.airnow.dockerignore": true,
+      "ingestion/Dockerfile.airnow": true,
+      "ingestion/requirements-airnow.txt": true,
+      "config/settings.yaml": true
+    }
+  },
+  "source": {
+    "product": "HourlyAQObs",
+    "url_template": "https://files.airnowtech.org/airnow/YYYY/YYYYMMDD/HourlyAQObs_YYYYMMDDHH.dat",
+    "specification": "https://docs.airnowapi.org/docs/HourlyAQObsFactSheet.pdf",
+    "requires_api_key": false,
+    "is_preliminary": true
+  },
+  "window": {
+    "start_hour_utc": "2026-11-06T07:00:00+00:00",
+    "end_hour_utc": "2026-11-09T06:00:00+00:00",
+    "bounds": {
+      "south": 41.3,
+      "north": 42.5,
+      "west": -88.5,
+      "east": -87.0
+    }
+  },
+  "executions": [
+    {
+      "purpose": "backfill",
+      "execution": "aq-airnow-collect-b6xbk",
+      "run_id": "53476177-59fd-4377-b0aa-41e91633e32f",
+      "start_time_utc": "2026-11-09T07:38:43.806453Z",
+      "completion_time_utc": "2026-11-09T07:40:22.141328Z",
+      "hours": 72,
+      "totals": {
+        "inserted": 2359,
+        "observations": 2359,
+        "raw_created": 72,
+        "revised": 0,
+        "stale": 0,
+        "unchanged": 0,
+        "withdrawn": 0
+      },
+      "errors": []
+    },
+    {
+      "purpose": "rerun",
+      "execution": "aq-airnow-collect-slprp",
+      "run_id": "438dce3f-2f7f-4353-b3e4-b7b858292a00",
+      "start_time_utc": "2026-11-09T07:40:43.777225Z",
+      "completion_time_utc": "2026-11-09T07:41:42.063720Z",
+      "hours": 72,
+      "totals": {
+        "inserted": 0,
+        "observations": 2359,
+        "raw_created": 0,
+        "revised": 0,
+        "stale": 0,
+        "unchanged": 2359,
+        "withdrawn": 0
+      },
+      "errors": []
+    }
+  ],
+  "acceptance": {
+    "row_count": 2359,
+    "site_count": 26,
+    "hour_count": 72,
+    "revision_count": 0,
+    "missing_hours": [],
+    "duplicate_key_count": 0,
+    "non_preliminary_count": 0,
+    "mismatches": [],
+    "pollutants": {
+      "PM25": {
+        "rows": 1511,
+        "concentrations": 1502,
+        "aqi": 1510
+      },
+      "OZONE": {
+        "rows": 316,
+        "concentrations": 294,
+        "aqi": 316
+      },
+      "PM10": {
+        "rows": 252,
+        "concentrations": 244,
+        "aqi": 252
+      },
+      "NO2": {
+        "rows": 70,
+        "concentrations": 70,
+        "aqi": 70
+      },
+      "SO2": {
+        "rows": 210,
+        "concentrations": 210,
+        "aqi": 0
+      }
+    }
+  },
+  "raw_snapshot_count": 72,
+  "raw_bytes": 71757311,
+  "rerun_same_raw_uri_and_generation": true,
+  "scheduler": {
+    "httpTarget": {
+      "oauthToken": {
+        "serviceAccountEmail": "aq-scheduler@final-team-514205.iam.gserviceaccount.com"
+      },
+      "uri": "https://run.googleapis.com/v2/projects/final-team-514205/locations/us-central1/jobs/aq-airnow-collect:run"
+    },
+    "name": "projects/final-team-514205/locations/us-central1/jobs/aq-airnow-collect",
+    "schedule": "40 * * * *",
+    "scheduleTime": "2026-11-09T08:40:00Z",
+    "state": "ENABLED",
+    "timeZone": "Etc/UTC"
+  },
+  "validation": {
+    "repository_pytest": {
+      "passed": 71,
+      "skipped": 4
+    },
+    "airnow_unit_tests_passed": 14,
+    "airnow_postgresql_integration_tests_passed": 1,
+    "terraform_mock_tests_passed": 14,
+    "lint": "passed",
+    "terraform_format": "passed",
+    "terraform_validate": "passed",
+    "terraform_final_plan_exit_code": 0,
+    "terraform_final_plan": "No changes; infrastructure matches configuration"
+  },
+  "revision_test": {
+    "scope": "disposable Cloud SQL schema; no synthetic production observations",
+    "initial": {
+      "concentration": -0.7,
+      "aqi": 3,
+      "generation": "1"
+    },
+    "revised": {
+      "concentration": 12.5,
+      "aqi": 50,
+      "generation": "2"
+    },
+    "assertions": [
+      "prior value and source generation archived",
+      "unchanged rerun does not duplicate rows or revisions",
+      "older retrieval rejected",
+      "withdrawal clears current concentration and AQI and archives previous values",
+      "failed transaction rolls back all observation and revision changes"
+    ],
+    "status": "passed"
+  },
+  "temporary_sql_users_and_schema_removed": true,
+  "reconciliation_report": "output/airnow/verification.json",
+  "runbook": "docs/airnow_collect.md"
+}

@@ -1,0 +1,11 @@
+# Allowlist: no .env, credentials, local data, or Terraform state in the build.
+**
+!ingestion/
+!ingestion/Dockerfile.airnow
+!ingestion/Dockerfile.airnow.dockerignore
+!ingestion/cloudbuild-airnow.yaml
+!ingestion/requirements-airnow.txt
+!ingestion/db.py
+!ingestion/airnow_collect.py
+!config/
+!config/settings.yaml

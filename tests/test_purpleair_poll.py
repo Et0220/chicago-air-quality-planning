@@ -253,6 +253,18 @@ def test_poll_dedupes_flags_late_tracks_history_and_recovers(pg, tmp_path):
     # The late report must not rewind the sensor's last-seen or coordinates.
     assert one(pg, "SELECT latitude FROM pa_sensor WHERE sensor_id = 1")[0][0] == 42.0
 
+    # 4b. A late report that ALSO carries a different location must not rewrite
+    # history: newer reports at 42.0 already exist.
+    late_moved = pp.poll(pg, fetcher(body([row(1, age=200, lat=42.5)])), **kw)
+    assert (late_moved.rows_inserted, late_moved.late_reports) == (1, 1)
+    history = one(
+        pg,
+        "SELECT latitude, valid_to_utc IS NULL FROM pa_sensor_history "
+        "WHERE sensor_id = 1 ORDER BY valid_from_utc",
+    )
+    assert [tuple(h) for h in history] == [(41.9, False), (42.0, True)]
+    assert one(pg, "SELECT latitude FROM pa_sensor WHERE sensor_id = 1")[0][0] == 42.0
+
     # 5. Outage: HTTP 403 is logged, nothing inserted; the next poll recovers.
     def forbidden():
         raise urllib.error.HTTPError("u", 403, "Forbidden", {}, None)
@@ -282,6 +294,7 @@ def test_poll_dedupes_flags_late_tracks_history_and_recovers(pg, tmp_path):
         "success",
         "success",
         "success",
+        "success",
         "http_error",
         "success",
         "invalid_response",
@@ -289,7 +302,7 @@ def test_poll_dedupes_flags_late_tracks_history_and_recovers(pg, tmp_path):
     statuses = [
         r[0] for r in one(pg, "SELECT status FROM ingest_run ORDER BY started_at_utc")
     ]
-    assert statuses.count("failed") == 2 and statuses.count("succeeded") == 5
+    assert statuses.count("failed") == 2 and statuses.count("succeeded") == 6
     # Counters on the failed poll are zero, and 403 is stored.
     assert one(
         pg,
@@ -322,3 +335,66 @@ def test_main_exits_without_request_after_cutoff(monkeypatch, capsys):
     monkeypatch.delenv(pa.KEY_VAR, raising=False)  # would fail if it got further
     assert pp.main([]) == 0
     assert "no request made" in capsys.readouterr().out
+
+
+# --- regressions: late reports and environment overrides ----------------------
+
+
+class _FakeCursor:
+    """Minimal cursor: sensor last seen t5 at X, open history from t1 at X."""
+
+    def __init__(self, last_seen, history):
+        self.last_seen, self.history = last_seen, history
+        self.history_writes = []
+        self.rowcount = 1
+        self._rows = []
+
+    def execute(self, sql, params=None):
+        if "FROM pa_sensor_history" in sql:
+            self._rows = [self.history]
+        elif sql.lstrip().startswith("SELECT sensor_id, last_seen"):
+            self._rows = [self.last_seen]
+        else:
+            self._rows = []
+        if sql in (pp.CLOSE_HISTORY, pp.OPEN_HISTORY):
+            self.history_writes.append((sql, params))
+
+    def fetchall(self):
+        return self._rows
+
+
+def test_late_report_with_new_location_does_not_rewrite_history():
+    t1 = datetime(2026, 1, 1, 1, tzinfo=UTC)
+    t3, t5 = t1 + timedelta(hours=2), t1 + timedelta(hours=4)
+    cur = _FakeCursor((7, t5), (7, 41.8, -87.6, True, t1))
+    late = pp.Reading(7, t3, 41.9, -87.7, True, 1.0, 1.0, 50.0, False)
+    pp.store_readings(cur, [late], t5, "uri", "poll")
+    assert cur.history_writes == []
+
+
+def test_newer_report_with_new_location_still_opens_history():
+    t1 = datetime(2026, 1, 1, 1, tzinfo=UTC)
+    t5, t6 = t1 + timedelta(hours=4), t1 + timedelta(hours=5)
+    cur = _FakeCursor((7, t5), (7, 41.8, -87.6, True, t1))
+    moved = pp.Reading(7, t6, 41.9, -87.7, True, 1.0, 1.0, 50.0, False)
+    pp.store_readings(cur, [moved], t6, "uri", "poll")
+    assert [w[0] for w in cur.history_writes] == [pp.CLOSE_HISTORY, pp.OPEN_HISTORY]
+
+
+def test_environment_overrides_beat_settings(monkeypatch):
+    section = {"max_age_seconds": 900}
+    assert (
+        pp._setting(None, "PURPLEAIR_MAX_AGE_SECONDS", section, "max_age_seconds")
+        == 900
+    )
+    monkeypatch.setenv("AIR_QUALITY_PURPLEAIR_MAX_AGE_SECONDS", "300")
+    assert (
+        pp._setting(None, "PURPLEAIR_MAX_AGE_SECONDS", section, "max_age_seconds")
+        == 300
+    )
+    assert (
+        pp._setting(120, "PURPLEAIR_MAX_AGE_SECONDS", section, "max_age_seconds") == 120
+    )
+    monkeypatch.setenv("AIR_QUALITY_PURPLEAIR_MAX_AGE_SECONDS", "0")
+    with pytest.raises(ValueError):
+        pp._setting(None, "PURPLEAIR_MAX_AGE_SECONDS", section, "max_age_seconds")

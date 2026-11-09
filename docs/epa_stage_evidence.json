@@ -1,0 +1,68 @@
+{
+  "status": "complete",
+  "project": "final-team-514205",
+  "region": "us-central1",
+  "bucket": "final-team-514205-air-quality",
+  "job": "aq-epa-stage",
+  "image": "us-central1-docker.pkg.dev/final-team-514205/air-quality/epa-stage@sha256:db7d193627f41d542eea2348c920fcbdbe87f4206ff227461bb1119d2311a240",
+  "cloud_build_id": "9b57e6ae-511e-4ba3-8d7d-a6b7a920741e",
+  "terraform_stage_job_apply": "one Cloud Run job updated by targeted plan",
+  "sample": {
+    "execution": "aq-epa-stage-f5f6q",
+    "status": "succeeded",
+    "outcomes": {"staged": 2},
+    "rows": 703729,
+    "verification_execution": "aq-epa-stage-l4zd9",
+    "verification_matches": 2,
+    "verification_mismatches": []
+  },
+  "year_ranges": [
+    {"years": "1990-1994", "execution": "aq-epa-stage-2x27f", "files": 25, "status": "succeeded"},
+    {"years": "1995-2004", "execution": "aq-epa-stage-hg42g", "files": 57, "status": "succeeded", "task_retries": 1},
+    {"years": "2005-2015", "execution": "aq-epa-stage-6mvcs", "files": 74, "status": "succeeded"},
+    {"years": "2016-2026", "execution": "aq-epa-stage-lh5mf", "files": 77, "status": "succeeded"}
+  ],
+  "cancelled_overlap": {
+    "execution": "aq-epa-stage-sjttc",
+    "reason": "Two transient advisory-lock conflicts after an all-years execution overlapped year-bounded executions",
+    "resolution": "Cancelled overlapping execution; all four disjoint ranges succeeded and full-catalog rerun was unchanged"
+  },
+  "full_rerun": {
+    "execution": "aq-epa-stage-6g8j8",
+    "run_id": "1299e3be-fce0-4fd7-84e6-48221e9d3685",
+    "start_time": "2026-11-09T08:26:14.704633Z",
+    "completion_time": "2026-11-09T08:27:55.352047Z",
+    "status": "succeeded",
+    "outcomes": {"unchanged": 233},
+    "problems": []
+  },
+  "final_verification": {
+    "execution": "aq-epa-stage-8tgzm",
+    "start_time": "2026-11-09T08:26:34.856738Z",
+    "completion_time": "2026-11-09T08:27:47.487382Z",
+    "status": "succeeded",
+    "verified_at_utc": "2026-11-09T08:27:41.595031+00:00",
+    "selected": 233,
+    "matched": 233,
+    "staged_rows": 907024502,
+    "mismatches": []
+  },
+  "independent_gcs_catalog_reconciliation": {
+    "artifact": "output/epa/stage_verification.json",
+    "verified_at_utc": "2026-11-09T08:28:14.858942+00:00",
+    "manifest_entries": 233,
+    "staged_objects": 233,
+    "staged_object_generations": 233,
+    "objects_with_multiple_generations": 0,
+    "catalog_rows": 907024502,
+    "staged_rows": 907024502,
+    "csv_bytes": 218661382349,
+    "mismatches": []
+  },
+  "validation": {
+    "repository_tests_passed": 71,
+    "repository_tests_skipped": 4,
+    "terraform_tests_passed": 14,
+    "terraform_tests_failed": 0
+  }
+}

@@ -1,0 +1,657 @@
+{
+  "verified_at_utc": "2026-11-09T07:42:28.489489+00:00",
+  "start_hour_utc": "2026-11-06T07:00:00+00:00",
+  "end_hour_utc": "2026-11-09T06:00:00+00:00",
+  "bounds": {
+    "south": 41.3,
+    "north": 42.5,
+    "west": -88.5,
+    "east": -87.0
+  },
+  "row_count": 2359,
+  "revision_count": 0,
+  "site_count": 26,
+  "duplicate_key_count": 0,
+  "non_preliminary_count": 0,
+  "hour_count": 72,
+  "missing_hours": [],
+  "pollutants": {
+    "PM25": {
+      "rows": 1511,
+      "concentrations": 1502,
+      "aqi": 1510
+    },
+    "OZONE": {
+      "rows": 316,
+      "concentrations": 294,
+      "aqi": 316
+    },
+    "PM10": {
+      "rows": 252,
+      "concentrations": 244,
+      "aqi": 252
+    },
+    "NO2": {
+      "rows": 70,
+      "concentrations": 70,
+      "aqi": 70
+    },
+    "SO2": {
+      "rows": 210,
+      "concentrations": 210,
+      "aqi": 0
+    }
+  },
+  "raw_snapshots": [
+    {
+      "hour": "2026-11-06T07:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=07/HourlyAQObs_2026110607_70d7356cbdb3ff92774948ff71cd59c7d7738bd8b320ea4e2fbdbc8edb2547c2.dat",
+      "source_generation": "1794209970658877",
+      "sha256": "70d7356cbdb3ff92774948ff71cd59c7d7738bd8b320ea4e2fbdbc8edb2547c2",
+      "bytes": 997118,
+      "source_observations": 39
+    },
+    {
+      "hour": "2026-11-06T08:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=08/HourlyAQObs_2026110608_000510d28c9547fba5b30f090575104fa55c0acfb8a0e75cb1fa8932dc46af9d.dat",
+      "source_generation": "1794209971403299",
+      "sha256": "000510d28c9547fba5b30f090575104fa55c0acfb8a0e75cb1fa8932dc46af9d",
+      "bytes": 997131,
+      "source_observations": 38
+    },
+    {
+      "hour": "2026-11-06T09:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=09/HourlyAQObs_2026110609_6198e3c0cd2a0661dbfb143c848057b5d3f57a67b3427b1c42b8959f33a36a24.dat",
+      "source_generation": "1794209972085496",
+      "sha256": "6198e3c0cd2a0661dbfb143c848057b5d3f57a67b3427b1c42b8959f33a36a24",
+      "bytes": 997294,
+      "source_observations": 37
+    },
+    {
+      "hour": "2026-11-06T10:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=10/HourlyAQObs_2026110610_b8e180ffb2504a8509bbca5dc387da69c76106b06b6ebed6b56de72fb288fa70.dat",
+      "source_generation": "1794209972751307",
+      "sha256": "b8e180ffb2504a8509bbca5dc387da69c76106b06b6ebed6b56de72fb288fa70",
+      "bytes": 996951,
+      "source_observations": 37
+    },
+    {
+      "hour": "2026-11-06T11:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=11/HourlyAQObs_2026110611_0691baaa920f1152e88417ae64c19d985f68af0904e0048d8110d8d80fe1903a.dat",
+      "source_generation": "1794209973446217",
+      "sha256": "0691baaa920f1152e88417ae64c19d985f68af0904e0048d8110d8d80fe1903a",
+      "bytes": 996824,
+      "source_observations": 37
+    },
+    {
+      "hour": "2026-11-06T12:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=12/HourlyAQObs_2026110612_660f9bb7ffe09629e865994e3f4f818720f10cb43470130a074364924db5688d.dat",
+      "source_generation": "1794209974128154",
+      "sha256": "660f9bb7ffe09629e865994e3f4f818720f10cb43470130a074364924db5688d",
+      "bytes": 997217,
+      "source_observations": 36
+    },
+    {
+      "hour": "2026-11-06T13:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=13/HourlyAQObs_2026110613_24f0590abbccff60ccaf1347c1960abd1afe1f9e1069dc9f3feaebeae6120aea.dat",
+      "source_generation": "1794209974801394",
+      "sha256": "24f0590abbccff60ccaf1347c1960abd1afe1f9e1069dc9f3feaebeae6120aea",
+      "bytes": 997661,
+      "source_observations": 36
+    },
+    {
+      "hour": "2026-11-06T14:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=14/HourlyAQObs_2026110614_68ea8051faafba5250ad1324d3aaab6d47881c637de99e81c6bd36286210efbf.dat",
+      "source_generation": "1794209975481075",
+      "sha256": "68ea8051faafba5250ad1324d3aaab6d47881c637de99e81c6bd36286210efbf",
+      "bytes": 997350,
+      "source_observations": 36
+    },
+    {
+      "hour": "2026-11-06T15:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=15/HourlyAQObs_2026110615_2aeb071e32299733f8db2badabc9c56cea4d472702d027e5e67659229699fc90.dat",
+      "source_generation": "1794209976134959",
+      "sha256": "2aeb071e32299733f8db2badabc9c56cea4d472702d027e5e67659229699fc90",
+      "bytes": 997165,
+      "source_observations": 35
+    },
+    {
+      "hour": "2026-11-06T16:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=16/HourlyAQObs_2026110616_7529df4fe681905fce48f2e36b9055de036c5d467ec805bcc3db60f01935996d.dat",
+      "source_generation": "1794209976769875",
+      "sha256": "7529df4fe681905fce48f2e36b9055de036c5d467ec805bcc3db60f01935996d",
+      "bytes": 997215,
+      "source_observations": 36
+    },
+    {
+      "hour": "2026-11-06T17:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=17/HourlyAQObs_2026110617_9ba8836c7c0bcbe08e52819c8ba9e2db288376c5873bf0020cfe2624a7e73645.dat",
+      "source_generation": "1794209977429110",
+      "sha256": "9ba8836c7c0bcbe08e52819c8ba9e2db288376c5873bf0020cfe2624a7e73645",
+      "bytes": 997084,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-06T18:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=18/HourlyAQObs_2026110618_0864e47ce3a6eebedb75ba84bbdf4bad37e3b294e6f41efee0f6a4beda11567f.dat",
+      "source_generation": "1794209978066598",
+      "sha256": "0864e47ce3a6eebedb75ba84bbdf4bad37e3b294e6f41efee0f6a4beda11567f",
+      "bytes": 997021,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-06T19:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=19/HourlyAQObs_2026110619_894a0c98847875396f4f0c246f51586aded25c519497960141c73ab73194d3d1.dat",
+      "source_generation": "1794209978716420",
+      "sha256": "894a0c98847875396f4f0c246f51586aded25c519497960141c73ab73194d3d1",
+      "bytes": 997016,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-06T20:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=20/HourlyAQObs_2026110620_4a247a82497efe0650398205741a05c4302cdb8d8237c42a637f9d63a801e99f.dat",
+      "source_generation": "1794209979377713",
+      "sha256": "4a247a82497efe0650398205741a05c4302cdb8d8237c42a637f9d63a801e99f",
+      "bytes": 997054,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-06T21:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=21/HourlyAQObs_2026110621_71a793780110a26fa234bfef6fa6326a60f8e2e34ff8f595d977a7803cc7bcb9.dat",
+      "source_generation": "1794209980012881",
+      "sha256": "71a793780110a26fa234bfef6fa6326a60f8e2e34ff8f595d977a7803cc7bcb9",
+      "bytes": 996860,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-06T22:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=22/HourlyAQObs_2026110622_db833cc7cc7ed3f8656de12aeffa506f17fdc1fad9053c0487e3759e262df74b.dat",
+      "source_generation": "1794209980647148",
+      "sha256": "db833cc7cc7ed3f8656de12aeffa506f17fdc1fad9053c0487e3759e262df74b",
+      "bytes": 997153,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-06T23:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-06/hh=23/HourlyAQObs_2026110623_78059fda478a2fde7780c0eb757e9f6c549a1c3ed119d05286459d78389ac605.dat",
+      "source_generation": "1794209981277548",
+      "sha256": "78059fda478a2fde7780c0eb757e9f6c549a1c3ed119d05286459d78389ac605",
+      "bytes": 997042,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T00:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=00/HourlyAQObs_2026110700_678e8b2f3391cbdd9d2ff3c28e22c46d570cea5e8b7c9eac56e467e59ee11c31.dat",
+      "source_generation": "1794209981921670",
+      "sha256": "678e8b2f3391cbdd9d2ff3c28e22c46d570cea5e8b7c9eac56e467e59ee11c31",
+      "bytes": 997439,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T01:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=01/HourlyAQObs_2026110701_bc445402ff315de8c616580809559fbc67437ee85da09c113e7f30638f094e76.dat",
+      "source_generation": "1794209982572417",
+      "sha256": "bc445402ff315de8c616580809559fbc67437ee85da09c113e7f30638f094e76",
+      "bytes": 996745,
+      "source_observations": 34
+    },
+    {
+      "hour": "2026-11-07T02:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=02/HourlyAQObs_2026110702_a03619eca86c4987ad126285a821d2d242364e575bc0a15c64ee60609f8a7a53.dat",
+      "source_generation": "1794209983214342",
+      "sha256": "a03619eca86c4987ad126285a821d2d242364e575bc0a15c64ee60609f8a7a53",
+      "bytes": 996792,
+      "source_observations": 34
+    },
+    {
+      "hour": "2026-11-07T03:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=03/HourlyAQObs_2026110703_709a5bd10b234cc4ba604cb41d20abcb92c2f56fabde2faa00cc6e70f84743ba.dat",
+      "source_generation": "1794209983884410",
+      "sha256": "709a5bd10b234cc4ba604cb41d20abcb92c2f56fabde2faa00cc6e70f84743ba",
+      "bytes": 996510,
+      "source_observations": 34
+    },
+    {
+      "hour": "2026-11-07T04:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=04/HourlyAQObs_2026110704_30426ba6b40aea838a116e62d5d60c47c8527de51e95b982a06936a6ce3cedd8.dat",
+      "source_generation": "1794209984543726",
+      "sha256": "30426ba6b40aea838a116e62d5d60c47c8527de51e95b982a06936a6ce3cedd8",
+      "bytes": 996396,
+      "source_observations": 34
+    },
+    {
+      "hour": "2026-11-07T05:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=05/HourlyAQObs_2026110705_a6839def2403572f5fa5538edbdb1f8851bb79771788fed9b86400e6e7d1ba6b.dat",
+      "source_generation": "1794209985222212",
+      "sha256": "a6839def2403572f5fa5538edbdb1f8851bb79771788fed9b86400e6e7d1ba6b",
+      "bytes": 996078,
+      "source_observations": 34
+    },
+    {
+      "hour": "2026-11-07T06:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=06/HourlyAQObs_2026110706_70a0a4cccdb70db26a8009029c0689d458b661a1f04779415d5864615bf5f4ca.dat",
+      "source_generation": "1794209985857315",
+      "sha256": "70a0a4cccdb70db26a8009029c0689d458b661a1f04779415d5864615bf5f4ca",
+      "bytes": 995480,
+      "source_observations": 34
+    },
+    {
+      "hour": "2026-11-07T07:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=07/HourlyAQObs_2026110707_4e83d31eaccb2e8fb747f68130fb5d43d03836d5e6e606775c4aa2e8a4e28812.dat",
+      "source_generation": "1794209986508477",
+      "sha256": "4e83d31eaccb2e8fb747f68130fb5d43d03836d5e6e606775c4aa2e8a4e28812",
+      "bytes": 995713,
+      "source_observations": 34
+    },
+    {
+      "hour": "2026-11-07T08:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=08/HourlyAQObs_2026110708_e4bb3cfda0a60454775be35dd512d9ee6867555f4dfac67b4e6b11f3823c74cd.dat",
+      "source_generation": "1794209987163364",
+      "sha256": "e4bb3cfda0a60454775be35dd512d9ee6867555f4dfac67b4e6b11f3823c74cd",
+      "bytes": 995775,
+      "source_observations": 34
+    },
+    {
+      "hour": "2026-11-07T09:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=09/HourlyAQObs_2026110709_658e677b706c4ac7e968098c1f23cde76eff3aa69c277d515e3d13076b127462.dat",
+      "source_generation": "1794209987819506",
+      "sha256": "658e677b706c4ac7e968098c1f23cde76eff3aa69c277d515e3d13076b127462",
+      "bytes": 995816,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T10:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=10/HourlyAQObs_2026110710_5b2a7bd98e83b484ab8ae8e678e1f6aa6b6e978408d6c024d3f00d6328fc079e.dat",
+      "source_generation": "1794209988471744",
+      "sha256": "5b2a7bd98e83b484ab8ae8e678e1f6aa6b6e978408d6c024d3f00d6328fc079e",
+      "bytes": 995709,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T11:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=11/HourlyAQObs_2026110711_1f70b9cec2632708eaa98c9e4dad745ed47e4b3f3b172fdc5a5a7fac3534cf5f.dat",
+      "source_generation": "1794209989102721",
+      "sha256": "1f70b9cec2632708eaa98c9e4dad745ed47e4b3f3b172fdc5a5a7fac3534cf5f",
+      "bytes": 995808,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T12:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=12/HourlyAQObs_2026110712_f10346d721b0aeedfc00053659599036b618c049457c147648d182ca3140320d.dat",
+      "source_generation": "1794209989753042",
+      "sha256": "f10346d721b0aeedfc00053659599036b618c049457c147648d182ca3140320d",
+      "bytes": 995916,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T13:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=13/HourlyAQObs_2026110713_b743b0d1daff10a667ca4aaf469c7e0e29d1c15575c92db3ff29b1eadac1e97e.dat",
+      "source_generation": "1794209990399180",
+      "sha256": "b743b0d1daff10a667ca4aaf469c7e0e29d1c15575c92db3ff29b1eadac1e97e",
+      "bytes": 996474,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T14:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=14/HourlyAQObs_2026110714_d599aced3394aebeebb9b2e5ec40d31a7b43544cd039b26c4037ac1c616586af.dat",
+      "source_generation": "1794209991036145",
+      "sha256": "d599aced3394aebeebb9b2e5ec40d31a7b43544cd039b26c4037ac1c616586af",
+      "bytes": 996570,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T15:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=15/HourlyAQObs_2026110715_0a60332f238995d3e28c24e09cb58777fff9ba0b76f79363b99459af582b45d9.dat",
+      "source_generation": "1794209991693545",
+      "sha256": "0a60332f238995d3e28c24e09cb58777fff9ba0b76f79363b99459af582b45d9",
+      "bytes": 996826,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T16:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=16/HourlyAQObs_2026110716_beb6fda9a3f08b38d1386bc3bc2e75a0a01e0c7b482d5dd5f9db607414c9afa3.dat",
+      "source_generation": "1794209992321720",
+      "sha256": "beb6fda9a3f08b38d1386bc3bc2e75a0a01e0c7b482d5dd5f9db607414c9afa3",
+      "bytes": 997247,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T17:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=17/HourlyAQObs_2026110717_efb94083a4d2cfef6ba2e4403a1903e39e478793d6808b94374d10cfec756d09.dat",
+      "source_generation": "1794209993078881",
+      "sha256": "efb94083a4d2cfef6ba2e4403a1903e39e478793d6808b94374d10cfec756d09",
+      "bytes": 996875,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T18:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=18/HourlyAQObs_2026110718_cfde29dc81c9ac9a2a98f172afc5a862d84fbdac81e9ce0d8adec382a1509610.dat",
+      "source_generation": "1794209993725684",
+      "sha256": "cfde29dc81c9ac9a2a98f172afc5a862d84fbdac81e9ce0d8adec382a1509610",
+      "bytes": 997167,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T19:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=19/HourlyAQObs_2026110719_288e8417a3372c0beef4181a80fc8bdc773e9db32f3a9345e63b42c29a093fd9.dat",
+      "source_generation": "1794209994379511",
+      "sha256": "288e8417a3372c0beef4181a80fc8bdc773e9db32f3a9345e63b42c29a093fd9",
+      "bytes": 997057,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T20:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=20/HourlyAQObs_2026110720_1883c7e01e011aa2cf84df0f2a1f5535ca6940bcf01a9ad78308795f7a865d75.dat",
+      "source_generation": "1794209995044983",
+      "sha256": "1883c7e01e011aa2cf84df0f2a1f5535ca6940bcf01a9ad78308795f7a865d75",
+      "bytes": 996985,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T21:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=21/HourlyAQObs_2026110721_762ba54403234b1d51726876bc3415420254231d40f9b63e37a98629398bf074.dat",
+      "source_generation": "1794209995681301",
+      "sha256": "762ba54403234b1d51726876bc3415420254231d40f9b63e37a98629398bf074",
+      "bytes": 996963,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T22:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=22/HourlyAQObs_2026110722_2bff0aed7362772652fc875834fcb885dd54270c3f11cc81e5faed66bc22f5b4.dat",
+      "source_generation": "1794209996297624",
+      "sha256": "2bff0aed7362772652fc875834fcb885dd54270c3f11cc81e5faed66bc22f5b4",
+      "bytes": 996998,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-07T23:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-07/hh=23/HourlyAQObs_2026110723_5f91818d97684b1f12ac3b53a6ebaf39b2b72c46d6d90e91a54e8cb7f853f270.dat",
+      "source_generation": "1794209996951231",
+      "sha256": "5f91818d97684b1f12ac3b53a6ebaf39b2b72c46d6d90e91a54e8cb7f853f270",
+      "bytes": 996816,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-08T00:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=00/HourlyAQObs_2026110800_9f0f645604ae7582d56d0e5577eb925b37fd8d54914ef714ce8bb2eef0a2e64d.dat",
+      "source_generation": "1794209997598669",
+      "sha256": "9f0f645604ae7582d56d0e5577eb925b37fd8d54914ef714ce8bb2eef0a2e64d",
+      "bytes": 997340,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-08T01:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=01/HourlyAQObs_2026110801_aa2b5127bcd351aecaa035d8f803b85268e603e4d179b94d1177e3fd78af3044.dat",
+      "source_generation": "1794209998239948",
+      "sha256": "aa2b5127bcd351aecaa035d8f803b85268e603e4d179b94d1177e3fd78af3044",
+      "bytes": 997560,
+      "source_observations": 34
+    },
+    {
+      "hour": "2026-11-08T02:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=02/HourlyAQObs_2026110802_8e27189fe430c9f56cd176e1357ff4413560f879dbfdd462da47b29fc2806014.dat",
+      "source_generation": "1794209998767167",
+      "sha256": "8e27189fe430c9f56cd176e1357ff4413560f879dbfdd462da47b29fc2806014",
+      "bytes": 997596,
+      "source_observations": 34
+    },
+    {
+      "hour": "2026-11-08T03:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=03/HourlyAQObs_2026110803_6ac5d59e64f48fa7ddee172d1146c615be1c824b66312731f1b2b381982eb0f8.dat",
+      "source_generation": "1794209999481182",
+      "sha256": "6ac5d59e64f48fa7ddee172d1146c615be1c824b66312731f1b2b381982eb0f8",
+      "bytes": 997524,
+      "source_observations": 33
+    },
+    {
+      "hour": "2026-11-08T04:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=04/HourlyAQObs_2026110804_1670bcbe795cfdfb9d602c80ef2acf5c385197c9f0a5343cefd564ba35074f79.dat",
+      "source_generation": "1794210000122018",
+      "sha256": "1670bcbe795cfdfb9d602c80ef2acf5c385197c9f0a5343cefd564ba35074f79",
+      "bytes": 996940,
+      "source_observations": 33
+    },
+    {
+      "hour": "2026-11-08T05:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=05/HourlyAQObs_2026110805_d469cf6a2a2e75bf7a37491bf7f21a4b2b4a83ef42b7f3136186dfceed306a51.dat",
+      "source_generation": "1794210000788885",
+      "sha256": "d469cf6a2a2e75bf7a37491bf7f21a4b2b4a83ef42b7f3136186dfceed306a51",
+      "bytes": 996464,
+      "source_observations": 34
+    },
+    {
+      "hour": "2026-11-08T06:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=06/HourlyAQObs_2026110806_246852041250cd2d7cab183c9afd1561b1b4e8d5a986c1ed3f332487cd2baf0e.dat",
+      "source_generation": "1794210001436445",
+      "sha256": "246852041250cd2d7cab183c9afd1561b1b4e8d5a986c1ed3f332487cd2baf0e",
+      "bytes": 996357,
+      "source_observations": 33
+    },
+    {
+      "hour": "2026-11-08T07:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=07/HourlyAQObs_2026110807_8feee13cc57a1ab0e83c15727088f0677109db7d7c8ea2a63c827c4f3e0c98bb.dat",
+      "source_generation": "1794210002120749",
+      "sha256": "8feee13cc57a1ab0e83c15727088f0677109db7d7c8ea2a63c827c4f3e0c98bb",
+      "bytes": 996270,
+      "source_observations": 34
+    },
+    {
+      "hour": "2026-11-08T08:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=08/HourlyAQObs_2026110808_817babe29d162161c5998a924fcc18dd923ffd101dc780095e28b6fa513ac55c.dat",
+      "source_generation": "1794210002979733",
+      "sha256": "817babe29d162161c5998a924fcc18dd923ffd101dc780095e28b6fa513ac55c",
+      "bytes": 996524,
+      "source_observations": 34
+    },
+    {
+      "hour": "2026-11-08T09:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=09/HourlyAQObs_2026110809_cbd5e2195166e240f35b74f5e1e226e51a5209abcdd7f54011432bd85396b94a.dat",
+      "source_generation": "1794210003656770",
+      "sha256": "cbd5e2195166e240f35b74f5e1e226e51a5209abcdd7f54011432bd85396b94a",
+      "bytes": 996652,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-08T10:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=10/HourlyAQObs_2026110810_76a220c6ab45ae597f7ec5de1b55e1fe9cc94cb17baedc1db45a162269a14e56.dat",
+      "source_generation": "1794210004291274",
+      "sha256": "76a220c6ab45ae597f7ec5de1b55e1fe9cc94cb17baedc1db45a162269a14e56",
+      "bytes": 996107,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-08T11:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=11/HourlyAQObs_2026110811_d43de83077f2f5a4d21b94003cdffa21e252bdd8c34cfa706824d9a99569d615.dat",
+      "source_generation": "1794210004796178",
+      "sha256": "d43de83077f2f5a4d21b94003cdffa21e252bdd8c34cfa706824d9a99569d615",
+      "bytes": 996137,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-08T12:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=12/HourlyAQObs_2026110812_de065be21c2558d3d814d7d34d2c83b37f129c752cec1c42c5e07502b964d33d.dat",
+      "source_generation": "1794210005441679",
+      "sha256": "de065be21c2558d3d814d7d34d2c83b37f129c752cec1c42c5e07502b964d33d",
+      "bytes": 996429,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-08T13:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=13/HourlyAQObs_2026110813_44a7d91f48a3d15dd32c8c1cc0610a6b70919c12cbb36e2504e4536167bb0134.dat",
+      "source_generation": "1794210006113261",
+      "sha256": "44a7d91f48a3d15dd32c8c1cc0610a6b70919c12cbb36e2504e4536167bb0134",
+      "bytes": 996846,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-08T14:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=14/HourlyAQObs_2026110814_c5a501f7f751f093538d6d161013ef18ed8214e46d8b1cfe8919c33dee1abaa0.dat",
+      "source_generation": "1794210006767866",
+      "sha256": "c5a501f7f751f093538d6d161013ef18ed8214e46d8b1cfe8919c33dee1abaa0",
+      "bytes": 996971,
+      "source_observations": 32
+    },
+    {
+      "hour": "2026-11-08T15:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=15/HourlyAQObs_2026110815_fa77644d68063c72d7a707b067ac21663387418da3460b8d13a3450a1fbe5643.dat",
+      "source_generation": "1794210007408030",
+      "sha256": "fa77644d68063c72d7a707b067ac21663387418da3460b8d13a3450a1fbe5643",
+      "bytes": 997055,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-08T16:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=16/HourlyAQObs_2026110816_c4460b22eab27cc82c692f2a0ddbae468043dd454006b1bf4194ead81e4de994.dat",
+      "source_generation": "1794210008024697",
+      "sha256": "c4460b22eab27cc82c692f2a0ddbae468043dd454006b1bf4194ead81e4de994",
+      "bytes": 997016,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-08T17:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=17/HourlyAQObs_2026110817_2efaa733874f35187c3d5c765b343143def90f70c45991210554d12aee87d87a.dat",
+      "source_generation": "1794210008639472",
+      "sha256": "2efaa733874f35187c3d5c765b343143def90f70c45991210554d12aee87d87a",
+      "bytes": 996903,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-08T18:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=18/HourlyAQObs_2026110818_3a169c2cf5df9ba9d8c22c049fe87eb6740cdc2dc1e40a137403752fb0944262.dat",
+      "source_generation": "1794210009287344",
+      "sha256": "3a169c2cf5df9ba9d8c22c049fe87eb6740cdc2dc1e40a137403752fb0944262",
+      "bytes": 996832,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-08T19:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=19/HourlyAQObs_2026110819_07160a97ac8262d5f39c6429b00798625f569afec090b9ceca5a85f3c1969443.dat",
+      "source_generation": "1794210009914332",
+      "sha256": "07160a97ac8262d5f39c6429b00798625f569afec090b9ceca5a85f3c1969443",
+      "bytes": 996786,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-08T20:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=20/HourlyAQObs_2026110820_9a299b46b9707fbeca21ff9f1ddb846725803265cee37dfd244ce61a95848a4f.dat",
+      "source_generation": "1794210010529207",
+      "sha256": "9a299b46b9707fbeca21ff9f1ddb846725803265cee37dfd244ce61a95848a4f",
+      "bytes": 996727,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-08T21:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=21/HourlyAQObs_2026110821_7df4470fd0cf703c59c98b09b7dbe502fd15cad1f4b7d7d6bdbd28dc764b5dbc.dat",
+      "source_generation": "1794210011161329",
+      "sha256": "7df4470fd0cf703c59c98b09b7dbe502fd15cad1f4b7d7d6bdbd28dc764b5dbc",
+      "bytes": 996806,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-08T22:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=22/HourlyAQObs_2026110822_8d5db79e8627252cc4436b40ad04fe8277af43ff4683574e2c1e280b8bb56c13.dat",
+      "source_generation": "1794210011768181",
+      "sha256": "8d5db79e8627252cc4436b40ad04fe8277af43ff4683574e2c1e280b8bb56c13",
+      "bytes": 996873,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-08T23:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-08/hh=23/HourlyAQObs_2026110823_9fadb36ff681506b31f592241ee83a75414cb1f52434e601b335dd5561e91c70.dat",
+      "source_generation": "1794210012402320",
+      "sha256": "9fadb36ff681506b31f592241ee83a75414cb1f52434e601b335dd5561e91c70",
+      "bytes": 996755,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-09T00:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=00/HourlyAQObs_2026110900_fa6994f7f4de08a8b884c7d9121c0075fb06a2935da6d60eed0aff22cabaf95e.dat",
+      "source_generation": "1794210013329897",
+      "sha256": "fa6994f7f4de08a8b884c7d9121c0075fb06a2935da6d60eed0aff22cabaf95e",
+      "bytes": 997323,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-09T01:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=01/HourlyAQObs_2026110901_3fbe8135695b3287db99e8d97da7521e0c8df04650ca474122175543ffc08536.dat",
+      "source_generation": "1794210014251937",
+      "sha256": "3fbe8135695b3287db99e8d97da7521e0c8df04650ca474122175543ffc08536",
+      "bytes": 997519,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-09T02:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=02/HourlyAQObs_2026110902_12004a279dca9f0bf3aa4fcf0d40cb12bc9ce8be0102a64acf2a9cc4594c65ab.dat",
+      "source_generation": "1794210015124147",
+      "sha256": "12004a279dca9f0bf3aa4fcf0d40cb12bc9ce8be0102a64acf2a9cc4594c65ab",
+      "bytes": 997675,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-09T03:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=03/HourlyAQObs_2026110903_d4b5d24f4c8ab66e16ab41dd84ec58ea825f8c26af95ff468b93e8da0204189e.dat",
+      "source_generation": "1794210015998648",
+      "sha256": "d4b5d24f4c8ab66e16ab41dd84ec58ea825f8c26af95ff468b93e8da0204189e",
+      "bytes": 997508,
+      "source_observations": 30
+    },
+    {
+      "hour": "2026-11-09T04:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=04/HourlyAQObs_2026110904_38a548804d3e755ea39d83b88c040e013bd221bcf6aec3367603ee0342133f77.dat",
+      "source_generation": "1794210016889966",
+      "sha256": "38a548804d3e755ea39d83b88c040e013bd221bcf6aec3367603ee0342133f77",
+      "bytes": 997385,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-09T05:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=05/HourlyAQObs_2026110905_47eba87ca390b1c92969194f82f963314d0c147c24220e3af1469f0ea4166d4f.dat",
+      "source_generation": "1794210017797365",
+      "sha256": "47eba87ca390b1c92969194f82f963314d0c147c24220e3af1469f0ea4166d4f",
+      "bytes": 995810,
+      "source_observations": 31
+    },
+    {
+      "hour": "2026-11-09T06:00:00+00:00",
+      "raw_uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=06/HourlyAQObs_2026110906_45d82a3a247a18cbac2dab9d37ebb147711eda9c9e4137a2b49209dc1a08e4e6.dat",
+      "source_generation": "1794210018298929",
+      "sha256": "45d82a3a247a18cbac2dab9d37ebb147711eda9c9e4137a2b49209dc1a08e4e6",
+      "bytes": 983310,
+      "source_observations": 27
+    }
+  ],
+  "mismatches": [],
+  "runs": [
+    {
+      "run_id": "53476177-59fd-4377-b0aa-41e91633e32f",
+      "status": "succeeded",
+      "started_at_utc": "2026-11-09 07:39:29.992042+00:00",
+      "finished_at_utc": "2026-11-09 07:40:18.578518+00:00",
+      "totals": {
+        "stale": 0,
+        "revised": 0,
+        "inserted": 2359,
+        "unchanged": 0,
+        "withdrawn": 0,
+        "raw_created": 72,
+        "observations": 2359
+      }
+    },
+    {
+      "run_id": "438dce3f-2f7f-4353-b3e4-b7b858292a00",
+      "status": "succeeded",
+      "started_at_utc": "2026-11-09 07:41:03.300633+00:00",
+      "finished_at_utc": "2026-11-09 07:41:38.098486+00:00",
+      "totals": {
+        "stale": 0,
+        "revised": 0,
+        "inserted": 0,
+        "unchanged": 2359,
+        "withdrawn": 0,
+        "raw_created": 0,
+        "observations": 2359
+      }
+    }
+  ],
+  "status": "passed"
+}
