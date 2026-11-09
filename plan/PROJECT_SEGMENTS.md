@@ -53,11 +53,11 @@ The rows below follow the order in which segments typically hand off their outpu
 | S01 | Repo scaffold and data contracts | Tongyan | Start immediately. Share draft contracts with all owners. | Agreed schemas, keys, configuration conventions, and repo layout. |
 | S02 | GCP infrastructure | Yujie | Start account and trial checks in parallel with S01. Provision once the relevant names and configuration are agreed. | S01 infrastructure conventions and human access to an eligible GCP project. Verify a small cloud Spark job and the services needed by the collectors. |
 | S03 | EPA AirData manifest | Yujie | Explore the public catalog in parallel with S01 and S02. Implement the manifest after S01 defines its schema. | S01 manifest contract and a catalog snapshot with file counts, sizes, and empty or missing entries. |
-| S04 | PurpleAir feasibility check | Yujie | Start credential setup and exploratory requests in parallel with S01–S03. | S01 sensor field contract, a PurpleAir key, and a short authenticated pilot that establishes reporting cadence, usable fields, coverage, and points cost. |
+| S04 | PurpleAir feasibility check | Tongyan | Start credential setup and exploratory requests in parallel with S01–S03. | S01 sensor field contract, a PurpleAir key, and a short authenticated pilot that establishes reporting cadence, usable fields, coverage, and points cost. |
 | S05 | Cloud SQL operational schema | Breanna | After S01, develop and test migrations locally while S02 provisions GCP. | S01 contracts and S02 Cloud SQL access to apply the migrations in the cloud. |
 | S06 | EPA ZIP downloader to GCS | Yujie | Develop against S03 sample manifest entries as soon as S01 defines their format. Run a sample download before starting the rest. | S02 GCS, S03 manifest, and S05 ingestion-state tables. Publish completed ZIPs incrementally for S10. |
 | S07 | AQS site and monitor listings | Yujie | Develop in parallel with S06 and S08. The national backfill is independent of this load. | S02 GCS and S05 reference tables. Publish Chicago site IDs, coordinates, and available activity dates for S17 and S18. |
-| S08 | PurpleAir poller | Yujie | Draft against S01 fixtures while S04 runs. Start collecting as soon as the prerequisites are ready. | S02 runtime and storage, S04 approved sensor set and interval, and S05 sensor tables. Publish readings for S14 and early S25. |
+| S08 | PurpleAir poller | Tongyan | Draft against S01 fixtures while S04 runs. Start collecting as soon as the prerequisites are ready. | S02 runtime and storage, S04 approved sensor set and interval, and S05 sensor tables. Publish readings for S14 and early S25. |
 | S09 | AirNow hourly collector | Yujie | Develop in parallel with S08. Start hourly collection as soon as its cloud prerequisites are ready. | S02 runtime and storage and S05 observation tables. Publish raw hourly concentrations and AQI for S14 and S17. Revision tracking is optional. |
 | S10 | ZIP-to-CSV staging | Yujie | Stage the first ZIPs as S06 publishes them. Continue in parallel with the remaining downloads. | Verified S06 ZIPs and recorded CSV row counts for each staged file. |
 | S11 | PySpark normalization | Breanna | Start on S01 contracts and fixtures while S06 and S10 run. | Representative S10 CSVs for validation, including older and recent observations. |
@@ -68,13 +68,26 @@ The rows below follow the order in which segments typically hand off their outpu
 | S25 | Exploratory data analysis | Tongyan | Profile early S08/S09 rows and the first S12 output in parallel. Share initial coverage and sensor quality findings before S16 and S18 finalize their choices. | S12 historical outputs, S13 warehouse data, and S14 live data for final reproducible figures. Use early cross-source overlap checks without waiting for S17's final validation. |
 | S16 | PurpleAir QC, hourly aggregation, and EPA correction | Bravo | Implement on fixtures while S14 is being wired. Use preliminary S25 findings to assess data completeness and the documented EPA method for correction. | S14 PurpleAir rows and S04 measured cadence to verify hourly completeness. Publish raw and corrected hourly values for S17. |
 | S17 | Sensor-to-monitor matching and validation | Bravo | Design geographic matching after S07 while S16 is underway. | S07 reference metadata, S09 hourly concentrations through S14, and S16 sensor hours. Use eligible S12 AQS observations when they overlap. Report the available matched hours and validation metrics. |
-| S18 | Chicago venues and session windows | Bravo | Choose provisional venues and windows early with the team. Start mapping after S07 in parallel with S17. | S07 reference data, preliminary S25 coverage results, human decisions on venues and thresholds, and S13 venue dimension for the final load. |
-| S19 | Historical scheduling analysis | Bravo | Draft and test queries on fixtures or the first Chicago warehouse slice while S15 and S18 are underway. | S13 Chicago historical facts, S15 Chicago quality checks, S18 final venue mapping, and S25 findings relevant to the study. National reconciliation can continue separately. |
+| S18 | Chicago venues and session windows | Breanna | Choose provisional venues and windows early with the team. Start mapping after S07 in parallel with S17. | S07 reference data, preliminary S25 coverage results, human decisions on venues and thresholds, and S13 venue dimension for the final load. |
+| S19 | Historical scheduling analysis | Tongyan | Draft and test queries on fixtures or the first Chicago warehouse slice while S15 and S18 are underway. | S13 Chicago historical facts, S15 Chicago quality checks, S18 final venue mapping, and S25 findings relevant to the study. National reconciliation can continue separately. |
 | S20 | Curated serving views | Bravo | Define view names and schemas after S01 so S21 and S22 can start on fixtures. Publish historical and live views as each branch is ready. | S19 historical results, S16 corrected readings, S17 match and validation results, and S14 AirNow data for the complete view set. |
 | S21 | Streamlit application | Tongyan | Build against the S20 view contracts while the views are being implemented. Run in parallel with S22. | Real S20 serving views, S25 EDA highlights, and S02 Cloud Run access for end-to-end verification. |
 | S22 | Claude MCP server | Tongyan | Build against the same S20 contracts in parallel with S21. | Real S20 views and the read-only warehouse role for Claude integration tests. |
 | S23 | Orchestration, monitoring, and runbook | Breanna | Document restart and recovery as jobs are built. Add optional alerts and cross-job orchestration once job interfaces stabilize. | Working S06–S14 jobs for integrated checks. Individual collectors own their minimum scheduling and restart behavior. |
 | S24 | Submission materials and recording | All | Start the README, architecture diagram, and check-in deck as soon as design and sample-run evidence are available. Update them as results come in. | Verified scale, EDA, analysis, and calibration results plus working S21/S22 demos. Rehearse with all four members, scan for secrets, then package and record. S23 stretch work does not gate submission. |
+
+### Workload split
+
+Target: Tongyan carries about 30% of the effort; Yujie, Breanna, and Bravo split the rest evenly (about 23% each). Effort points are a rough 1–5 estimate per segment (S24 is shared by all four and not counted).
+
+| Owner | Segments | Effort points | Share |
+| --- | --- | --- | --- |
+| Tongyan | S01, S04, S08, S19, S21, S22, S25 | 26 | 31% |
+| Yujie | S02, S03, S06, S07, S09, S10 | 19 | 23% |
+| Breanna | S05, S11, S12, S15, S18, S23 | 20 | 24% |
+| Bravo | S13, S14, S16, S17, S20 | 19 | 23% |
+
+Points per segment: S01 2, S02 4, S03 2, S04 2, S05 3, S06 4, S07 3, S08 4, S09 3, S10 3, S11 4, S12 5, S13 5, S14 3, S15 4, S16 4, S17 4, S18 2, S19 5, S20 3, S21 5, S22 3, S23 2, S25 5 (total 84). If a segment slips or grows, move a whole segment rather than splitting one.
 
 ### Scope decisions
 
