@@ -1,0 +1,16 @@
+{
+  "aqs_sites": {
+    "name": "raw/aqs/aqs_sites/56b322f6a3d5368d055bce53d0988275c0b27fbcced3d57a6ce8f2e2b539e15a.zip",
+    "sha256": "56b322f6a3d5368d055bce53d0988275c0b27fbcced3d57a6ce8f2e2b539e15a",
+    "generation": "1794204166286269",
+    "bytes": 1018314,
+    "rows": 20994
+  },
+  "aqs_monitors": {
+    "name": "raw/aqs/aqs_monitors/e8325216d4ec5df462a23c201e6ffa1176b2fce363c9f6b0e3f18ce6ad958525.zip",
+    "sha256": "e8325216d4ec5df462a23c201e6ffa1176b2fce363c9f6b0e3f18ce6ad958525",
+    "generation": "1794204166716088",
+    "bytes": 6919360,
+    "rows": 370090
+  }
+}

@@ -1,0 +1,496 @@
+{
+  "batch": "aq-s12-2026-20261109221230",
+  "checked_at_utc": "2026-11-09T22:48:52.855365+00:00",
+  "commit_generation": "1794262923562000",
+  "commit_sha256": "fa74c51e23674369359504fdd4dfb9b1a9f3eba10b33fbeba20bbd9764f582b7",
+  "commit_uri": "gs://final-team-514205-air-quality/curated/epa_hourly/_commits/2026.json",
+  "expected_rows": {
+    "42101": 368027,
+    "42401": 741160,
+    "42602": 805803,
+    "44201": 1906626,
+    "81102": 850829,
+    "88101": 1979862,
+    "88502": 335702
+  },
+  "files": [
+    {
+      "bytes": 3286556,
+      "generation": "1794262907243955",
+      "md5": "Dyt4aPghyUHb4CFuZGZF1w==",
+      "pollutant": "42101",
+      "relative_path": "year=2026/pollutant=42101/aq-s12-2026-20261109221230-part-00000-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42101/aq-s12-2026-20261109221230-part-00000-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 4218816,
+      "generation": "1794262907665956",
+      "md5": "5kPYejCkTQRCOXjLQ5kgKg==",
+      "pollutant": "42101",
+      "relative_path": "year=2026/pollutant=42101/aq-s12-2026-20261109221230-part-00004-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42101/aq-s12-2026-20261109221230-part-00004-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 3947632,
+      "generation": "1794262907977852",
+      "md5": "hk3HsGSNC7Jwj0OBPpoMgw==",
+      "pollutant": "42101",
+      "relative_path": "year=2026/pollutant=42101/aq-s12-2026-20261109221230-part-00005-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42101/aq-s12-2026-20261109221230-part-00005-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 5943760,
+      "generation": "1794262908313980",
+      "md5": "Ti5xsBfnxv/wZC4o0uQBmQ==",
+      "pollutant": "42101",
+      "relative_path": "year=2026/pollutant=42101/aq-s12-2026-20261109221230-part-00009-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42101/aq-s12-2026-20261109221230-part-00009-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 6160473,
+      "generation": "1794262908641551",
+      "md5": "FarbGHjuUeXNayLE7bARQQ==",
+      "pollutant": "42101",
+      "relative_path": "year=2026/pollutant=42101/aq-s12-2026-20261109221230-part-00010-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42101/aq-s12-2026-20261109221230-part-00010-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 3756997,
+      "generation": "1794262908959133",
+      "md5": "9n8bQy9gLsBhTO++5n5JOw==",
+      "pollutant": "42101",
+      "relative_path": "year=2026/pollutant=42101/aq-s12-2026-20261109221230-part-00013-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42101/aq-s12-2026-20261109221230-part-00013-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 11042018,
+      "generation": "1794262909284679",
+      "md5": "EDex/g2j2JtF/nJsIjp4+w==",
+      "pollutant": "42401",
+      "relative_path": "year=2026/pollutant=42401/aq-s12-2026-20261109221230-part-00000-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42401/aq-s12-2026-20261109221230-part-00000-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 7047707,
+      "generation": "1794262909601360",
+      "md5": "4CsEw9hxtetBFfIEHOA5Kg==",
+      "pollutant": "42401",
+      "relative_path": "year=2026/pollutant=42401/aq-s12-2026-20261109221230-part-00002-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42401/aq-s12-2026-20261109221230-part-00002-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 14937032,
+      "generation": "1794262909948904",
+      "md5": "SNBqQHuBS70MUjdQemEdpA==",
+      "pollutant": "42401",
+      "relative_path": "year=2026/pollutant=42401/aq-s12-2026-20261109221230-part-00007-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42401/aq-s12-2026-20261109221230-part-00007-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 6478094,
+      "generation": "1794262910307628",
+      "md5": "Q9LEn8J6kvSmrh1wcnfmeQ==",
+      "pollutant": "42401",
+      "relative_path": "year=2026/pollutant=42401/aq-s12-2026-20261109221230-part-00012-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42401/aq-s12-2026-20261109221230-part-00012-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 6778976,
+      "generation": "1794262910616785",
+      "md5": "s7Ljak0BkhQMsqW8OvD4Zw==",
+      "pollutant": "42401",
+      "relative_path": "year=2026/pollutant=42401/aq-s12-2026-20261109221230-part-00014-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42401/aq-s12-2026-20261109221230-part-00014-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 7978826,
+      "generation": "1794262911015839",
+      "md5": "wBMhnBO8K3kGrEz/JElmJQ==",
+      "pollutant": "42401",
+      "relative_path": "year=2026/pollutant=42401/aq-s12-2026-20261109221230-part-00015-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42401/aq-s12-2026-20261109221230-part-00015-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 8420322,
+      "generation": "1794262911339859",
+      "md5": "pOv0UzInwvXl5WbzcPeb1g==",
+      "pollutant": "42602",
+      "relative_path": "year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00000-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00000-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 7194594,
+      "generation": "1794262911690228",
+      "md5": "M/S8DuveDktxeLjUahF5+A==",
+      "pollutant": "42602",
+      "relative_path": "year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00001-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00001-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 7171820,
+      "generation": "1794262911989773",
+      "md5": "GiCgLcwpANiUZnlvHM+L1w==",
+      "pollutant": "42602",
+      "relative_path": "year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00003-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00003-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 8344767,
+      "generation": "1794262912304486",
+      "md5": "JsX82mkMYK9xnlEEVrFMUw==",
+      "pollutant": "42602",
+      "relative_path": "year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00005-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00005-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 6053176,
+      "generation": "1794262912601786",
+      "md5": "bM03TDcEzd0xj2jsV+TRJA==",
+      "pollutant": "42602",
+      "relative_path": "year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00006-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00006-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 7477820,
+      "generation": "1794262912897404",
+      "md5": "P/QAHI54UwLgfuL9bj965Q==",
+      "pollutant": "42602",
+      "relative_path": "year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00008-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00008-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 6758641,
+      "generation": "1794262913232867",
+      "md5": "vcj9lOUehfFplUrJbrQmDw==",
+      "pollutant": "42602",
+      "relative_path": "year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00010-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00010-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 8274740,
+      "generation": "1794262913506610",
+      "md5": "QSsuBBiHJvRhBL5yZvSwMQ==",
+      "pollutant": "42602",
+      "relative_path": "year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00011-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=42602/aq-s12-2026-20261109221230-part-00011-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 16304468,
+      "generation": "1794262913785497",
+      "md5": "lwwReQpiu3uXplHgzAHSEg==",
+      "pollutant": "44201",
+      "relative_path": "year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00002-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00002-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 18826254,
+      "generation": "1794262914087234",
+      "md5": "roCiCXPLR/hPJJv+Sh8Hog==",
+      "pollutant": "44201",
+      "relative_path": "year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00003-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00003-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 18775349,
+      "generation": "1794262914397353",
+      "md5": "y0C8dZG965R5olvN+K15Ng==",
+      "pollutant": "44201",
+      "relative_path": "year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00004-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00004-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 17746035,
+      "generation": "1794262914696225",
+      "md5": "nVipWQx8SetRRAqOc2f/oA==",
+      "pollutant": "44201",
+      "relative_path": "year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00006-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00006-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 18240281,
+      "generation": "1794262915018223",
+      "md5": "WPzsBelnUgyVaBZGt+l84A==",
+      "pollutant": "44201",
+      "relative_path": "year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00007-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00007-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 32929057,
+      "generation": "1794262915299207",
+      "md5": "vVJIZ7nuwtRAYPRCv9jEnA==",
+      "pollutant": "44201",
+      "relative_path": "year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00013-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00013-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 16041783,
+      "generation": "1794262915606572",
+      "md5": "QGBbTrQxCxPdI+K+P9rTeQ==",
+      "pollutant": "44201",
+      "relative_path": "year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00014-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=44201/aq-s12-2026-20261109221230-part-00014-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 8385322,
+      "generation": "1794262915886077",
+      "md5": "l7qRRzEX3CgCgfkTEzDbbQ==",
+      "pollutant": "81102",
+      "relative_path": "year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00000-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00000-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 9090283,
+      "generation": "1794262916258183",
+      "md5": "3dl879cjTGR03FCWCGq2VA==",
+      "pollutant": "81102",
+      "relative_path": "year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00001-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00001-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 8514342,
+      "generation": "1794262916514145",
+      "md5": "Mqf6R9ezHtVcbsabOzclIA==",
+      "pollutant": "81102",
+      "relative_path": "year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00002-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00002-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 8084449,
+      "generation": "1794262916861245",
+      "md5": "rvy/OVmhti8PKfhLI8mMZA==",
+      "pollutant": "81102",
+      "relative_path": "year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00003-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00003-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 7167706,
+      "generation": "1794262917165336",
+      "md5": "V2LQo1e4/LnbLFc+LSqxow==",
+      "pollutant": "81102",
+      "relative_path": "year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00006-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00006-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 9585319,
+      "generation": "1794262917454363",
+      "md5": "ytOtXZUQpwUjGzc+B14y1Q==",
+      "pollutant": "81102",
+      "relative_path": "year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00009-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00009-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 5467536,
+      "generation": "1794262917782589",
+      "md5": "Bpv1+k0Fsnd8WtDRTAUe5Q==",
+      "pollutant": "81102",
+      "relative_path": "year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00010-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00010-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 6863366,
+      "generation": "1794262918047339",
+      "md5": "l59LplCgKb19FkUbTDXVgg==",
+      "pollutant": "81102",
+      "relative_path": "year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00015-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=81102/aq-s12-2026-20261109221230-part-00015-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 16883983,
+      "generation": "1794262918409126",
+      "md5": "nMoh/K7K541KFPp88o7HFw==",
+      "pollutant": "88101",
+      "relative_path": "year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00001-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00001-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 15426223,
+      "generation": "1794262918704452",
+      "md5": "afJuKIZx+NJ6pz5bxSvLGQ==",
+      "pollutant": "88101",
+      "relative_path": "year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00005-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00005-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 19197763,
+      "generation": "1794262918995484",
+      "md5": "R6vFPErgwhQKV9Cg1jYuDg==",
+      "pollutant": "88101",
+      "relative_path": "year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00008-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00008-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 20706582,
+      "generation": "1794262919289144",
+      "md5": "9MQGci4tqPbKDiEuXrFkMA==",
+      "pollutant": "88101",
+      "relative_path": "year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00009-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00009-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 17545508,
+      "generation": "1794262919614855",
+      "md5": "iGSMZx7S6RhQpc0P4QnGDg==",
+      "pollutant": "88101",
+      "relative_path": "year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00010-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00010-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 19295696,
+      "generation": "1794262919952634",
+      "md5": "ENsaqi7xc1iBrt1F/gJtwA==",
+      "pollutant": "88101",
+      "relative_path": "year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00011-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00011-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 17802155,
+      "generation": "1794262920297188",
+      "md5": "bgxPe5G0+p5Q7coGa/ucIg==",
+      "pollutant": "88101",
+      "relative_path": "year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00012-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00012-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 18933512,
+      "generation": "1794262920595326",
+      "md5": "/ZaE8PjRsdcf8LncyoYSVg==",
+      "pollutant": "88101",
+      "relative_path": "year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00015-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88101/aq-s12-2026-20261109221230-part-00015-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 3652649,
+      "generation": "1794262920930541",
+      "md5": "jGH/HcI7sOokvFJ3uaSLSA==",
+      "pollutant": "88502",
+      "relative_path": "year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00005-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00005-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 3352591,
+      "generation": "1794262921259339",
+      "md5": "jnvH+aCe9vAJJw+ilqZx7w==",
+      "pollutant": "88502",
+      "relative_path": "year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00006-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00006-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 2657201,
+      "generation": "1794262921595237",
+      "md5": "k6guSHphgbsYtQq5Pksr5A==",
+      "pollutant": "88502",
+      "relative_path": "year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00007-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00007-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 2599707,
+      "generation": "1794262921924464",
+      "md5": "3l5MobzjUZM2T80vUcjjHQ==",
+      "pollutant": "88502",
+      "relative_path": "year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00009-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00009-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 6735997,
+      "generation": "1794262922300668",
+      "md5": "TQzYj4syCKLYqxzDJPTXbA==",
+      "pollutant": "88502",
+      "relative_path": "year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00012-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00012-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 3357799,
+      "generation": "1794262922653690",
+      "md5": "qBr1gMy5myB0kmfq+Khwog==",
+      "pollutant": "88502",
+      "relative_path": "year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00014-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00014-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    },
+    {
+      "bytes": 2694644,
+      "generation": "1794262922970805",
+      "md5": "avXt6SL2QfBxqXLk8zXirw==",
+      "pollutant": "88502",
+      "relative_path": "year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00015-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "uri": "gs://final-team-514205-air-quality/curated/epa_hourly/year=2026/pollutant=88502/aq-s12-2026-20261109221230-part-00015-6ad3f2a5-2121-4875-92f2-5cb09a950540.c000.snappy.parquet",
+      "year": 2026
+    }
+  ],
+  "python_requirement": "3.15",
+  "reference": {
+    "counts": {
+      "monitor": 370090,
+      "site": 20994
+    },
+    "gzip_sha256": "b85fbc54ad9f3502fe2f551400cbbe0e8026ef111b62e443d13af476736da129",
+    "path": "/Users/peter_liu/Documents/ChicagoUniversity/Q1/31011/Final Project/tmp/warehouse/dimension_events.jsonl.gz",
+    "sha256": "900ddc49a34203a65fe321aaadee13024734c500392acd70d73dcd14f2ff586c",
+    "sources": {
+      "aqs_monitors": {
+        "bytes": 6919360,
+        "generation": "1794204166716088",
+        "name": "raw/aqs/aqs_monitors/e8325216d4ec5df462a23c201e6ffa1176b2fce363c9f6b0e3f18ce6ad958525.zip",
+        "rows": 370090,
+        "sha256": "e8325216d4ec5df462a23c201e6ffa1176b2fce363c9f6b0e3f18ce6ad958525"
+      },
+      "aqs_sites": {
+        "bytes": 1018314,
+        "generation": "1794204166286269",
+        "name": "raw/aqs/aqs_sites/56b322f6a3d5368d055bce53d0988275c0b27fbcced3d57a6ce8f2e2b539e15a.zip",
+        "rows": 20994,
+        "sha256": "56b322f6a3d5368d055bce53d0988275c0b27fbcced3d57a6ce8f2e2b539e15a"
+      }
+    }
+  },
+  "status": "prepared_not_loaded",
+  "year": 2026
+}
