@@ -1,0 +1,11 @@
+# Copy to infra/terraform.tfvars (ignored). This file is not applied as-is.
+project_id         = "replace-with-project-id"
+billing_account_id = "000000-000000-000000"
+trial_confirmed    = false
+region             = "us-central1"
+monthly_budget_usd = 50
+# Optional if the generated bucket name is unavailable:
+# bucket_name = "your-globally-unique-air-quality-bucket"
+spark_submitter_members = [] # e.g. ["user:you@example.com"]
+# Set after building S06; use the returned digest, never a mutable tag:
+# epa_download_image = "us-central1-docker.pkg.dev/PROJECT/air-quality/epa-download@sha256:DIGEST"

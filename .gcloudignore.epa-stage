@@ -1,0 +1,14 @@
+# Only S10 runtime files enter the Cloud Build source bundle.
+**
+!.dockerignore
+!ingestion/
+!ingestion/Dockerfile.epa_stage
+!ingestion/cloudbuild-epa-stage.yaml
+!ingestion/requirements-epa.txt
+!ingestion/db.py
+!ingestion/epa_manifest.py
+!ingestion/epa_state.py
+!ingestion/epa_download.py
+!ingestion/epa_stage.py
+!config/
+!config/settings.yaml

@@ -24,7 +24,11 @@ epa:
     lead: LEAD
 
 purpleair:
-  target_poll_seconds: 120
+  # Provisional S08 discovery phase: whole bounding box, hourly (see
+  # docs/purpleair_feasibility.md). Tighten after the sensor subset is chosen.
+  target_poll_seconds: 3600
+  max_age_seconds: 900     # only sensors that reported in the last 15 min
+  stale_after_seconds: 600 # a reading older than this at snapshot time is stale
   fields:
     - last_seen
     - latitude

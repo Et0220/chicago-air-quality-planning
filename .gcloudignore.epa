@@ -1,0 +1,16 @@
+# Allowlist for Cloud Build uploads. Never send .env, credentials, or TF state.
+**
+!.dockerignore
+!ingestion/
+!ingestion/Dockerfile.epa
+!ingestion/cloudbuild-epa.yaml
+!ingestion/requirements-epa.txt
+!ingestion/db.py
+!ingestion/epa_manifest.py
+!ingestion/epa_state.py
+!ingestion/epa_download.py
+!config/
+!config/settings.yaml
+!output/
+!output/epa/
+!output/epa/manifest.csv

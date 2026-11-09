@@ -1,0 +1,12 @@
+# Allowlist for Cloud Build uploads. Never send .env, credentials, or TF state.
+**
+!.dockerignore
+!ingestion/
+!ingestion/Dockerfile.purpleair
+!ingestion/cloudbuild-purpleair.yaml
+!ingestion/requirements-epa.txt
+!ingestion/db.py
+!ingestion/purpleair_check.py
+!ingestion/purpleair_poll.py
+!config/
+!config/settings.yaml

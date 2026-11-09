@@ -1,0 +1,156 @@
+{
+  "status": "complete",
+  "project": "final-team-514205",
+  "region": "us-central1",
+  "bucket": "final-team-514205-air-quality",
+  "job": "aq-epa-download",
+  "image": "us-central1-docker.pkg.dev/final-team-514205/air-quality/epa-download@sha256:e45561bc0f73a51f3ee83abbfbf5e0bd300685dbedd860f2fd7bf06a8d39c0cd",
+  "cloud_build_id": "d3dd9ca9-d557-40e9-8250-c4b79b6618a0",
+  "source_sha256": {
+    ".dockerignore": "c859f3979d742a8e7d39ee256b0f4f61c65229c6efd141488f01309bf142d688",
+    "ingestion/Dockerfile.epa": "ccf9bd40c4fda0b626d4bfa047c9955afd7a508efba7a1b64baf71ab47c4a23e",
+    "ingestion/cloudbuild-epa.yaml": "ebbfc3a2c00a27a2bfc61c3ef95f9a0bb1b767bcddf90e531cee92108c8d5de4",
+    "ingestion/requirements-epa.txt": "949e80032df71f62658a849408565a29eab7611ab35461f11807bdcb4b82e8b1",
+    "ingestion/db.py": "ab831b1f8796f16fb93af587edaeb7a71990bd4c82261180e4667a082b644f46",
+    "ingestion/epa_manifest.py": "f8d572d4ffe9bf7d742cd6785cd1d755a70551e67347a63a8022ec7c2a100999",
+    "ingestion/epa_state.py": "d228f5aace18f46e338b206a0449fba74b070c6487747c29fe1e28532cbd2ce9",
+    "ingestion/epa_download.py": "9ffda7062e6d749ec48da4454a9ed78ffc6f9492dd1972db290e9b603bcb1957",
+    "config/settings.yaml": "a11e585359e1b05c667dc9351c7af42682029f050554bb42a17452cf28ea967c",
+    "output/epa/manifest.csv": "5ba92572c519982917e03515eb3c716e4452b7a6e6ffd1ce5d63de4e6336538c"
+  },
+  "validation": {
+    "s06_unit_tests_passed": 12,
+    "sql_integration_passed": true,
+    "terraform_tests_passed": 6,
+    "terraform_plan_exit_code": 0,
+    "build_upload_allowlist_files": 10,
+    "s06_python_315_tests_passed": 13,
+    "repository_tests_passed": 50,
+    "repository_tests_skipped": 3,
+    "source_bundle_hashes_verified": true
+  },
+  "schema_bootstrap": {
+    "applied": [
+      "001_operational.sql",
+      "002_aqs_listing_fields.sql"
+    ],
+    "replay_applied": [],
+    "worker_grants_applied": true,
+    "temporary_admins_removed": true
+  },
+  "sample": {
+    "execution": "aq-epa-download-mkczs",
+    "start_time": "2026-11-09T06:09:28.610463Z",
+    "completion_time": "2026-11-09T06:11:25.373055Z",
+    "succeeded_count": 1,
+    "run_id": "18e49177-a90d-43e0-a32a-5c7c59f19f83",
+    "outcomes": {
+      "downloaded": 2,
+      "skipped_empty": 1
+    },
+    "zip_checks": [
+      {
+        "file_name": "hourly_42101_2026.zip",
+        "rows": 368027,
+        "columns": 24,
+        "zip_crc_verified": true,
+        "generation": "1794204679268300"
+      },
+      {
+        "file_name": "hourly_88502_2026.zip",
+        "rows": 335702,
+        "columns": 24,
+        "zip_crc_verified": true,
+        "generation": "1794204681356835"
+      }
+    ]
+  },
+  "sample_rerun": {
+    "execution": "aq-epa-download-pldjf",
+    "start_time": "2026-11-09T06:11:58.708571Z",
+    "completion_time": "2026-11-09T06:12:57.455822Z",
+    "succeeded_count": 1,
+    "run_id": "8b466ea0-e4d4-4a6a-b868-1a112772698b",
+    "outcomes": {
+      "unchanged": 2,
+      "skipped_empty": 1
+    },
+    "gcs_versions_unchanged": true
+  },
+  "full_execution": "aq-epa-download-b6wbv",
+  "full_run_id": "70c20b1d-3349-4142-8e82-632146f5e835",
+  "full": {
+    "execution": "aq-epa-download-b6wbv",
+    "start_time": "2026-11-09T06:13:28.826424Z",
+    "completion_time": "2026-11-09T07:08:25.577799Z",
+    "succeeded_count": 1,
+    "runtime": "Python 3.11",
+    "errors": [],
+    "outcomes": {
+      "downloaded": 231,
+      "skipped_empty": 63,
+      "unchanged": 2
+    },
+    "run_id": "70c20b1d-3349-4142-8e82-632146f5e835"
+  },
+  "full_rerun": {
+    "execution": "aq-epa-download-m5jwh",
+    "start_time": "2026-11-09T07:09:02.614889Z",
+    "completion_time": "2026-11-09T07:09:54.544627Z",
+    "succeeded_count": 1,
+    "runtime": "Python 3.11",
+    "errors": [],
+    "outcomes": {
+      "skipped_empty": 63,
+      "unchanged": 233
+    },
+    "run_id": "9dde81d2-c061-4db0-a746-d9f48cb99152",
+    "gcs_versions_unchanged": true
+  },
+  "backfill_totals": {
+    "objects": 233,
+    "object_generations": 233,
+    "actual_bytes": 6716684039,
+    "skipped_empty": 63
+  },
+  "backfill_image": "us-central1-docker.pkg.dev/final-team-514205/air-quality/epa-download@sha256:f9e18ed84d0245c6e401ff18dfbef223b8d050ed96e2e10f4841f73e40c26412",
+  "backfill_cloud_build_id": "f7de2ba9-92be-4d42-bd1e-6242fac09e5d",
+  "backfill_source_sha256": {
+    "ingestion/Dockerfile.epa": "841fe53bb9455012d78c3f8221ba07b064f87c69e77d239f19cbf05a18e2912e",
+    "ingestion/requirements-epa.txt": "949e80032df71f62658a849408565a29eab7611ab35461f11807bdcb4b82e8b1",
+    "ingestion/db.py": "ab831b1f8796f16fb93af587edaeb7a71990bd4c82261180e4667a082b644f46",
+    "ingestion/epa_manifest.py": "f8d572d4ffe9bf7d742cd6785cd1d755a70551e67347a63a8022ec7c2a100999",
+    "ingestion/epa_state.py": "d228f5aace18f46e338b206a0449fba74b070c6487747c29fe1e28532cbd2ce9",
+    "ingestion/epa_download.py": "9ffda7062e6d749ec48da4454a9ed78ffc6f9492dd1972db290e9b603bcb1957",
+    "output/epa/manifest.csv": "5ba92572c519982917e03515eb3c716e4452b7a6e6ffd1ce5d63de4e6336538c"
+  },
+  "runtime": "Python 3.15",
+  "python_315_rerun": {
+    "execution": "aq-epa-download-89w4z",
+    "start_time": "2026-11-09T07:13:32.979148Z",
+    "completion_time": "2026-11-09T07:14:51.033254Z",
+    "succeeded_count": 1,
+    "errors": [],
+    "outcomes": {
+      "skipped_empty": 63,
+      "unchanged": 233
+    },
+    "run_id": "4132c117-b7eb-4bbd-b875-4e35c2c910aa",
+    "gcs_versions_unchanged": true
+  },
+  "verification": {
+    "execution": "aq-epa-download-ddr2t",
+    "start_time": "2026-11-09T07:15:13.139203Z",
+    "completion_time": "2026-11-09T07:16:08.232043Z",
+    "succeeded_count": 1,
+    "actual_zip_bytes": 6716684039,
+    "listed_gcs_objects": 233,
+    "matched_nonempty": 233,
+    "mismatches": [],
+    "selected": 296,
+    "skipped": 63,
+    "verified_at_utc": "2026-11-09T07:16:01.128660+00:00",
+    "version_rows": 233,
+    "artifact": "output/epa/download_verification.json"
+  }
+}

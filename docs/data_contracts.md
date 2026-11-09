@@ -6,7 +6,7 @@ timestamps, units, and object paths before dependent jobs are finalized.
 
 ## Conventions
 
-- Python runtime: 3.11. Configuration starts with `config/settings.yaml`;
+- Python runtime: 3.15. Configuration starts with `config/settings.yaml`;
   `AIR_QUALITY_*` environment variables override corresponding values.
   `AIR_QUALITY_GCP_PROJECT_ID` and `AIR_QUALITY_GCS_BUCKET` name cloud resources.
   For a YAML scalar, the override name is
@@ -109,10 +109,19 @@ empty or absent cells. Its columns are `file_name` STRING nullable,
 `listed_rows` BIGINT nullable, `listed_bytes` BIGINT nullable,
 `last_modified` DATE nullable, `status` STRING. Status is one of
 `listed_nonempty`, `listed_empty`, or `missing`. `listed_bytes` converts the
-catalog's displayed KB to approximate bytes, so it is an estimate, not the
-downloaded ZIP size. `last_modified` means the catalog's "As of" date, not an
-HTTP `Last-Modified` header. S05 tracks download and staging state separately
+catalog's displayed KB to approximate bytes using **KB × 1,024**. This is a
+documented project convention because the catalog does not define KB; S06
+records actual downloaded ZIP bytes separately. `last_modified` means the
+catalog's "As of" date, not an HTTP `Last-Modified` header. S05 tracks download
+and staging state separately
 from this catalog status.
+
+S06 records `raw_md5` as lowercase hexadecimal and `raw_size_bytes` as the
+exact transferred ZIP size. GCS exposes the same MD5 in base64; decode it
+before comparing with SQL. `raw_generation` is a string and must accompany
+`raw_uri` when a downstream job reads an immutable source version. A repeated
+S06 execution may add a run log and refresh checks, but must not duplicate
+unchanged GCS generations or `ingest_file_version` rows.
 
 EPA's hourly ZIPs exclude measurements taken at longer durations. A zero-row
 hourly file does not prove that a pollutant was never measured. The PM2.5
@@ -121,6 +130,30 @@ Teledyne T640/T640X methods 236/238 as superseded and prefer corrected methods
 736/738 or updated FEM methods 636/638 when they represent the same monitor
 hour. Keep all versions in raw data and record the selected method in curated
 data. S07/S11 should expose the advisory flag, not silently remove records.
+
+## AQS site and monitor listings (S07)
+
+The source files are `aqs_sites.zip` and `aqs_monitors.zip`; each contains one
+CSV. `aqs_site` has one row per `site_key`; `aqs_monitor` has one row per
+`monitor_key`. Preserve all published rows. The June 26, 2026 extraction
+includes four Canadian sites and 28 Canadian monitors with state code `CC`;
+this is the sole exception to the numeric two-character state-code rule.
+The Chicago study uses Illinois `17` and Indiana `18` only.
+
+The site listing supplies establishment and closure dates. The monitor listing
+supplies `First Year of Data` and `Last Sample Date`, which do **not** establish
+an exact start date or closure date. S07 stores them as `first_year_of_data`
+and `last_sample_date`; `begin_date` and `end_date` remain null unless a later
+source provides their meanings. S17/S18 should treat the last sample date as
+an activity clue, not proof of a currently reporting monitor. Both listings
+carry `Extraction Date`, coordinates, datum, and GCS source generation.
+
+`aqs_monitor.pm25_advisory_superseded` is true only when parameter `88101` has
+**last listed** method code `236` or `238`. The listing has one latest method
+per monitor and cannot identify every historical hour measured with those
+methods. S11 must apply the same advisory codes to each hourly source row;
+codes `636`, `638`, `736`, and `738` remain eligible. S07 retains the flagged
+monitors and all raw ZIP versions rather than deleting them.
 
 ## PurpleAir current readings
 
@@ -191,6 +224,7 @@ and record its GCS generation. Use UTC dates and hours in live prefixes.
 | Layer | Object path | Producer -> consumer |
 | --- | --- | --- |
 | EPA raw | `raw/epa/{year}/{file}.zip` (`{file}` excludes `.zip`) | S06 -> S10 |
+| AQS listings | `raw/aqs/{listing}/{sha256}.zip` | S07 -> S13/S17/S18; immutable published ZIP |
 | EPA staging | `staging/epa/{param}/{year}/*.csv` | S10 -> S11/S12; `{param}` is ZIP group suffix |
 | EPA curated | `curated/epa_hourly/year={YYYY}/pollutant={code}/*.parquet` | S12 -> S13; pollutant is observed parameter code |
 | PurpleAir raw | `raw/purpleair/dt=YYYY-MM-DD/hh=HH/*.json` | S08 -> S14/S16 |

@@ -1,0 +1,12 @@
+FROM python:3.15-slim
+ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+WORKDIR /app
+COPY ingestion/requirements-epa.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt \
+    && useradd --uid 10002 --create-home worker
+COPY ingestion/db.py ingestion/purpleair_check.py ingestion/purpleair_poll.py /app/ingestion/
+COPY config/settings.yaml /app/config/settings.yaml
+RUN chmod -R a+rX /app
+USER worker
+ENTRYPOINT ["python", "-m", "ingestion.purpleair_poll"]
+CMD ["--db", "--raw-store", "gcs"]

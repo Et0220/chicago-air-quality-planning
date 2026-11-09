@@ -36,7 +36,7 @@ config/         # settings.yaml, .env.example
 
 **Project language**: Write all project changes and inputs in English, including code comments, documentation, configuration descriptions, and presentation materials.
 
-**Rules**: Python 3.11, `pyproject.toml`, config via env vars + `config/settings.yaml`, secrets only from Secret Manager / `.env` (never committed), all timestamps stored in UTC with Chicago local time derived, every job idempotent and re-runnable, each segment ships tests + a short README section.
+**Rules**: Python 3.15, `pyproject.toml`, config via env vars + `config/settings.yaml`, secrets only from Secret Manager / `.env` (never committed), all timestamps stored in UTC with Chicago local time derived, every job idempotent and re-runnable, each segment ships tests + a short README section.
 
 **Prompt template to hand a segment to an AI**
 

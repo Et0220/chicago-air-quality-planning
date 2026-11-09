@@ -9,3 +9,15 @@ lint:
 
 test:
 	$(PYTHON) -m pytest -q
+
+TERRAFORM ?= terraform
+.PHONY: infra-check infra-smoke
+
+# Run `terraform -chdir=infra init -backend=false` once before this check.
+infra-check:
+	$(TERRAFORM) -chdir=infra fmt -check -recursive
+	$(TERRAFORM) -chdir=infra validate
+	$(TERRAFORM) -chdir=infra test
+
+infra-smoke:
+	TERRAFORM="$(TERRAFORM)" PYTHON="$(PYTHON)" bash infra/smoke.sh

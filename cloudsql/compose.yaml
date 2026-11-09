@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: air_quality_test
+      POSTGRES_USER: air_quality_dev
+      # Disposable local database: no password is stored in the repo. Safe only
+      # because the port below is published on loopback (127.0.0.1) alone.
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "127.0.0.1:5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U air_quality_dev -d air_quality_test"]
+      interval: 2s
+      timeout: 2s
+      retries: 20

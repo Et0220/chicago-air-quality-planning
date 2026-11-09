@@ -1,0 +1,122 @@
+{
+  "verified_at_utc": "2026-11-09T05:32:29.157848+00:00",
+  "project_id": "final-team-514205",
+  "region": "us-central1",
+  "trial_expiry_confirmed_by_owner": "2027-01-06",
+  "terraform": {
+    "managed_resources": 78,
+    "final_plan_exit_code": 0,
+    "result": "No changes"
+  },
+  "storage": {
+    "name": "final-team-514205-air-quality",
+    "location": "US-CENTRAL1",
+    "versioning_enabled": true,
+    "uniform_bucket_level_access": true,
+    "public_access_prevention": "enforced"
+  },
+  "cloud_sql": {
+    "connection_name": "final-team-514205:us-central1:aq-operational",
+    "state": "RUNNABLE",
+    "tier": "db-f1-micro",
+    "disk_gib": "10",
+    "connector_enforcement": "REQUIRED"
+  },
+  "cloud_run_placeholder_executions": [
+    {
+      "job": "airnow-collect",
+      "execution": "aq-airnow-collect-w42bp",
+      "succeeded_tasks": 1,
+      "completion_time_utc": "2026-11-09T05:29:26.584825Z"
+    },
+    {
+      "job": "epa-download",
+      "execution": "aq-epa-download-n4h2d",
+      "succeeded_tasks": 1,
+      "completion_time_utc": "2026-11-09T05:29:28.971927Z"
+    },
+    {
+      "job": "epa-stage",
+      "execution": "aq-epa-stage-k4fcr",
+      "succeeded_tasks": 1,
+      "completion_time_utc": "2026-11-09T05:29:26.607868Z"
+    },
+    {
+      "job": "live-sync",
+      "execution": "aq-live-sync-pj7h2",
+      "succeeded_tasks": 1,
+      "completion_time_utc": "2026-11-09T05:29:28.990221Z"
+    },
+    {
+      "job": "purpleair-poll",
+      "execution": "aq-purpleair-poll-h6vpc",
+      "succeeded_tasks": 1,
+      "completion_time_utc": "2026-11-09T05:29:26.572774Z"
+    }
+  ],
+  "schedules": [
+    {
+      "name": "aq-airnow-collect",
+      "state": "PAUSED",
+      "schedule": "40 * * * *"
+    },
+    {
+      "name": "aq-purpleair-poll",
+      "state": "PAUSED",
+      "schedule": "*/2 * * * *"
+    },
+    {
+      "name": "aq-live-sync",
+      "state": "PAUSED",
+      "schedule": "*/5 * * * *"
+    }
+  ],
+  "secret_containers": [
+    {
+      "name": "aq-airnow-api-key",
+      "replica_locations": [
+        "us-central1"
+      ]
+    },
+    {
+      "name": "aq-purpleair-read-key",
+      "replica_locations": [
+        "us-central1"
+      ]
+    },
+    {
+      "name": "aq-snowflake-creds",
+      "replica_locations": [
+        "us-central1"
+      ]
+    }
+  ],
+  "artifact_registry": {
+    "name": "projects/final-team-514205/locations/us-central1/repositories/air-quality",
+    "format": "DOCKER"
+  },
+  "budget": {
+    "monthly_usd": 50,
+    "credit_types_treatment": "EXCLUDE_ALL_CREDITS",
+    "thresholds": [
+      0.5,
+      0.9,
+      1.0
+    ]
+  },
+  "spark": {
+    "batch": "projects/final-team-514205/locations/us-central1/batches/aq-s02-20261109052051",
+    "state": "SUCCEEDED",
+    "parquet_check": {
+      "status": "passed",
+      "row_count": 1000,
+      "id_sum": 499500
+    },
+    "approximate_usage": {
+      "acceleratorType": "UNSPECIFIED",
+      "milliDcuSeconds": "711000",
+      "shuffleStorageGbSeconds": "72000"
+    }
+  },
+  "scope": "Infrastructure and placeholder verification only. Collector source calls, secret payloads, and database table access belong to subsequent segments."
+}

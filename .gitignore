@@ -13,6 +13,13 @@ tmp/
 *.egg-info/
 build/
 dist/
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.tfvars.json
+crash.log
 
 # Canvas assignment brief (not our work)
 Final Project Submission.pdf

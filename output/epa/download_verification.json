@@ -1,0 +1,2109 @@
+{
+  "actual_zip_bytes": 6716684039,
+  "listed_gcs_objects": 233,
+  "matched_nonempty": 233,
+  "mismatches": [],
+  "objects": [
+    {
+      "created_at": "2026-11-09 06:14:56.447000+00:00",
+      "generation": "1794204896440571",
+      "md5": "524899a7025c7bf9f9bacc0dd32215b1",
+      "pollutant": "carbon_monoxide",
+      "size": 26478458,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1990/hourly_42101_1990.zip",
+      "year": 1990
+    },
+    {
+      "created_at": "2026-11-09 06:15:08.734000+00:00",
+      "generation": "1794204908729801",
+      "md5": "160c0eb0e7e2800302f7c3ff44b38fe9",
+      "pollutant": "nitrogen_dioxide",
+      "size": 17507496,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1990/hourly_42602_1990.zip",
+      "year": 1990
+    },
+    {
+      "created_at": "2026-11-09 06:15:11.656000+00:00",
+      "generation": "1794204911648791",
+      "md5": "dcc646eabafa85eb50a97c7b20be7897",
+      "pollutant": "ozone",
+      "size": 42571533,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1990/hourly_44201_1990.zip",
+      "year": 1990
+    },
+    {
+      "created_at": "2026-11-09 06:15:09.414000+00:00",
+      "generation": "1794204909404302",
+      "md5": "1b7617025b85d2063aad6c5d9c2dba8b",
+      "pollutant": "pm10",
+      "size": 134185,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1990/hourly_81102_1990.zip",
+      "year": 1990
+    },
+    {
+      "created_at": "2026-11-09 06:15:43.201000+00:00",
+      "generation": "1794204943193900",
+      "md5": "5395783bf6dca186f35cd3db90ab18d2",
+      "pollutant": "sulfur_dioxide",
+      "size": 40600249,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1990/hourly_42401_1990.zip",
+      "year": 1990
+    },
+    {
+      "created_at": "2026-11-09 06:15:26.999000+00:00",
+      "generation": "1794204926992851",
+      "md5": "691699f12a4a7a3be38b4bb093f11237",
+      "pollutant": "carbon_monoxide",
+      "size": 26934698,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1991/hourly_42101_1991.zip",
+      "year": 1991
+    },
+    {
+      "created_at": "2026-11-09 06:15:39.492000+00:00",
+      "generation": "1794204939485267",
+      "md5": "6d55da893a31664e1bdfcb17940b060c",
+      "pollutant": "nitrogen_dioxide",
+      "size": 18197106,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1991/hourly_42602_1991.zip",
+      "year": 1991
+    },
+    {
+      "created_at": "2026-11-09 06:16:17.330000+00:00",
+      "generation": "1794204977324452",
+      "md5": "365460e7ad660c83f8b47942e23fe6a4",
+      "pollutant": "ozone",
+      "size": 44355393,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1991/hourly_44201_1991.zip",
+      "year": 1991
+    },
+    {
+      "created_at": "2026-11-09 06:15:40.230000+00:00",
+      "generation": "1794204940223547",
+      "md5": "f1d2cc6963ee124cdf8e5bba87966a51",
+      "pollutant": "pm10",
+      "size": 298073,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1991/hourly_81102_1991.zip",
+      "year": 1991
+    },
+    {
+      "created_at": "2026-11-09 06:16:54.302000+00:00",
+      "generation": "1794205014296010",
+      "md5": "4cd71f4ecc411247ced7e5585f7547c3",
+      "pollutant": "sulfur_dioxide",
+      "size": 40802487,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1991/hourly_42401_1991.zip",
+      "year": 1991
+    },
+    {
+      "created_at": "2026-11-09 06:16:01.113000+00:00",
+      "generation": "1794204961106199",
+      "md5": "ffd46ba3e733bf2087a295b5d9c8f1ed",
+      "pollutant": "carbon_monoxide",
+      "size": 28317747,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1992/hourly_42101_1992.zip",
+      "year": 1992
+    },
+    {
+      "created_at": "2026-11-09 06:16:19.475000+00:00",
+      "generation": "1794204979468564",
+      "md5": "056554ddeb1590b579bc8551c5076540",
+      "pollutant": "nitrogen_dioxide",
+      "size": 18965525,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1992/hourly_42602_1992.zip",
+      "year": 1992
+    },
+    {
+      "created_at": "2026-11-09 06:17:40.406000+00:00",
+      "generation": "1794205060399676",
+      "md5": "675a50c555d929ae781433ae46770666",
+      "pollutant": "ozone",
+      "size": 46213826,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1992/hourly_44201_1992.zip",
+      "year": 1992
+    },
+    {
+      "created_at": "2026-11-09 06:16:21.389000+00:00",
+      "generation": "1794204981381999",
+      "md5": "c45972723fc61e739e08465551aedb25",
+      "pollutant": "pm10",
+      "size": 1334898,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1992/hourly_81102_1992.zip",
+      "year": 1992
+    },
+    {
+      "created_at": "2026-11-09 06:18:17.329000+00:00",
+      "generation": "1794205097323220",
+      "md5": "ec14402e598a6042e272d0af12d29f97",
+      "pollutant": "sulfur_dioxide",
+      "size": 39669408,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1992/hourly_42401_1992.zip",
+      "year": 1992
+    },
+    {
+      "created_at": "2026-11-09 06:16:45.962000+00:00",
+      "generation": "1794205005955849",
+      "md5": "7a757f8955654f964d21d5a6d30a6d55",
+      "pollutant": "carbon_monoxide",
+      "size": 28818367,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1993/hourly_42101_1993.zip",
+      "year": 1993
+    },
+    {
+      "created_at": "2026-11-09 06:17:03.495000+00:00",
+      "generation": "1794205023484784",
+      "md5": "19b7d5d44527bf31e73748781efa33f1",
+      "pollutant": "nitrogen_dioxide",
+      "size": 19938120,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1993/hourly_42602_1993.zip",
+      "year": 1993
+    },
+    {
+      "created_at": "2026-11-09 06:18:58.790000+00:00",
+      "generation": "1794205138781925",
+      "md5": "65a8c0354662c8836ebfaa8fe8957f9f",
+      "pollutant": "ozone",
+      "size": 48338514,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1993/hourly_44201_1993.zip",
+      "year": 1993
+    },
+    {
+      "created_at": "2026-11-09 06:17:05.346000+00:00",
+      "generation": "1794205025340432",
+      "md5": "a7a96facafc36ff03ef11d109873cbc6",
+      "pollutant": "pm10",
+      "size": 2211393,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1993/hourly_81102_1993.zip",
+      "year": 1993
+    },
+    {
+      "created_at": "2026-11-09 06:19:28.130000+00:00",
+      "generation": "1794205168121347",
+      "md5": "4cb6df06a64e046442f266cfe8794fbf",
+      "pollutant": "sulfur_dioxide",
+      "size": 38510900,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1993/hourly_42401_1993.zip",
+      "year": 1993
+    },
+    {
+      "created_at": "2026-11-09 06:17:35.471000+00:00",
+      "generation": "1794205055463121",
+      "md5": "7a7e46ec235d904768b9baff1ab39f6e",
+      "pollutant": "carbon_monoxide",
+      "size": 28989988,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1994/hourly_42101_1994.zip",
+      "year": 1994
+    },
+    {
+      "created_at": "2026-11-09 06:17:58.379000+00:00",
+      "generation": "1794205078374200",
+      "md5": "b7aa74aa44ac26a558d5e85e8fa25582",
+      "pollutant": "nitrogen_dioxide",
+      "size": 21044214,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1994/hourly_42602_1994.zip",
+      "year": 1994
+    },
+    {
+      "created_at": "2026-11-09 06:20:12.888000+00:00",
+      "generation": "1794205212881270",
+      "md5": "bcaaa45770ddfef18008db1261450635",
+      "pollutant": "ozone",
+      "size": 50485999,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1994/hourly_44201_1994.zip",
+      "year": 1994
+    },
+    {
+      "created_at": "2026-11-09 06:18:04.198000+00:00",
+      "generation": "1794205084191510",
+      "md5": "83e82d287fc61ed5aa3ef220806c2699",
+      "pollutant": "pm10",
+      "size": 4219923,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1994/hourly_81102_1994.zip",
+      "year": 1994
+    },
+    {
+      "created_at": "2026-11-09 06:20:46.474000+00:00",
+      "generation": "1794205246469427",
+      "md5": "9d227299b968cc563a8b7a510a04dd7c",
+      "pollutant": "sulfur_dioxide",
+      "size": 37979910,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1994/hourly_42401_1994.zip",
+      "year": 1994
+    },
+    {
+      "created_at": "2026-11-09 06:18:36.185000+00:00",
+      "generation": "1794205116177334",
+      "md5": "e53d93cbcc2794315455fad75a40dc61",
+      "pollutant": "carbon_monoxide",
+      "size": 29494542,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1995/hourly_42101_1995.zip",
+      "year": 1995
+    },
+    {
+      "created_at": "2026-11-09 06:18:53.575000+00:00",
+      "generation": "1794205133566816",
+      "md5": "fbf423f9026b3d152c63ff7af4d1dfe2",
+      "pollutant": "nitrogen_dioxide",
+      "size": 22004278,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1995/hourly_42602_1995.zip",
+      "year": 1995
+    },
+    {
+      "created_at": "2026-11-09 06:21:28.350000+00:00",
+      "generation": "1794205288343565",
+      "md5": "be3da935b26514f268520e86319994b2",
+      "pollutant": "ozone",
+      "size": 51031257,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1995/hourly_44201_1995.zip",
+      "year": 1995
+    },
+    {
+      "created_at": "2026-11-09 06:18:59.062000+00:00",
+      "generation": "1794205139055431",
+      "md5": "deabe5392eb9514b86562b5994d5479f",
+      "pollutant": "pm10",
+      "size": 5612117,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1995/hourly_81102_1995.zip",
+      "year": 1995
+    },
+    {
+      "created_at": "2026-11-09 06:21:58.914000+00:00",
+      "generation": "1794205318908396",
+      "md5": "d9f8609cf4b06df01ad7fb8a9807937e",
+      "pollutant": "sulfur_dioxide",
+      "size": 37850579,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1995/hourly_42401_1995.zip",
+      "year": 1995
+    },
+    {
+      "created_at": "2026-11-09 06:19:22.767000+00:00",
+      "generation": "1794205162757265",
+      "md5": "11ba231256047ef0fc97e2e24b075e8e",
+      "pollutant": "carbon_monoxide",
+      "size": 29422396,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1996/hourly_42101_1996.zip",
+      "year": 1996
+    },
+    {
+      "created_at": "2026-11-09 06:19:42.609000+00:00",
+      "generation": "1794205182602217",
+      "md5": "bbc4e867e64fd5c5c104ee054c1b9107",
+      "pollutant": "nitrogen_dioxide",
+      "size": 21972569,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1996/hourly_42602_1996.zip",
+      "year": 1996
+    },
+    {
+      "created_at": "2026-11-09 06:22:38.095000+00:00",
+      "generation": "1794205358087514",
+      "md5": "4be5edeca29cde199bbb16dab3c83be7",
+      "pollutant": "ozone",
+      "size": 50700852,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1996/hourly_44201_1996.zip",
+      "year": 1996
+    },
+    {
+      "created_at": "2026-11-09 06:19:47.538000+00:00",
+      "generation": "1794205187531367",
+      "md5": "1b6c883c13569df98a09271951ae3300",
+      "pollutant": "pm10",
+      "size": 6755811,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1996/hourly_81102_1996.zip",
+      "year": 1996
+    },
+    {
+      "created_at": "2026-11-09 06:23:01.322000+00:00",
+      "generation": "1794205381314293",
+      "md5": "253af2aac0e07f578dac23d568d0b445",
+      "pollutant": "sulfur_dioxide",
+      "size": 37483029,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1996/hourly_42401_1996.zip",
+      "year": 1996
+    },
+    {
+      "created_at": "2026-11-09 06:20:10.352000+00:00",
+      "generation": "1794205210346400",
+      "md5": "9e7ff8d8474ed2589a976471e526f998",
+      "pollutant": "carbon_monoxide",
+      "size": 29064515,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1997/hourly_42101_1997.zip",
+      "year": 1997
+    },
+    {
+      "created_at": "2026-11-09 06:20:27.218000+00:00",
+      "generation": "1794205227211471",
+      "md5": "434a90539e20e83b99db905ed0124524",
+      "pollutant": "nitrogen_dioxide",
+      "size": 22569993,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1997/hourly_42602_1997.zip",
+      "year": 1997
+    },
+    {
+      "created_at": "2026-11-09 06:23:34.922000+00:00",
+      "generation": "1794205414915777",
+      "md5": "9d3bd32e9af53ba899794308fe62be83",
+      "pollutant": "ozone",
+      "size": 53544183,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1997/hourly_44201_1997.zip",
+      "year": 1997
+    },
+    {
+      "created_at": "2026-11-09 06:20:33.547000+00:00",
+      "generation": "1794205233541198",
+      "md5": "4ce0509586b16b629ce467259711de77",
+      "pollutant": "pm10",
+      "size": 7562796,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1997/hourly_81102_1997.zip",
+      "year": 1997
+    },
+    {
+      "created_at": "2026-11-09 06:23:57.360000+00:00",
+      "generation": "1794205437353350",
+      "md5": "a0292ead4254864655c3cdc7654f9f73",
+      "pollutant": "sulfur_dioxide",
+      "size": 36406525,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1997/hourly_42401_1997.zip",
+      "year": 1997
+    },
+    {
+      "created_at": "2026-11-09 06:20:57.204000+00:00",
+      "generation": "1794205257197193",
+      "md5": "d7391b27b1be286398bc4e92d878e68a",
+      "pollutant": "carbon_monoxide",
+      "size": 28821085,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1998/hourly_42101_1998.zip",
+      "year": 1998
+    },
+    {
+      "created_at": "2026-11-09 06:21:18.559000+00:00",
+      "generation": "1794205278552964",
+      "md5": "043efcb54bc5c4d8c8e751e1f4cc3b4d",
+      "pollutant": "nitrogen_dioxide",
+      "size": 22962790,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1998/hourly_42602_1998.zip",
+      "year": 1998
+    },
+    {
+      "created_at": "2026-11-09 06:24:30.245000+00:00",
+      "generation": "1794205470239512",
+      "md5": "270f8ba369a003d2e7eb8fd6e3ab3fde",
+      "pollutant": "ozone",
+      "size": 54890307,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1998/hourly_44201_1998.zip",
+      "year": 1998
+    },
+    {
+      "created_at": "2026-11-09 06:21:24.339000+00:00",
+      "generation": "1794205284332503",
+      "md5": "6c6b4ba8ddb7eb877d746504f0eeb12c",
+      "pollutant": "pm10",
+      "size": 6676311,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1998/hourly_81102_1998.zip",
+      "year": 1998
+    },
+    {
+      "created_at": "2026-11-09 06:21:24.884000+00:00",
+      "generation": "1794205284877562",
+      "md5": "67dc59356a300308ccd9759b9b9b786b",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 31635,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1998/hourly_88502_1998.zip",
+      "year": 1998
+    },
+    {
+      "created_at": "2026-11-09 06:24:58.709000+00:00",
+      "generation": "1794205498703431",
+      "md5": "0b734a2eb2f4d32175bd4aa3ecc999cd",
+      "pollutant": "sulfur_dioxide",
+      "size": 35423560,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1998/hourly_42401_1998.zip",
+      "year": 1998
+    },
+    {
+      "created_at": "2026-11-09 06:21:51.030000+00:00",
+      "generation": "1794205311024217",
+      "md5": "113cbd791ab6fa46dd0b1107071f9382",
+      "pollutant": "carbon_monoxide",
+      "size": 27885256,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1999/hourly_42101_1999.zip",
+      "year": 1999
+    },
+    {
+      "created_at": "2026-11-09 06:22:10.159000+00:00",
+      "generation": "1794205330152066",
+      "md5": "47385c190888bf843db0e81eb097172b",
+      "pollutant": "nitrogen_dioxide",
+      "size": 23250418,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1999/hourly_42602_1999.zip",
+      "year": 1999
+    },
+    {
+      "created_at": "2026-11-09 06:25:35.766000+00:00",
+      "generation": "1794205535758919",
+      "md5": "ac23c224b4d26ace135995c25ab49cff",
+      "pollutant": "ozone",
+      "size": 56016900,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1999/hourly_44201_1999.zip",
+      "year": 1999
+    },
+    {
+      "created_at": "2026-11-09 06:22:16.610000+00:00",
+      "generation": "1794205336603699",
+      "md5": "174c66484f3e8b8c276ffa4f6f4b185a",
+      "pollutant": "pm10",
+      "size": 5938532,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1999/hourly_81102_1999.zip",
+      "year": 1999
+    },
+    {
+      "created_at": "2026-11-09 06:22:17.416000+00:00",
+      "generation": "1794205337410129",
+      "md5": "8b028f0de9e54f6c0eadceafa76b4838",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 384771,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1999/hourly_88502_1999.zip",
+      "year": 1999
+    },
+    {
+      "created_at": "2026-11-09 06:25:57.005000+00:00",
+      "generation": "1794205556999414",
+      "md5": "7e9f7edc871b2f79f4cf778607e8622d",
+      "pollutant": "sulfur_dioxide",
+      "size": 33679809,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/1999/hourly_42401_1999.zip",
+      "year": 1999
+    },
+    {
+      "created_at": "2026-11-09 06:22:40.140000+00:00",
+      "generation": "1794205360133528",
+      "md5": "272182a361795ac0551d568eaca1d84b",
+      "pollutant": "carbon_monoxide",
+      "size": 27833471,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2000/hourly_42101_2000.zip",
+      "year": 2000
+    },
+    {
+      "created_at": "2026-11-09 06:22:56.379000+00:00",
+      "generation": "1794205376372841",
+      "md5": "ccfb00ecf8d3864a83a6b4b043b5bdf5",
+      "pollutant": "nitrogen_dioxide",
+      "size": 23721439,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2000/hourly_42602_2000.zip",
+      "year": 2000
+    },
+    {
+      "created_at": "2026-11-09 06:26:40.449000+00:00",
+      "generation": "1794205600439709",
+      "md5": "0e611fe64bd0d0d212784d7c4cae1056",
+      "pollutant": "ozone",
+      "size": 57760642,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2000/hourly_44201_2000.zip",
+      "year": 2000
+    },
+    {
+      "created_at": "2026-11-09 06:23:01.033000+00:00",
+      "generation": "1794205381026708",
+      "md5": "c3f70cd2d9ef80f61ba2762d5ea643a6",
+      "pollutant": "pm10",
+      "size": 7205723,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2000/hourly_81102_2000.zip",
+      "year": 2000
+    },
+    {
+      "created_at": "2026-11-09 06:23:02.315000+00:00",
+      "generation": "1794205382308306",
+      "md5": "84e3d714e33f35dd957acf9aa9d456a3",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 1416140,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2000/hourly_88502_2000.zip",
+      "year": 2000
+    },
+    {
+      "created_at": "2026-11-09 06:27:12.448000+00:00",
+      "generation": "1794205632442257",
+      "md5": "a902e5501f00bd133180ede2adbff2b5",
+      "pollutant": "sulfur_dioxide",
+      "size": 32903572,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2000/hourly_42401_2000.zip",
+      "year": 2000
+    },
+    {
+      "created_at": "2026-11-09 06:23:17.471000+00:00",
+      "generation": "1794205397466380",
+      "md5": "c2e8301276d92d1a71fe56db25d80681",
+      "pollutant": "carbon_monoxide",
+      "size": 26360054,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2001/hourly_42101_2001.zip",
+      "year": 2001
+    },
+    {
+      "created_at": "2026-11-09 06:23:33.363000+00:00",
+      "generation": "1794205413357886",
+      "md5": "3b5330c64d932111dcd15b8bfe5240d8",
+      "pollutant": "nitrogen_dioxide",
+      "size": 23961397,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2001/hourly_42602_2001.zip",
+      "year": 2001
+    },
+    {
+      "created_at": "2026-11-09 06:28:08.866000+00:00",
+      "generation": "1794205688860206",
+      "md5": "5669d417974cb28aaac081b47f1b9911",
+      "pollutant": "ozone",
+      "size": 59797747,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2001/hourly_44201_2001.zip",
+      "year": 2001
+    },
+    {
+      "created_at": "2026-11-09 06:23:39.066000+00:00",
+      "generation": "1794205419058699",
+      "md5": "9d9085882d43d1b898a066a17e6d02f1",
+      "pollutant": "pm10",
+      "size": 9253063,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2001/hourly_81102_2001.zip",
+      "year": 2001
+    },
+    {
+      "created_at": "2026-11-09 06:23:40.760000+00:00",
+      "generation": "1794205420753563",
+      "md5": "8739a86856fb031c2d5371b5cde4b4fe",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 2342169,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2001/hourly_88502_2001.zip",
+      "year": 2001
+    },
+    {
+      "created_at": "2026-11-09 06:28:37.369000+00:00",
+      "generation": "1794205717363789",
+      "md5": "da16e51ca295a07b9978051640928f57",
+      "pollutant": "sulfur_dioxide",
+      "size": 31872573,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2001/hourly_42401_2001.zip",
+      "year": 2001
+    },
+    {
+      "created_at": "2026-11-09 06:23:56.440000+00:00",
+      "generation": "1794205436435094",
+      "md5": "876871d5d8c02816b87885b76259cbf4",
+      "pollutant": "carbon_monoxide",
+      "size": 25381243,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2002/hourly_42101_2002.zip",
+      "year": 2002
+    },
+    {
+      "created_at": "2026-11-09 06:24:13.167000+00:00",
+      "generation": "1794205453161665",
+      "md5": "3fec49f94347e0c2b4647cb442e853d2",
+      "pollutant": "nitrogen_dioxide",
+      "size": 24038410,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2002/hourly_42602_2002.zip",
+      "year": 2002
+    },
+    {
+      "created_at": "2026-11-09 06:29:31.635000+00:00",
+      "generation": "1794205771628136",
+      "md5": "828b8f022ad136c69a7cc31d5917f030",
+      "pollutant": "ozone",
+      "size": 61217102,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2002/hourly_44201_2002.zip",
+      "year": 2002
+    },
+    {
+      "created_at": "2026-11-09 06:24:18.981000+00:00",
+      "generation": "1794205458973740",
+      "md5": "0e8ead2a44f7e87ab10a24856f38905d",
+      "pollutant": "pm10",
+      "size": 9708048,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2002/hourly_81102_2002.zip",
+      "year": 2002
+    },
+    {
+      "created_at": "2026-11-09 06:24:21.773000+00:00",
+      "generation": "1794205461765252",
+      "md5": "9d8f6c5f3c34b567aec2406029e8dc65",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 3605874,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2002/hourly_88502_2002.zip",
+      "year": 2002
+    },
+    {
+      "created_at": "2026-11-09 06:30:06.236000+00:00",
+      "generation": "1794205806229571",
+      "md5": "a1b4569e1d7b7e4efeed56cddee8ee31",
+      "pollutant": "sulfur_dioxide",
+      "size": 31521394,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2002/hourly_42401_2002.zip",
+      "year": 2002
+    },
+    {
+      "created_at": "2026-11-09 06:24:38.301000+00:00",
+      "generation": "1794205478295061",
+      "md5": "b21c275c024976b04f319cc542c22d40",
+      "pollutant": "carbon_monoxide",
+      "size": 24065049,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2003/hourly_42101_2003.zip",
+      "year": 2003
+    },
+    {
+      "created_at": "2026-11-09 06:24:55.070000+00:00",
+      "generation": "1794205495062934",
+      "md5": "08d93eeadf9f37afdcdf75cec0f1c785",
+      "pollutant": "nitrogen_dioxide",
+      "size": 23619071,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2003/hourly_42602_2003.zip",
+      "year": 2003
+    },
+    {
+      "created_at": "2026-11-09 06:31:04.876000+00:00",
+      "generation": "1794205864869072",
+      "md5": "37e22e33c1cbdc22fa9b13bfc125c9c4",
+      "pollutant": "ozone",
+      "size": 62060118,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2003/hourly_44201_2003.zip",
+      "year": 2003
+    },
+    {
+      "created_at": "2026-11-09 06:25:02.165000+00:00",
+      "generation": "1794205502156137",
+      "md5": "5f71e7557e7001c8332a323d65cefebf",
+      "pollutant": "pm10",
+      "size": 10316217,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2003/hourly_81102_2003.zip",
+      "year": 2003
+    },
+    {
+      "created_at": "2026-11-09 06:25:07.087000+00:00",
+      "generation": "1794205507082613",
+      "md5": "6b0e70f92f1713fe65e0682a65a78022",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 6644424,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2003/hourly_88502_2003.zip",
+      "year": 2003
+    },
+    {
+      "created_at": "2026-11-09 06:31:40.856000+00:00",
+      "generation": "1794205900848542",
+      "md5": "08a2bd76e9af3ad19244d0dc4e6e3b13",
+      "pollutant": "sulfur_dioxide",
+      "size": 29847831,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2003/hourly_42401_2003.zip",
+      "year": 2003
+    },
+    {
+      "created_at": "2026-11-09 06:25:23.191000+00:00",
+      "generation": "1794205523184802",
+      "md5": "8a8081c9c419fd2ddee0d5fc2d386aa1",
+      "pollutant": "carbon_monoxide",
+      "size": 23442086,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2004/hourly_42101_2004.zip",
+      "year": 2004
+    },
+    {
+      "created_at": "2026-11-09 06:25:39.465000+00:00",
+      "generation": "1794205539459470",
+      "md5": "4010e1bced71bcfef03c9acc88904c43",
+      "pollutant": "nitrogen_dioxide",
+      "size": 23808419,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2004/hourly_42602_2004.zip",
+      "year": 2004
+    },
+    {
+      "created_at": "2026-11-09 06:32:26.816000+00:00",
+      "generation": "1794205946808650",
+      "md5": "3b36e0c34c68fda3f90c157618f382fc",
+      "pollutant": "ozone",
+      "size": 62292855,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2004/hourly_44201_2004.zip",
+      "year": 2004
+    },
+    {
+      "created_at": "2026-11-09 06:26:05.697000+00:00",
+      "generation": "1794205565690719",
+      "md5": "2608825d72d03f5a5447431635d01259",
+      "pollutant": "pm10",
+      "size": 11219541,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2004/hourly_81102_2004.zip",
+      "year": 2004
+    },
+    {
+      "created_at": "2026-11-09 06:26:14.956000+00:00",
+      "generation": "1794205574949755",
+      "md5": "3d560dcc13e26f8a759c722d1c9ace56",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 10505155,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2004/hourly_88502_2004.zip",
+      "year": 2004
+    },
+    {
+      "created_at": "2026-11-09 06:32:51.683000+00:00",
+      "generation": "1794205971674437",
+      "md5": "62c0176005095a51d90d3067718ff88d",
+      "pollutant": "sulfur_dioxide",
+      "size": 29289266,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2004/hourly_42401_2004.zip",
+      "year": 2004
+    },
+    {
+      "created_at": "2026-11-09 06:26:32.826000+00:00",
+      "generation": "1794205592820918",
+      "md5": "e57656ea21a002a638bdf55c1d04bdfc",
+      "pollutant": "carbon_monoxide",
+      "size": 22542795,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2005/hourly_42101_2005.zip",
+      "year": 2005
+    },
+    {
+      "created_at": "2026-11-09 06:26:53.608000+00:00",
+      "generation": "1794205613601743",
+      "md5": "b5a569cb6b0edfeffa2b526c3f385977",
+      "pollutant": "nitrogen_dioxide",
+      "size": 23580810,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2005/hourly_42602_2005.zip",
+      "year": 2005
+    },
+    {
+      "created_at": "2026-11-09 06:33:45.265000+00:00",
+      "generation": "1794206025258037",
+      "md5": "b05f9397256ae253d209d34da2b83d67",
+      "pollutant": "ozone",
+      "size": 62059652,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2005/hourly_44201_2005.zip",
+      "year": 2005
+    },
+    {
+      "created_at": "2026-11-09 06:27:07.659000+00:00",
+      "generation": "1794205627653844",
+      "md5": "fafcf9ae92b8f644c1a9e3890621e02a",
+      "pollutant": "pm10",
+      "size": 12239719,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2005/hourly_81102_2005.zip",
+      "year": 2005
+    },
+    {
+      "created_at": "2026-11-09 06:27:22.162000+00:00",
+      "generation": "1794205642154380",
+      "md5": "dbe64f2d441b9658014bf00a500248ce",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 16431263,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2005/hourly_88502_2005.zip",
+      "year": 2005
+    },
+    {
+      "created_at": "2026-11-09 06:34:06.774000+00:00",
+      "generation": "1794206046763687",
+      "md5": "a23eb0b7d5d80f4f39f5381f89abc6f0",
+      "pollutant": "sulfur_dioxide",
+      "size": 28650783,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2005/hourly_42401_2005.zip",
+      "year": 2005
+    },
+    {
+      "created_at": "2026-11-09 06:27:46.074000+00:00",
+      "generation": "1794205666067818",
+      "md5": "eedf440d25005d8524e940911e70a260",
+      "pollutant": "carbon_monoxide",
+      "size": 21099940,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2006/hourly_42101_2006.zip",
+      "year": 2006
+    },
+    {
+      "created_at": "2026-11-09 06:28:10.846000+00:00",
+      "generation": "1794205690839563",
+      "md5": "c9594069f688b2388eaed92ef067c669",
+      "pollutant": "nitrogen_dioxide",
+      "size": 23416805,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2006/hourly_42602_2006.zip",
+      "year": 2006
+    },
+    {
+      "created_at": "2026-11-09 06:34:56.196000+00:00",
+      "generation": "1794206096189568",
+      "md5": "8e1d1144388a672f89bf54a307a68958",
+      "pollutant": "ozone",
+      "size": 62781158,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2006/hourly_44201_2006.zip",
+      "year": 2006
+    },
+    {
+      "created_at": "2026-11-09 06:28:24.698000+00:00",
+      "generation": "1794205704692496",
+      "md5": "45a22d837ab693e5a02fd756044364fa",
+      "pollutant": "pm10",
+      "size": 12585381,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2006/hourly_81102_2006.zip",
+      "year": 2006
+    },
+    {
+      "created_at": "2026-11-09 06:28:44.153000+00:00",
+      "generation": "1794205724146552",
+      "md5": "d2b4183ba2a4aa1786ff638f00796eed",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 19563874,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2006/hourly_88502_2006.zip",
+      "year": 2006
+    },
+    {
+      "created_at": "2026-11-09 06:35:16.375000+00:00",
+      "generation": "1794206116368721",
+      "md5": "5a41fe14877fe5610b72244aae7930d6",
+      "pollutant": "sulfur_dioxide",
+      "size": 27858064,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2006/hourly_42401_2006.zip",
+      "year": 2006
+    },
+    {
+      "created_at": "2026-11-09 06:29:05.284000+00:00",
+      "generation": "1794205745274727",
+      "md5": "f34b902caa0a43ccaad93612fac69a32",
+      "pollutant": "carbon_monoxide",
+      "size": 20101948,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2007/hourly_42101_2007.zip",
+      "year": 2007
+    },
+    {
+      "created_at": "2026-11-09 06:29:26.976000+00:00",
+      "generation": "1794205766969756",
+      "md5": "08856bd855f4ad58443bad3cfefe7402",
+      "pollutant": "nitrogen_dioxide",
+      "size": 22684141,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2007/hourly_42602_2007.zip",
+      "year": 2007
+    },
+    {
+      "created_at": "2026-11-09 06:36:02.886000+00:00",
+      "generation": "1794206162879893",
+      "md5": "c16dbc44cf739bdf6bbf92703888434e",
+      "pollutant": "ozone",
+      "size": 63959131,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2007/hourly_44201_2007.zip",
+      "year": 2007
+    },
+    {
+      "created_at": "2026-11-09 06:29:42.267000+00:00",
+      "generation": "1794205782259201",
+      "md5": "a5665c4f5f7dcc468ebeef7522eb8f3f",
+      "pollutant": "pm10",
+      "size": 12665336,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2007/hourly_81102_2007.zip",
+      "year": 2007
+    },
+    {
+      "created_at": "2026-11-09 06:30:17.448000+00:00",
+      "generation": "1794205817440982",
+      "md5": "d7b00bf5a055429e805c15e5b2a3ed2a",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 25833765,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2007/hourly_88502_2007.zip",
+      "year": 2007
+    },
+    {
+      "created_at": "2026-11-09 06:36:22.078000+00:00",
+      "generation": "1794206182072659",
+      "md5": "b2b3b1eeec700ecdfade4dce97b9cfe7",
+      "pollutant": "sulfur_dioxide",
+      "size": 27967741,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2007/hourly_42401_2007.zip",
+      "year": 2007
+    },
+    {
+      "created_at": "2026-11-09 06:30:42.143000+00:00",
+      "generation": "1794205842136083",
+      "md5": "8c82b5ba9f6e5323cbe86325514d2431",
+      "pollutant": "carbon_monoxide",
+      "size": 19588838,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2008/hourly_42101_2008.zip",
+      "year": 2008
+    },
+    {
+      "created_at": "2026-11-09 06:31:11.895000+00:00",
+      "generation": "1794205871888608",
+      "md5": "5e1061b9b1b718fa7730db2d16ae8d43",
+      "pollutant": "nitrogen_dioxide",
+      "size": 22454465,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2008/hourly_42602_2008.zip",
+      "year": 2008
+    },
+    {
+      "created_at": "2026-11-09 06:37:08.749000+00:00",
+      "generation": "1794206228741656",
+      "md5": "d2da93189d57bad85c830e14e4a4f6f2",
+      "pollutant": "ozone",
+      "size": 64146437,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2008/hourly_44201_2008.zip",
+      "year": 2008
+    },
+    {
+      "created_at": "2026-11-09 06:31:27.695000+00:00",
+      "generation": "1794205887688393",
+      "md5": "2ec84073261cee1073747fa625b86782",
+      "pollutant": "pm10",
+      "size": 13221871,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2008/hourly_81102_2008.zip",
+      "year": 2008
+    },
+    {
+      "created_at": "2026-11-09 06:37:10.402000+00:00",
+      "generation": "1794206230395661",
+      "md5": "fba6621958c7ba534656f672a18c5bc9",
+      "pollutant": "pm25_frm_fem",
+      "size": 533073,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2008/hourly_88101_2008.zip",
+      "year": 2008
+    },
+    {
+      "created_at": "2026-11-09 06:31:56.789000+00:00",
+      "generation": "1794205916781827",
+      "md5": "98f9ee82c02b7497f5649af4698e4d36",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 28480893,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2008/hourly_88502_2008.zip",
+      "year": 2008
+    },
+    {
+      "created_at": "2026-11-09 06:37:33.276000+00:00",
+      "generation": "1794206253270097",
+      "md5": "4b486c2ea2153ce54960f92f88b5433f",
+      "pollutant": "sulfur_dioxide",
+      "size": 26332343,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2008/hourly_42401_2008.zip",
+      "year": 2008
+    },
+    {
+      "created_at": "2026-11-09 06:32:14.215000+00:00",
+      "generation": "1794205934209050",
+      "md5": "17b8798f66be3e8f3859119d170d0e73",
+      "pollutant": "carbon_monoxide",
+      "size": 18436966,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2009/hourly_42101_2009.zip",
+      "year": 2009
+    },
+    {
+      "created_at": "2026-11-09 06:32:33.343000+00:00",
+      "generation": "1794205953335910",
+      "md5": "ea40d41ea73a8ee4c5eb7ca77a704951",
+      "pollutant": "nitrogen_dioxide",
+      "size": 22084747,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2009/hourly_42602_2009.zip",
+      "year": 2009
+    },
+    {
+      "created_at": "2026-11-09 06:38:15.414000+00:00",
+      "generation": "1794206295408297",
+      "md5": "8a514929b36343b6a2a5b2ffebf05f46",
+      "pollutant": "ozone",
+      "size": 65030949,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2009/hourly_44201_2009.zip",
+      "year": 2009
+    },
+    {
+      "created_at": "2026-11-09 06:32:45.444000+00:00",
+      "generation": "1794205965438576",
+      "md5": "aa4bbca2e6cd823f38ec68617b1e21f1",
+      "pollutant": "pm10",
+      "size": 13692705,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2009/hourly_81102_2009.zip",
+      "year": 2009
+    },
+    {
+      "created_at": "2026-11-09 06:38:18.895000+00:00",
+      "generation": "1794206298887156",
+      "md5": "e75e54c89935dbdd9c7517e642e2f6e6",
+      "pollutant": "pm25_frm_fem",
+      "size": 4663148,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2009/hourly_88101_2009.zip",
+      "year": 2009
+    },
+    {
+      "created_at": "2026-11-09 06:33:11.649000+00:00",
+      "generation": "1794205991644094",
+      "md5": "5133ad7d558c4e4d35ec89bb2dcbd03d",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 29478435,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2009/hourly_88502_2009.zip",
+      "year": 2009
+    },
+    {
+      "created_at": "2026-11-09 06:38:34.654000+00:00",
+      "generation": "1794206314647283",
+      "md5": "d0e3e6de7c8a5535a8571782eccdfe10",
+      "pollutant": "sulfur_dioxide",
+      "size": 24743612,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2009/hourly_42401_2009.zip",
+      "year": 2009
+    },
+    {
+      "created_at": "2026-11-09 06:33:31.205000+00:00",
+      "generation": "1794206011198499",
+      "md5": "d03f29887ed3d4d59952955eb56e5ab2",
+      "pollutant": "carbon_monoxide",
+      "size": 17840610,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2010/hourly_42101_2010.zip",
+      "year": 2010
+    },
+    {
+      "created_at": "2026-11-09 06:33:49.983000+00:00",
+      "generation": "1794206029976302",
+      "md5": "903a57703bbf67e930e7d1e53d02bb76",
+      "pollutant": "nitrogen_dioxide",
+      "size": 22977410,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2010/hourly_42602_2010.zip",
+      "year": 2010
+    },
+    {
+      "created_at": "2026-11-09 06:39:23.867000+00:00",
+      "generation": "1794206363859922",
+      "md5": "991333377ec35837c952b7a3b21b6b72",
+      "pollutant": "ozone",
+      "size": 67632896,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2010/hourly_44201_2010.zip",
+      "year": 2010
+    },
+    {
+      "created_at": "2026-11-09 06:34:03.577000+00:00",
+      "generation": "1794206043569433",
+      "md5": "28c5c858f94a3018918dac1e140eb94f",
+      "pollutant": "pm10",
+      "size": 14199878,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2010/hourly_81102_2010.zip",
+      "year": 2010
+    },
+    {
+      "created_at": "2026-11-09 06:39:32.634000+00:00",
+      "generation": "1794206372629082",
+      "md5": "84944290d672a5a78fb19d55bb1f0959",
+      "pollutant": "pm25_frm_fem",
+      "size": 9156269,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2010/hourly_88101_2010.zip",
+      "year": 2010
+    },
+    {
+      "created_at": "2026-11-09 06:34:32.419000+00:00",
+      "generation": "1794206072411895",
+      "md5": "e76412018b55fcaa68e4f71903b8c66e",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 30882006,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2010/hourly_88502_2010.zip",
+      "year": 2010
+    },
+    {
+      "created_at": "2026-11-09 06:39:51.334000+00:00",
+      "generation": "1794206391329506",
+      "md5": "0529650282dbd94483a854f2e3292866",
+      "pollutant": "sulfur_dioxide",
+      "size": 24620995,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2010/hourly_42401_2010.zip",
+      "year": 2010
+    },
+    {
+      "created_at": "2026-11-09 06:34:47.829000+00:00",
+      "generation": "1794206087822388",
+      "md5": "918261c64d9080e58addf13d5dc178ed",
+      "pollutant": "carbon_monoxide",
+      "size": 18314277,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2011/hourly_42101_2011.zip",
+      "year": 2011
+    },
+    {
+      "created_at": "2026-11-09 06:35:06.807000+00:00",
+      "generation": "1794206106800348",
+      "md5": "b500f3c732f7146787475ed6f0775b17",
+      "pollutant": "nitrogen_dioxide",
+      "size": 22903132,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2011/hourly_42602_2011.zip",
+      "year": 2011
+    },
+    {
+      "created_at": "2026-11-09 06:40:43.915000+00:00",
+      "generation": "1794206443910033",
+      "md5": "ea297ae2c7c73d9c716c658aeb3c26ff",
+      "pollutant": "ozone",
+      "size": 68382929,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2011/hourly_44201_2011.zip",
+      "year": 2011
+    },
+    {
+      "created_at": "2026-11-09 06:35:18.339000+00:00",
+      "generation": "1794206118333845",
+      "md5": "91e2d955b58b02cd04137849587fa9af",
+      "pollutant": "pm10",
+      "size": 15597146,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2011/hourly_81102_2011.zip",
+      "year": 2011
+    },
+    {
+      "created_at": "2026-11-09 06:40:55.628000+00:00",
+      "generation": "1794206455621054",
+      "md5": "5876e488f8cb1c966611c56a9241ff5e",
+      "pollutant": "pm25_frm_fem",
+      "size": 13046848,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2011/hourly_88101_2011.zip",
+      "year": 2011
+    },
+    {
+      "created_at": "2026-11-09 06:35:44.528000+00:00",
+      "generation": "1794206144522340",
+      "md5": "5fa26a4d828063f196949b2343cbde33",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 31285189,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2011/hourly_88502_2011.zip",
+      "year": 2011
+    },
+    {
+      "created_at": "2026-11-09 06:41:26.068000+00:00",
+      "generation": "1794206486061588",
+      "md5": "b10cc617bba8bff9fe5ff7b1212b71ec",
+      "pollutant": "sulfur_dioxide",
+      "size": 25184936,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2011/hourly_42401_2011.zip",
+      "year": 2011
+    },
+    {
+      "created_at": "2026-11-09 06:35:58.914000+00:00",
+      "generation": "1794206158905651",
+      "md5": "613cab95585d6dee5db5f8e9f1895d30",
+      "pollutant": "carbon_monoxide",
+      "size": 18093607,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2012/hourly_42101_2012.zip",
+      "year": 2012
+    },
+    {
+      "created_at": "2026-11-09 06:36:17.534000+00:00",
+      "generation": "1794206177527885",
+      "md5": "bc014163cc87dc06baa0e6885c39df79",
+      "pollutant": "nitrogen_dioxide",
+      "size": 23424160,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2012/hourly_42602_2012.zip",
+      "year": 2012
+    },
+    {
+      "created_at": "2026-11-09 06:42:20.257000+00:00",
+      "generation": "1794206540248002",
+      "md5": "7f4e6649d7aadd34bdbb28270bf56b13",
+      "pollutant": "ozone",
+      "size": 69024239,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2012/hourly_44201_2012.zip",
+      "year": 2012
+    },
+    {
+      "created_at": "2026-11-09 06:36:32.235000+00:00",
+      "generation": "1794206192229256",
+      "md5": "65d186df19821fb0fd9d12afe6dda492",
+      "pollutant": "pm10",
+      "size": 17302735,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2012/hourly_81102_2012.zip",
+      "year": 2012
+    },
+    {
+      "created_at": "2026-11-09 06:42:30.503000+00:00",
+      "generation": "1794206550495673",
+      "md5": "bc7adfb9543f9c354acc4a29ade8321a",
+      "pollutant": "pm25_frm_fem",
+      "size": 15189669,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2012/hourly_88101_2012.zip",
+      "year": 2012
+    },
+    {
+      "created_at": "2026-11-09 06:37:02.812000+00:00",
+      "generation": "1794206222805390",
+      "md5": "14b0b6cf4976ab7c003cfa348b5d09d2",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 31651485,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2012/hourly_88502_2012.zip",
+      "year": 2012
+    },
+    {
+      "created_at": "2026-11-09 06:43:08.448000+00:00",
+      "generation": "1794206588442673",
+      "md5": "b7375c2e4be97449aeeace80fc1a7f98",
+      "pollutant": "sulfur_dioxide",
+      "size": 25248777,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2012/hourly_42401_2012.zip",
+      "year": 2012
+    },
+    {
+      "created_at": "2026-11-09 06:37:22.372000+00:00",
+      "generation": "1794206242365109",
+      "md5": "cec1db218f88a514672e5355842b376d",
+      "pollutant": "carbon_monoxide",
+      "size": 17741796,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2013/hourly_42101_2013.zip",
+      "year": 2013
+    },
+    {
+      "created_at": "2026-11-09 06:37:42.388000+00:00",
+      "generation": "1794206262380044",
+      "md5": "b91be86d2ffcc3ab0d8c16a00a25238c",
+      "pollutant": "nitrogen_dioxide",
+      "size": 24448689,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2013/hourly_42602_2013.zip",
+      "year": 2013
+    },
+    {
+      "created_at": "2026-11-09 06:44:00.351000+00:00",
+      "generation": "1794206640344479",
+      "md5": "7c68f407fa0a50924cdc1673832d1f2a",
+      "pollutant": "ozone",
+      "size": 69114825,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2013/hourly_44201_2013.zip",
+      "year": 2013
+    },
+    {
+      "created_at": "2026-11-09 06:37:58.219000+00:00",
+      "generation": "1794206278212595",
+      "md5": "7c116561ab9b82bc1b7702cbd3c15e88",
+      "pollutant": "pm10",
+      "size": 18925465,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2013/hourly_81102_2013.zip",
+      "year": 2013
+    },
+    {
+      "created_at": "2026-11-09 06:44:14.569000+00:00",
+      "generation": "1794206654562035",
+      "md5": "32eea910d45029e81a2ee903f079c75e",
+      "pollutant": "pm25_frm_fem",
+      "size": 19177851,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2013/hourly_88101_2013.zip",
+      "year": 2013
+    },
+    {
+      "created_at": "2026-11-09 06:38:21.848000+00:00",
+      "generation": "1794206301843195",
+      "md5": "d5400874c8629f1b0174595a79c1361d",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 29918758,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2013/hourly_88502_2013.zip",
+      "year": 2013
+    },
+    {
+      "created_at": "2026-11-09 06:44:31.587000+00:00",
+      "generation": "1794206671580881",
+      "md5": "ebde33c66fc5f94498aed7a1e5b37b1d",
+      "pollutant": "sulfur_dioxide",
+      "size": 25424899,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2013/hourly_42401_2013.zip",
+      "year": 2013
+    },
+    {
+      "created_at": "2026-11-09 06:38:37.232000+00:00",
+      "generation": "1794206317226574",
+      "md5": "557819476dc8be1ba030adb6faee9012",
+      "pollutant": "carbon_monoxide",
+      "size": 17734965,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2014/hourly_42101_2014.zip",
+      "year": 2014
+    },
+    {
+      "created_at": "2026-11-09 06:39:01.691000+00:00",
+      "generation": "1794206341685427",
+      "md5": "eaaa62e80ef061c2bc5d12380d3f13f7",
+      "pollutant": "nitrogen_dioxide",
+      "size": 26554189,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2014/hourly_42602_2014.zip",
+      "year": 2014
+    },
+    {
+      "created_at": "2026-11-09 06:45:20.783000+00:00",
+      "generation": "1794206720779054",
+      "md5": "2af41c9163f7611a1e6566311e8b3fe1",
+      "pollutant": "ozone",
+      "size": 68942424,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2014/hourly_44201_2014.zip",
+      "year": 2014
+    },
+    {
+      "created_at": "2026-11-09 06:39:17.336000+00:00",
+      "generation": "1794206357331529",
+      "md5": "2d77db7d1a01a1a4730c9e4e8431aea5",
+      "pollutant": "pm10",
+      "size": 19390607,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2014/hourly_81102_2014.zip",
+      "year": 2014
+    },
+    {
+      "created_at": "2026-11-09 06:45:37.201000+00:00",
+      "generation": "1794206737193470",
+      "md5": "7e6ab1f7c0115e41e3b1f28f783d4c3f",
+      "pollutant": "pm25_frm_fem",
+      "size": 22163813,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2014/hourly_88101_2014.zip",
+      "year": 2014
+    },
+    {
+      "created_at": "2026-11-09 06:39:46.397000+00:00",
+      "generation": "1794206386390140",
+      "md5": "92b02f039bfce93c0dbf385087031bab",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 28396380,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2014/hourly_88502_2014.zip",
+      "year": 2014
+    },
+    {
+      "created_at": "2026-11-09 06:45:54.026000+00:00",
+      "generation": "1794206754020722",
+      "md5": "d63a03518a47e9178bb7d5a5be6c66be",
+      "pollutant": "sulfur_dioxide",
+      "size": 25306942,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2014/hourly_42401_2014.zip",
+      "year": 2014
+    },
+    {
+      "created_at": "2026-11-09 06:40:03.411000+00:00",
+      "generation": "1794206403405676",
+      "md5": "ff75491a4942bdff139f79f2a58ba925",
+      "pollutant": "carbon_monoxide",
+      "size": 17857896,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2015/hourly_42101_2015.zip",
+      "year": 2015
+    },
+    {
+      "created_at": "2026-11-09 06:40:28.311000+00:00",
+      "generation": "1794206428304896",
+      "md5": "b290ac3cc547413da12032074ccc8168",
+      "pollutant": "nitrogen_dioxide",
+      "size": 27799651,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2015/hourly_42602_2015.zip",
+      "year": 2015
+    },
+    {
+      "created_at": "2026-11-09 06:46:34.689000+00:00",
+      "generation": "1794206794683178",
+      "md5": "6e86bad5d947b3916f050d8c1a3925e8",
+      "pollutant": "ozone",
+      "size": 68531710,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2015/hourly_44201_2015.zip",
+      "year": 2015
+    },
+    {
+      "created_at": "2026-11-09 06:40:49.590000+00:00",
+      "generation": "1794206449584545",
+      "md5": "f87715efc1475f5c696e23590f3cb17e",
+      "pollutant": "pm10",
+      "size": 20837595,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2015/hourly_81102_2015.zip",
+      "year": 2015
+    },
+    {
+      "created_at": "2026-11-09 06:46:50.212000+00:00",
+      "generation": "1794206810205419",
+      "md5": "cbe96c790104dba217d7ae355fdbf670",
+      "pollutant": "pm25_frm_fem",
+      "size": 23921802,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2015/hourly_88101_2015.zip",
+      "year": 2015
+    },
+    {
+      "created_at": "2026-11-09 06:41:26.728000+00:00",
+      "generation": "1794206486721536",
+      "md5": "247a94907a1077b05892bc2850596cf2",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 28312018,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2015/hourly_88502_2015.zip",
+      "year": 2015
+    },
+    {
+      "created_at": "2026-11-09 06:47:11.504000+00:00",
+      "generation": "1794206831497802",
+      "md5": "7820ef9d7aa88e8a6bb8708bc98f0101",
+      "pollutant": "sulfur_dioxide",
+      "size": 25113527,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2015/hourly_42401_2015.zip",
+      "year": 2015
+    },
+    {
+      "created_at": "2026-11-09 06:41:45.700000+00:00",
+      "generation": "1794206505693867",
+      "md5": "ffda1f83db81df39f318a42a3477a24d",
+      "pollutant": "carbon_monoxide",
+      "size": 17716301,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2016/hourly_42101_2016.zip",
+      "year": 2016
+    },
+    {
+      "created_at": "2026-11-09 06:42:07.716000+00:00",
+      "generation": "1794206527709114",
+      "md5": "ec3a5c70823ce13b130f04fc9e6f9ab5",
+      "pollutant": "nitrogen_dioxide",
+      "size": 28513003,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2016/hourly_42602_2016.zip",
+      "year": 2016
+    },
+    {
+      "created_at": "2026-11-09 06:48:01.257000+00:00",
+      "generation": "1794206881251672",
+      "md5": "3d8304b1cb4e3bb12db6f126a29f2c3c",
+      "pollutant": "ozone",
+      "size": 69752136,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2016/hourly_44201_2016.zip",
+      "year": 2016
+    },
+    {
+      "created_at": "2026-11-09 06:42:25.421000+00:00",
+      "generation": "1794206545416545",
+      "md5": "7c23b88b384522b0618846e847ebac19",
+      "pollutant": "pm10",
+      "size": 21609937,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2016/hourly_81102_2016.zip",
+      "year": 2016
+    },
+    {
+      "created_at": "2026-11-09 06:48:18.748000+00:00",
+      "generation": "1794206898742114",
+      "md5": "5ef308f26278f7decbf6d72d5d840597",
+      "pollutant": "pm25_frm_fem",
+      "size": 27346453,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2016/hourly_88101_2016.zip",
+      "year": 2016
+    },
+    {
+      "created_at": "2026-11-09 06:42:44.341000+00:00",
+      "generation": "1794206564333671",
+      "md5": "a08b0f67f83bb79f862e39388d0ea21f",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 25804140,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2016/hourly_88502_2016.zip",
+      "year": 2016
+    },
+    {
+      "created_at": "2026-11-09 06:48:35.435000+00:00",
+      "generation": "1794206915427550",
+      "md5": "38538ac072ae28072cbb0bf764ec0e68",
+      "pollutant": "sulfur_dioxide",
+      "size": 24970167,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2016/hourly_42401_2016.zip",
+      "year": 2016
+    },
+    {
+      "created_at": "2026-11-09 06:42:59.141000+00:00",
+      "generation": "1794206579137416",
+      "md5": "88d12450d29143c3a83b9b5afe81e8d5",
+      "pollutant": "carbon_monoxide",
+      "size": 17537623,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2017/hourly_42101_2017.zip",
+      "year": 2017
+    },
+    {
+      "created_at": "2026-11-09 06:43:37.375000+00:00",
+      "generation": "1794206617368689",
+      "md5": "bb93274ef9f382a5dfb6730f5130ebdd",
+      "pollutant": "nitrogen_dioxide",
+      "size": 28235323,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2017/hourly_42602_2017.zip",
+      "year": 2017
+    },
+    {
+      "created_at": "2026-11-09 06:49:24.636000+00:00",
+      "generation": "1794206964628717",
+      "md5": "eb3b69926df949814a29288932a4b923",
+      "pollutant": "ozone",
+      "size": 71716960,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2017/hourly_44201_2017.zip",
+      "year": 2017
+    },
+    {
+      "created_at": "2026-11-09 06:43:54.916000+00:00",
+      "generation": "1794206634911088",
+      "md5": "efe3bc7277b970d31c632664c38b37fe",
+      "pollutant": "pm10",
+      "size": 22388298,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2017/hourly_81102_2017.zip",
+      "year": 2017
+    },
+    {
+      "created_at": "2026-11-09 06:49:55.443000+00:00",
+      "generation": "1794206995436520",
+      "md5": "23bef223c5a409366711da656027cbb5",
+      "pollutant": "pm25_frm_fem",
+      "size": 33081082,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2017/hourly_88101_2017.zip",
+      "year": 2017
+    },
+    {
+      "created_at": "2026-11-09 06:44:11.452000+00:00",
+      "generation": "1794206651444981",
+      "md5": "b04034e9dca389fbb1fd9c5fec85edfb",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 24477381,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2017/hourly_88502_2017.zip",
+      "year": 2017
+    },
+    {
+      "created_at": "2026-11-09 06:50:24.262000+00:00",
+      "generation": "1794207024256437",
+      "md5": "fd4b57337729d2c0f0abb7e673f41495",
+      "pollutant": "sulfur_dioxide",
+      "size": 27557559,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2017/hourly_42401_2017.zip",
+      "year": 2017
+    },
+    {
+      "created_at": "2026-11-09 06:44:22.970000+00:00",
+      "generation": "1794206662961868",
+      "md5": "c8ad853d2da2a729aab96f5042e1445b",
+      "pollutant": "carbon_monoxide",
+      "size": 17080152,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2018/hourly_42101_2018.zip",
+      "year": 2018
+    },
+    {
+      "created_at": "2026-11-09 06:44:43.608000+00:00",
+      "generation": "1794206683600538",
+      "md5": "d4ca87ff76e6166c4b30faa7b95ca833",
+      "pollutant": "nitrogen_dioxide",
+      "size": 28204716,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2018/hourly_42602_2018.zip",
+      "year": 2018
+    },
+    {
+      "created_at": "2026-11-09 06:51:19.808000+00:00",
+      "generation": "1794207079801679",
+      "md5": "771c5da31f6fe615755964f9204900f6",
+      "pollutant": "ozone",
+      "size": 71248722,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2018/hourly_44201_2018.zip",
+      "year": 2018
+    },
+    {
+      "created_at": "2026-11-09 06:44:59.565000+00:00",
+      "generation": "1794206699558977",
+      "md5": "8153b5445960df404bf537b74ad47d30",
+      "pollutant": "pm10",
+      "size": 23802750,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2018/hourly_81102_2018.zip",
+      "year": 2018
+    },
+    {
+      "created_at": "2026-11-09 06:51:52.297000+00:00",
+      "generation": "1794207112290907",
+      "md5": "18cda3372fd22b22ae0d887cdc85bb22",
+      "pollutant": "pm25_frm_fem",
+      "size": 43306379,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2018/hourly_88101_2018.zip",
+      "year": 2018
+    },
+    {
+      "created_at": "2026-11-09 06:45:17.046000+00:00",
+      "generation": "1794206717040367",
+      "md5": "743ac9a0a8b9eec8744634c04a9f140f",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 22112026,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2018/hourly_88502_2018.zip",
+      "year": 2018
+    },
+    {
+      "created_at": "2026-11-09 06:52:11.659000+00:00",
+      "generation": "1794207131652758",
+      "md5": "56fde0e86d905a50bac3efb13ad682cb",
+      "pollutant": "sulfur_dioxide",
+      "size": 26363611,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2018/hourly_42401_2018.zip",
+      "year": 2018
+    },
+    {
+      "created_at": "2026-11-09 06:45:33.761000+00:00",
+      "generation": "1794206733755394",
+      "md5": "13ae999504af1f78604b4b989247fe03",
+      "pollutant": "carbon_monoxide",
+      "size": 16339966,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2019/hourly_42101_2019.zip",
+      "year": 2019
+    },
+    {
+      "created_at": "2026-11-09 06:45:55.206000+00:00",
+      "generation": "1794206755202860",
+      "md5": "2f6266739c676732d4b25bec048da63f",
+      "pollutant": "nitrogen_dioxide",
+      "size": 28716223,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2019/hourly_42602_2019.zip",
+      "year": 2019
+    },
+    {
+      "created_at": "2026-11-09 06:53:10.569000+00:00",
+      "generation": "1794207190562349",
+      "md5": "839fabea35af3838e28c6f84cf72acbc",
+      "pollutant": "ozone",
+      "size": 69524611,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2019/hourly_44201_2019.zip",
+      "year": 2019
+    },
+    {
+      "created_at": "2026-11-09 06:46:11.790000+00:00",
+      "generation": "1794206771783549",
+      "md5": "3ae065c32e085248475c292b397fdac9",
+      "pollutant": "pm10",
+      "size": 24196426,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2019/hourly_81102_2019.zip",
+      "year": 2019
+    },
+    {
+      "created_at": "2026-11-09 06:53:54.963000+00:00",
+      "generation": "1794207234956653",
+      "md5": "cf2ee6183e40637610122cfb35bab54b",
+      "pollutant": "pm25_frm_fem",
+      "size": 53545171,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2019/hourly_88101_2019.zip",
+      "year": 2019
+    },
+    {
+      "created_at": "2026-11-09 06:46:27.285000+00:00",
+      "generation": "1794206787278522",
+      "md5": "6a39ac6c1202d07c5cfdcd651eafb150",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 20649694,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2019/hourly_88502_2019.zip",
+      "year": 2019
+    },
+    {
+      "created_at": "2026-11-09 06:54:16.638000+00:00",
+      "generation": "1794207256632455",
+      "md5": "893c5b66fe6b67bfe722abc0677500c3",
+      "pollutant": "sulfur_dioxide",
+      "size": 26296878,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2019/hourly_42401_2019.zip",
+      "year": 2019
+    },
+    {
+      "created_at": "2026-11-09 06:46:40.700000+00:00",
+      "generation": "1794206800694841",
+      "md5": "de6a3557adf688855c7343213e40c997",
+      "pollutant": "carbon_monoxide",
+      "size": 15700504,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2020/hourly_42101_2020.zip",
+      "year": 2020
+    },
+    {
+      "created_at": "2026-11-09 06:47:00.942000+00:00",
+      "generation": "1794206820936030",
+      "md5": "3e244e47f31f6bad987fbe8496927df0",
+      "pollutant": "nitrogen_dioxide",
+      "size": 29239399,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2020/hourly_42602_2020.zip",
+      "year": 2020
+    },
+    {
+      "created_at": "2026-11-09 06:55:10.644000+00:00",
+      "generation": "1794207310637725",
+      "md5": "7c826d8f0cf119ccc980048bf0a30e65",
+      "pollutant": "ozone",
+      "size": 69896992,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2020/hourly_44201_2020.zip",
+      "year": 2020
+    },
+    {
+      "created_at": "2026-11-09 06:47:23.911000+00:00",
+      "generation": "1794206843904100",
+      "md5": "901722fd4c5d9c72b5aaed6376192b35",
+      "pollutant": "pm10",
+      "size": 24523194,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2020/hourly_81102_2020.zip",
+      "year": 2020
+    },
+    {
+      "created_at": "2026-11-09 06:56:01.001000+00:00",
+      "generation": "1794207360995298",
+      "md5": "3a9492343579ba640c031c313b489add",
+      "pollutant": "pm25_frm_fem",
+      "size": 59698845,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2020/hourly_88101_2020.zip",
+      "year": 2020
+    },
+    {
+      "created_at": "2026-11-09 06:47:38.406000+00:00",
+      "generation": "1794206858400271",
+      "md5": "c2b51d9814e5da90066cdfde62dc3e17",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 19911673,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2020/hourly_88502_2020.zip",
+      "year": 2020
+    },
+    {
+      "created_at": "2026-11-09 06:56:22.547000+00:00",
+      "generation": "1794207382540307",
+      "md5": "29f815c763fa6d74b46cb696e2c2c8ea",
+      "pollutant": "sulfur_dioxide",
+      "size": 25252608,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2020/hourly_42401_2020.zip",
+      "year": 2020
+    },
+    {
+      "created_at": "2026-11-09 06:47:49.485000+00:00",
+      "generation": "1794206869479058",
+      "md5": "ed3003c9803cc14492040f52aa6af648",
+      "pollutant": "carbon_monoxide",
+      "size": 15297646,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2021/hourly_42101_2021.zip",
+      "year": 2021
+    },
+    {
+      "created_at": "2026-11-09 06:48:10.185000+00:00",
+      "generation": "1794206890177328",
+      "md5": "844eb4e77ca56976cbdc68c24b77c92a",
+      "pollutant": "nitrogen_dioxide",
+      "size": 29496998,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2021/hourly_42602_2021.zip",
+      "year": 2021
+    },
+    {
+      "created_at": "2026-11-09 06:57:19.215000+00:00",
+      "generation": "1794207439207834",
+      "md5": "187d5616f29e6829085a1044f6a88748",
+      "pollutant": "ozone",
+      "size": 69887725,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2021/hourly_44201_2021.zip",
+      "year": 2021
+    },
+    {
+      "created_at": "2026-11-09 06:48:29.708000+00:00",
+      "generation": "1794206909699473",
+      "md5": "04790b9e8ff06dcdf57321068e1c7352",
+      "pollutant": "pm10",
+      "size": 25728264,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2021/hourly_81102_2021.zip",
+      "year": 2021
+    },
+    {
+      "created_at": "2026-11-09 06:58:08.103000+00:00",
+      "generation": "1794207488096383",
+      "md5": "f3813023e73719a9e0ad15552162bd1c",
+      "pollutant": "pm25_frm_fem",
+      "size": 68868169,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2021/hourly_88101_2021.zip",
+      "year": 2021
+    },
+    {
+      "created_at": "2026-11-09 06:48:46.087000+00:00",
+      "generation": "1794206926081783",
+      "md5": "d6bb620c79e452bd64dc16811ed8385f",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 19211140,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2021/hourly_88502_2021.zip",
+      "year": 2021
+    },
+    {
+      "created_at": "2026-11-09 06:58:25.275000+00:00",
+      "generation": "1794207505268269",
+      "md5": "85358a6479ec008db215ae030a46ed33",
+      "pollutant": "sulfur_dioxide",
+      "size": 24023149,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2021/hourly_42401_2021.zip",
+      "year": 2021
+    },
+    {
+      "created_at": "2026-11-09 06:48:57.469000+00:00",
+      "generation": "1794206937463262",
+      "md5": "1828270a99eac4a165ff25b73712e529",
+      "pollutant": "carbon_monoxide",
+      "size": 14675153,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2022/hourly_42101_2022.zip",
+      "year": 2022
+    },
+    {
+      "created_at": "2026-11-09 06:49:21.124000+00:00",
+      "generation": "1794206961119135",
+      "md5": "ce08911cd45bbf738a48a3c3744539d1",
+      "pollutant": "nitrogen_dioxide",
+      "size": 29655802,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2022/hourly_42602_2022.zip",
+      "year": 2022
+    },
+    {
+      "created_at": "2026-11-09 06:59:27.753000+00:00",
+      "generation": "1794207567747765",
+      "md5": "1c7c0f4c9134dff37b79c86bb79ec171",
+      "pollutant": "ozone",
+      "size": 68544229,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2022/hourly_44201_2022.zip",
+      "year": 2022
+    },
+    {
+      "created_at": "2026-11-09 06:49:46.903000+00:00",
+      "generation": "1794206986896892",
+      "md5": "c1daea2fd65c18dcaeaaf3439cf5e767",
+      "pollutant": "pm10",
+      "size": 27033866,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2022/hourly_81102_2022.zip",
+      "year": 2022
+    },
+    {
+      "created_at": "2026-11-09 07:00:25.940000+00:00",
+      "generation": "1794207625933726",
+      "md5": "0d0c6ab922056ee159e30d269a0ebd60",
+      "pollutant": "pm25_frm_fem",
+      "size": 75836309,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2022/hourly_88101_2022.zip",
+      "year": 2022
+    },
+    {
+      "created_at": "2026-11-09 06:50:02.209000+00:00",
+      "generation": "1794207002203580",
+      "md5": "83f73461fab112a2ea1791d4f8714f97",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 17216626,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2022/hourly_88502_2022.zip",
+      "year": 2022
+    },
+    {
+      "created_at": "2026-11-09 07:00:45.177000+00:00",
+      "generation": "1794207645171441",
+      "md5": "f0fd212353874fb707a294bfbb5eb6de",
+      "pollutant": "sulfur_dioxide",
+      "size": 23191058,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2022/hourly_42401_2022.zip",
+      "year": 2022
+    },
+    {
+      "created_at": "2026-11-09 06:50:15.072000+00:00",
+      "generation": "1794207015066193",
+      "md5": "aa905f14666308cf8d1648f73ef0122c",
+      "pollutant": "carbon_monoxide",
+      "size": 14112163,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2023/hourly_42101_2023.zip",
+      "year": 2023
+    },
+    {
+      "created_at": "2026-11-09 06:50:37.404000+00:00",
+      "generation": "1794207037399127",
+      "md5": "1e14961a428017417e35d6dd504b7418",
+      "pollutant": "nitrogen_dioxide",
+      "size": 29359161,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2023/hourly_42602_2023.zip",
+      "year": 2023
+    },
+    {
+      "created_at": "2026-11-09 07:01:47.001000+00:00",
+      "generation": "1794207706993848",
+      "md5": "bc3b723e1e297e54fab97a33c3f37db8",
+      "pollutant": "ozone",
+      "size": 68819777,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2023/hourly_44201_2023.zip",
+      "year": 2023
+    },
+    {
+      "created_at": "2026-11-09 06:50:57.504000+00:00",
+      "generation": "1794207057497450",
+      "md5": "6aba213edcd2757726cebe27fb3572e4",
+      "pollutant": "pm10",
+      "size": 28870142,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2023/hourly_81102_2023.zip",
+      "year": 2023
+    },
+    {
+      "created_at": "2026-11-09 07:02:52.886000+00:00",
+      "generation": "1794207772879796",
+      "md5": "bc08e508331b1a4286b511d73a6a62b5",
+      "pollutant": "pm25_frm_fem",
+      "size": 76998372,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2023/hourly_88101_2023.zip",
+      "year": 2023
+    },
+    {
+      "created_at": "2026-11-09 06:51:08.603000+00:00",
+      "generation": "1794207068597338",
+      "md5": "e006f0bafea2902239de1fde874ed282",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 15188269,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2023/hourly_88502_2023.zip",
+      "year": 2023
+    },
+    {
+      "created_at": "2026-11-09 07:03:16.456000+00:00",
+      "generation": "1794207796450291",
+      "md5": "c3fa89e28d5508652378e73aaae3b062",
+      "pollutant": "sulfur_dioxide",
+      "size": 22294303,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2023/hourly_42401_2023.zip",
+      "year": 2023
+    },
+    {
+      "created_at": "2026-11-09 06:51:18.797000+00:00",
+      "generation": "1794207078791548",
+      "md5": "042093b329bee27d413987ccb7c4ea7c",
+      "pollutant": "carbon_monoxide",
+      "size": 13071579,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2024/hourly_42101_2024.zip",
+      "year": 2024
+    },
+    {
+      "created_at": "2026-11-09 06:51:43.986000+00:00",
+      "generation": "1794207103980665",
+      "md5": "18f1eae0fb162dc024d1de010373c297",
+      "pollutant": "nitrogen_dioxide",
+      "size": 29055294,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2024/hourly_42602_2024.zip",
+      "year": 2024
+    },
+    {
+      "created_at": "2026-11-09 07:04:25.964000+00:00",
+      "generation": "1794207865958408",
+      "md5": "572448cb66016e021ee9360b4aca3ac2",
+      "pollutant": "ozone",
+      "size": 68510135,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2024/hourly_44201_2024.zip",
+      "year": 2024
+    },
+    {
+      "created_at": "2026-11-09 06:52:13.277000+00:00",
+      "generation": "1794207133267485",
+      "md5": "cc26fa30d6b660aa782cb1409854a4ae",
+      "pollutant": "pm10",
+      "size": 32122063,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2024/hourly_81102_2024.zip",
+      "year": 2024
+    },
+    {
+      "created_at": "2026-11-09 07:05:22.617000+00:00",
+      "generation": "1794207922611759",
+      "md5": "15c78687d926323d30d8d0290266fbec",
+      "pollutant": "pm25_frm_fem",
+      "size": 66347589,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2024/hourly_88101_2024.zip",
+      "year": 2024
+    },
+    {
+      "created_at": "2026-11-09 06:52:25.908000+00:00",
+      "generation": "1794207145902857",
+      "md5": "b6b3d175c54bf98f7aa97f224bb51513",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 13862744,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2024/hourly_88502_2024.zip",
+      "year": 2024
+    },
+    {
+      "created_at": "2026-11-09 07:05:39.058000+00:00",
+      "generation": "1794207939051243",
+      "md5": "b11d47dcc237a9ad5803670957514cac",
+      "pollutant": "sulfur_dioxide",
+      "size": 20828981,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2024/hourly_42401_2024.zip",
+      "year": 2024
+    },
+    {
+      "created_at": "2026-11-09 06:52:36.958000+00:00",
+      "generation": "1794207156951397",
+      "md5": "8b1128d193389a02bb0381c00e9edbdd",
+      "pollutant": "carbon_monoxide",
+      "size": 12704126,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2025/hourly_42101_2025.zip",
+      "year": 2025
+    },
+    {
+      "created_at": "2026-11-09 06:52:59.380000+00:00",
+      "generation": "1794207179373271",
+      "md5": "a0053e5ee9230bbfc63efe729c2fc36b",
+      "pollutant": "nitrogen_dioxide",
+      "size": 28678440,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2025/hourly_42602_2025.zip",
+      "year": 2025
+    },
+    {
+      "created_at": "2026-11-09 07:06:39.423000+00:00",
+      "generation": "1794207999414846",
+      "md5": "ce25117c3e75ffcb77c8a91d7851ff87",
+      "pollutant": "ozone",
+      "size": 67454812,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2025/hourly_44201_2025.zip",
+      "year": 2025
+    },
+    {
+      "created_at": "2026-11-09 06:53:28.145000+00:00",
+      "generation": "1794207208137781",
+      "md5": "bfca61cca0bcca595768f8753637a179",
+      "pollutant": "pm10",
+      "size": 32960250,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2025/hourly_81102_2025.zip",
+      "year": 2025
+    },
+    {
+      "created_at": "2026-11-09 07:07:39.303000+00:00",
+      "generation": "1794208059296973",
+      "md5": "9758806d91f45e8026ec9c2f7eacef0c",
+      "pollutant": "pm25_frm_fem",
+      "size": 68558274,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2025/hourly_88101_2025.zip",
+      "year": 2025
+    },
+    {
+      "created_at": "2026-11-09 06:53:40.604000+00:00",
+      "generation": "1794207220596187",
+      "md5": "4a6a0099b4006d49a407c2fd271f8935",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 12784381,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2025/hourly_88502_2025.zip",
+      "year": 2025
+    },
+    {
+      "created_at": "2026-11-09 07:07:55.943000+00:00",
+      "generation": "1794208075937436",
+      "md5": "81da8c345faeb56565f26aab23b4391f",
+      "pollutant": "sulfur_dioxide",
+      "size": 19758144,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2025/hourly_42401_2025.zip",
+      "year": 2025
+    },
+    {
+      "created_at": "2026-11-09 06:11:19.275000+00:00",
+      "generation": "1794204679268300",
+      "md5": "22e2c3c1667755abbf11aa02bb2621f6",
+      "pollutant": "carbon_monoxide",
+      "size": 2854687,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_42101_2026.zip",
+      "year": 2026
+    },
+    {
+      "created_at": "2026-11-09 06:53:46.001000+00:00",
+      "generation": "1794207225995670",
+      "md5": "e39f09828f5ba4a9b91e01070f2dbcb8",
+      "pollutant": "nitrogen_dioxide",
+      "size": 6780044,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_42602_2026.zip",
+      "year": 2026
+    },
+    {
+      "created_at": "2026-11-09 07:08:05.560000+00:00",
+      "generation": "1794208085552157",
+      "md5": "901798ca25eb68a226c885f91e0f8a94",
+      "pollutant": "ozone",
+      "size": 14454674,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_44201_2026.zip",
+      "year": 2026
+    },
+    {
+      "created_at": "2026-11-09 06:53:52.229000+00:00",
+      "generation": "1794207232223758",
+      "md5": "944bfd4461ca886973405bc5082aae7b",
+      "pollutant": "pm10",
+      "size": 7268326,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_81102_2026.zip",
+      "year": 2026
+    },
+    {
+      "created_at": "2026-11-09 07:08:18.903000+00:00",
+      "generation": "1794208098896826",
+      "md5": "88f449669aa0e6654469f21b727f2448",
+      "pollutant": "pm25_frm_fem",
+      "size": 16372523,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_88101_2026.zip",
+      "year": 2026
+    },
+    {
+      "created_at": "2026-11-09 06:11:21.364000+00:00",
+      "generation": "1794204681356835",
+      "md5": "4b686845e8420f638cd99464f5b2f955",
+      "pollutant": "pm25_non_frm_fem",
+      "size": 2734020,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_88502_2026.zip",
+      "year": 2026
+    },
+    {
+      "created_at": "2026-11-09 07:08:22.877000+00:00",
+      "generation": "1794208102871034",
+      "md5": "38e9ca33d0cdff276493199aad847f08",
+      "pollutant": "sulfur_dioxide",
+      "size": 5046627,
+      "uri": "gs://final-team-514205-air-quality/raw/epa/2026/hourly_42401_2026.zip",
+      "year": 2026
+    }
+  ],
+  "selected": 296,
+  "skipped": 63,
+  "verified_at_utc": "2026-11-09T07:16:01.128660+00:00",
+  "version_rows": 233
+}

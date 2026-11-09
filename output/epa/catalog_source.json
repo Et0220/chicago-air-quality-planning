@@ -1,0 +1,9 @@
+{
+  "catalog_url": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+  "input_mode": "http",
+  "resolved_url": "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+  "retrieved_at_utc": "2026-11-09T05:39:49.392018+00:00",
+  "http_last_modified": "Mon, 13 Jul 2026 15:51:18 GMT",
+  "http_etag": "\"5e495-656800fa533f2\"",
+  "catalog_sha256": "815afb5445d66d1762caecfc5a5c4072640d7d2548638bb3c90c0ad43bdb814b"
+}
