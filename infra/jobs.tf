@@ -8,22 +8,26 @@ locals {
   }
   # Deployed images; null keeps the S02 placeholder for that job.
   images = {
+    "airnow-collect" = var.airnow_collect_image
     "epa-download"   = var.epa_download_image
     "epa-stage"      = var.epa_stage_image
     "purpleair-poll" = var.purpleair_poll_image
   }
   deployed = { for k, _ in local.jobs : k => lookup(local.images, k, null) != null }
   commands = {
+    "airnow-collect" = ["python", "-m", "ingestion.airnow_collect"]
     "epa-download"   = ["python", "-m", "ingestion.epa_download"]
     "epa-stage"      = ["python", "-m", "ingestion.epa_stage"]
     "purpleair-poll" = ["python", "-m", "ingestion.purpleair_poll"]
   }
   command_args = {
+    "airnow-collect" = []
     "epa-download"   = []
     "epa-stage"      = []
     "purpleair-poll" = ["--db", "--raw-store", "gcs"]
   }
   schedule_enabled = {
+    "airnow-collect" = var.airnow_schedule_enabled
     "purpleair-poll" = var.purpleair_poll_enabled
   }
   schedules = {
@@ -44,8 +48,8 @@ resource "google_cloud_run_v2_job" "placeholder" {
     parallelism = 1
     template {
       service_account = google_service_account.worker[each.value].email
-      timeout         = each.key == "epa-stage" && local.deployed[each.key] ? "14400s" : each.key == "epa-download" && local.deployed[each.key] ? "7200s" : "300s"
-      max_retries     = contains(["epa-download", "epa-stage"], each.key) && local.deployed[each.key] ? 1 : 0
+      timeout         = each.key == "epa-stage" && local.deployed[each.key] ? "14400s" : each.key == "epa-download" && local.deployed[each.key] ? "7200s" : each.key == "airnow-collect" && local.deployed[each.key] ? "1800s" : "300s"
+      max_retries     = contains(["epa-download", "epa-stage", "airnow-collect"], each.key) && local.deployed[each.key] ? 1 : 0
       containers {
         image   = local.deployed[each.key] ? local.images[each.key] : "docker.io/library/python:3.15-slim"
         command = local.deployed[each.key] ? local.commands[each.key] : ["python"]

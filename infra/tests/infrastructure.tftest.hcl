@@ -11,6 +11,27 @@ mock_provider "google" {
   }
 }
 
+run "snowflake_read_only_stage" {
+  command = plan
+  variables {
+    snowflake_storage_service_account = "snowflake-stage@example-project.iam.gserviceaccount.com"
+  }
+  assert {
+    condition = (
+      toset(google_project_iam_custom_role.snowflake_reader[0].permissions) ==
+      toset(["storage.buckets.get", "storage.objects.get", "storage.objects.list"])
+    )
+    error_message = "The Snowflake stage may read only; purge and writes are forbidden."
+  }
+  assert {
+    condition = (
+      google_storage_bucket_iam_member.snowflake_reader[0].bucket == google_storage_bucket.data.name &&
+      strcontains(google_storage_bucket_iam_member.snowflake_reader[0].condition[0].expression, "/objects/curated/")
+    )
+    error_message = "Snowflake object reads must be restricted to curated data."
+  }
+}
+
 override_resource {
   target = google_service_account.worker["spark"]
   values = {
@@ -28,10 +49,27 @@ variables {
   monthly_budget_usd      = 50
   spark_submitter_members = ["user:operator@example.com"]
   epa_download_image      = null
+  airnow_collect_image    = null
+  airnow_schedule_enabled = false
+  epa_stage_image         = null
+  purpleair_poll_image    = null
+  purpleair_poll_enabled  = false
 }
 
 run "default_infrastructure" {
   command = apply
+  assert {
+    condition     = length(google_storage_bucket_iam_member.snowflake_reader) == 0
+    error_message = "Snowflake access must wait for its actual generated service identity."
+  }
+  assert {
+    condition = (
+      google_artifact_registry_repository_iam_member.spark_image_reader.role == "roles/artifactregistry.reader" &&
+      google_artifact_registry_repository_iam_member.spark_image_reader.repository == google_artifact_registry_repository.images.repository_id &&
+      google_artifact_registry_repository_iam_member.spark_image_reader.member == "serviceAccount:${google_service_account.worker["spark"].email}"
+    )
+    error_message = "Spark needs repository-scoped read access for its Python 3.15 image."
+  }
   assert {
     condition = alltrue([
       for permission in google_project_iam_custom_role.spark_worker.permissions :
@@ -114,6 +152,45 @@ run "trial_required" {
   expect_failures = [var.trial_confirmed]
 }
 
+run "airnow_hourly_deployed" {
+  command = apply
+  variables {
+    airnow_collect_image    = "us-central1-docker.pkg.dev/air-quality-test/air-quality/airnow-collect@sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    airnow_schedule_enabled = true
+  }
+  assert {
+    condition = (
+      google_cloud_run_v2_job.placeholder["airnow-collect"].template[0].template[0].containers[0].image == var.airnow_collect_image &&
+      google_cloud_run_v2_job.placeholder["airnow-collect"].template[0].template[0].timeout == "1800s" &&
+      google_cloud_run_v2_job.placeholder["airnow-collect"].template[0].template[0].max_retries == 1 &&
+      google_cloud_run_v2_job.placeholder["airnow-collect"].template[0].template[0].service_account == google_service_account.worker["airnow"].email &&
+      !google_cloud_scheduler_job.collector["airnow-collect"].paused &&
+      google_cloud_scheduler_job.collector["airnow-collect"].schedule == "40 * * * *" &&
+      google_cloud_scheduler_job.collector["live-sync"].paused
+    )
+    error_message = "S09 must run the pinned image hourly as its own IAM identity."
+  }
+  assert {
+    condition = alltrue([
+      for e in google_cloud_run_v2_job.placeholder["airnow-collect"].template[0].template[0].containers[0].env :
+      e.name != "AIR_QUALITY_CLOUDSQL_IAM_USER" || e.value == trimsuffix(google_service_account.worker["airnow"].email, ".gserviceaccount.com")
+    ])
+    error_message = "AirNow must use its dedicated SQL IAM account."
+  }
+}
+
+run "airnow_enable_requires_image" {
+  command = plan
+  variables { airnow_schedule_enabled = true }
+  expect_failures = [var.airnow_schedule_enabled]
+}
+
+run "airnow_image_must_be_pinned" {
+  command = plan
+  variables { airnow_collect_image = "us-central1-docker.pkg.dev/air-quality-test/air-quality/airnow-collect:latest" }
+  expect_failures = [var.airnow_collect_image]
+}
+
 run "epa_download_deployed" {
   command = apply
   variables {
@@ -135,6 +212,28 @@ run "epa_image_must_be_pinned" {
   command = plan
   variables { epa_download_image = "us-central1-docker.pkg.dev/air-quality-test/air-quality/epa-download:latest" }
   expect_failures = [var.epa_download_image]
+}
+
+run "epa_stage_deployed" {
+  command = apply
+  variables {
+    epa_stage_image = "us-central1-docker.pkg.dev/air-quality-test/air-quality/epa-stage@sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+  }
+  assert {
+    condition = (
+      google_cloud_run_v2_job.placeholder["epa-stage"].template[0].template[0].containers[0].image == var.epa_stage_image &&
+      google_cloud_run_v2_job.placeholder["epa-stage"].template[0].template[0].timeout == "14400s" &&
+      google_cloud_run_v2_job.placeholder["epa-stage"].template[0].template[0].containers[0].resources[0].limits["cpu"] == "2" &&
+      google_cloud_run_v2_job.placeholder["epa-stage"].template[0].template[0].service_account == google_service_account.worker["epa"].email
+    )
+    error_message = "S10 must deploy a pinned stage image with the EPA worker and a four-hour timeout."
+  }
+}
+
+run "epa_stage_image_must_be_pinned" {
+  command = plan
+  variables { epa_stage_image = "us-central1-docker.pkg.dev/air-quality-test/air-quality/epa-stage:latest" }
+  expect_failures = [var.epa_stage_image]
 }
 
 run "purpleair_poll_deployed_hourly" {

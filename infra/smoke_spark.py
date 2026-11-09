@@ -2,9 +2,12 @@
 
 import argparse
 import json
+import sys
 
 
 def main() -> None:
+    if sys.version_info[:2] != (3, 15):
+        raise RuntimeError("This project requires Python 3.15")
     from pyspark.sql import SparkSession
     from pyspark.sql import functions as F
 

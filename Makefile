@@ -1,5 +1,5 @@
-# Prefer the project venv, else python3 (macOS has no bare `python`).
-PYTHON ?= $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
+# Prefer the project Python 3.15 venv; never fall back to a different minor.
+PYTHON ?= $(if $(wildcard .venv/bin/python),.venv/bin/python,python3.15)
 
 .PHONY: lint test
 

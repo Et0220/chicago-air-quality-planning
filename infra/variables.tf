@@ -64,6 +64,26 @@ variable "epa_download_image" {
   }
 }
 
+variable "airnow_collect_image" {
+  description = "S09 image pinned by sha256 digest; null keeps the S02 placeholder."
+  type        = string
+  default     = null
+  validation {
+    condition     = var.airnow_collect_image == null ? true : can(regex("@sha256:[a-f0-9]{64}$", var.airnow_collect_image))
+    error_message = "Pin the deployed AirNow collector to an immutable image digest."
+  }
+}
+
+variable "airnow_schedule_enabled" {
+  description = "Enable the hourly S09 collector after its backfill and rerun pass."
+  type        = bool
+  default     = false
+  validation {
+    condition     = !var.airnow_schedule_enabled || var.airnow_collect_image != null
+    error_message = "Deploy the AirNow collector image before enabling its schedule."
+  }
+}
+
 variable "epa_stage_image" {
   description = "S10 image pinned by sha256 digest; null keeps the S02 placeholder."
   type        = string

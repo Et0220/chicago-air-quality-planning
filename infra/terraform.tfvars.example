@@ -9,3 +9,6 @@ monthly_budget_usd = 50
 spark_submitter_members = [] # e.g. ["user:you@example.com"]
 # Set after building S06; use the returned digest, never a mutable tag:
 # epa_download_image = "us-central1-docker.pkg.dev/PROJECT/air-quality/epa-download@sha256:DIGEST"
+# S09: deploy and verify the backfill before enabling the hourly schedule.
+# airnow_collect_image = "us-central1-docker.pkg.dev/PROJECT/air-quality/airnow-collect@sha256:DIGEST"
+airnow_schedule_enabled = false

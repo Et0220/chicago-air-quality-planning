@@ -15,14 +15,21 @@ S06 update (November 9 UTC): the EPA download job now runs its pinned
 application image with 1 CPU, 1 GiB RAM, a two-hour timeout, and one retry.
 Terraform additionally manages the Cloud Build API and the `aq-build` identity
 with scoped source-read, repository-write, and logging grants (five added
-resources). The SQL schema and worker table grants are applied. Six simulated
-Terraform tests cover the infrastructure and S06 job configuration. See
+resources). The SQL schema and worker table grants are applied. Fourteen
+simulated Terraform tests cover the infrastructure and deployed job settings. See
 [`epa_download.md`](epa_download.md) for the data run and verification evidence.
 The S02 smoke script now skips jobs whose placeholder image has been replaced.
 S06's final real Terraform plan is clean, and its Python 3.15 reconciliation
 verified all 233 raw ZIP generations against SQL state/history with zero
 mismatches. The remaining placeholder images also match the workspace's
-configured Python 3.15 runtime; schedules remain paused.
+configured Python 3.15 runtime. PurpleAir and AirNow are enabled; live-sync
+remains paused in the November 9 validation.
+
+S12 adds one repository-scoped `roles/artifactregistry.reader` binding for
+`aq-spark` to pull its digest-pinned Python 3.15 image. Its targeted apply
+added one resource, all 14 Terraform tests passed, and the subsequent full
+real plan reported no changes. Spark smoke runs now require the same Python
+3.15 custom image; [setup and execution](spark_normalization.md).
 
 ## Resources and ownership
 
@@ -178,7 +185,8 @@ data count toward stored volume.
 | SQL SSD | 10 GiB × $0.17/GiB-month | $1.70 |
 | SQL backups | 10 GiB total retained × $0.08/GiB-month | $0.80 |
 | Data bucket: EPA raw ZIPs | S06 measured: 6.2554 GiB × $0.020/GiB-month, one generation | $0.13 |
-| Data bucket: staging, curated, and older versions | Measure expansion and retained volume in S10–S12 | Not yet estimated |
+| Data bucket: EPA staging | S10 measured 203.6 GiB × $0.020/GiB-month | $4.07 |
+| Data bucket: curated and older versions | S12 measures current Parquet; retained generations add storage | See scale report |
 | Spark scratch bucket | 5 GiB average × $0.020/GiB-month | $0.10 |
 | Artifact Registry | 2 GiB × $0.10/GiB-month | $0.20 |
 | Secret Manager | 3 active versions × $0.06/month | $0.18 |
@@ -186,7 +194,7 @@ data count toward stored volume.
 | Run placeholders | No executions while paused | $0.00 |
 | Spark | No persistent cluster / no running batch | $0.00 |
 | Service accounts, IAM, API enablement, VPC/subnet/firewall, SQL users/database, budget | No standalone recurring resource fee | $0.00 |
-| **Example subtotal** | Excludes unmeasured data, executions, operations, logging overages, and egress | **$11.08** |
+| **Example subtotal** | Includes measured staging; excludes curated data, executions, operations, logging overages, and egress | **$15.15** |
 
 Rates: [Cloud SQL](https://cloud.google.com/sql/pricing),
 [Cloud Storage](https://cloud.google.com/storage/pricing),
@@ -199,7 +207,10 @@ retained data. At 1 TiB of total stored GCS versions, storage alone is about
 $20.48/month. S03 found 6,716,687,360 approximate compressed bytes across
 233 nonempty hourly ZIPs (1990–2026). S06 subsequently measured
 6,716,684,039 stored bytes; the raw ZIP row above now uses that measurement.
-This does not measure staged or curated volume; see
+S10 subsequently measured 218,661,382,349 staged CSV bytes. The example
+subtotal now includes that $4.07/month staging estimate. Curated
+volume and actual Spark compute are tracked in [scale_report.md](scale_report.md).
+See
 [`epa_manifest.md`](epa_manifest.md) for the snapshot and limitations.
 
 Cloud Run jobs have a one-minute minimum charge per task. At 1 vCPU and 0.5

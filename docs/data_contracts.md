@@ -67,9 +67,10 @@ equivalent. Do not mix unlike lead parameter codes in one statistic.
 
 ## EPA AirData hourly
 
-**Source grain:** one reported sample at a monitor and GMT begin-hour. Raw
+**Source grain:** one reported hourly-duration sample at a monitor and GMT
+sampling begin-time (which need not have zero minutes). Raw
 rows and file versions are immutable. **Curated grain:** one row per
-`(monitor_key, observed_at_utc)` after the documented revision rule. `monitor_key`
+`(monitor_key, observed_hour_utc)` after the documented revision rule. `monitor_key`
 is the five-part string `SS-CCC-NNNN-PPPPP-OO`, where `SS` is two-digit state
 FIPS, `CCC` three-digit county FIPS, `NNNN` four-digit site number, `PPPPP`
 five-digit parameter code, and `OO` two-digit POC. Example:
@@ -81,7 +82,9 @@ before padding. AQS site and monitor listings join by these component keys.
 | --- | --- | --- |
 | `state_code`, `county_code`, `site_num`, `parameter_code`, `poc` | STRING | Zero-padded source identifiers |
 | `site_key`, `monitor_key` | STRING | Composed as above |
-| `observed_at_utc` | TIMESTAMP UTC | `Date GMT` + `Time GMT`, the sample begin-hour |
+| `observed_at_utc` | TIMESTAMP UTC | Exact `Date GMT` + `Time GMT`, the sampling begin-time |
+| `observed_hour_utc` | TIMESTAMP UTC | Explicit UTC hour bucket for the curated key; floor of exact sampling time |
+| `is_hour_aligned` | BOOLEAN | Whether exact sampling time equals its UTC hour bucket |
 | `date_local_standard`, `time_local_standard` | DATE, STRING | Original `Date Local` + `Time Local` for audit |
 | `sample_measurement`, `measurement_standard` | DOUBLE nullable | Original value; unit conversion where recognized |
 | `units_of_measure`, `unit_standard` | STRING | Original unit; documented target unit |
@@ -93,6 +96,31 @@ before padding. AQS site and monitor listings join by these component keys.
 | `date_of_last_change` | DATE nullable | EPA revision date; date only |
 | `source_uri`, `source_generation`, `ingested_at_utc` | STRING, STRING, TIMESTAMP UTC | Lineage |
 | `chicago_local_date`, `chicago_local_hour`, `chicago_utc_offset_minutes` | DATE, SMALLINT, SMALLINT nullable | Derived for Chicago study rows only |
+
+S11 adds `raw_source_uri`, `raw_source_generation`, `source_file_group`, and
+`row_hash` (STRING), plus `pm25_advisory_superseded` (BOOLEAN).
+`source_uri/source_generation` identify the exact staged CSV; the raw fields
+identify its ZIP. The explicit schema is in `spark/schemas.py`.
+Parquet `year` (INT) is the EPA archive/local-standard year, including any
+UTC New Year spillover; `pollutant` (STRING) is the observed parameter code.
+Event-time filters must use `observed_at_utc`. This partition convention
+allows complete source-year replacement without overwriting another year's
+partial UTC partition. S13 reads the exact current file list from
+`curated/epa_hourly/_commits/{year}.json`; it must not glob old batch files.
+Partition columns are stored in directory names, not the Parquet payload.
+Spark readers must specify `CURATED_SCHEMA` and the curated root as `basePath`
+when reading the committed file URIs; automatic directory type inference can
+otherwise turn `pollutant` into INT. Catalog `LEAD` remains a file-group label;
+observed lead codes such as `14129` and `12128` remain STRING parameters.
+See [normalization and publication](spark_normalization.md) for exception
+handling, method precedence, and the tested output contract.
+
+The 2026 pilot found 3,579 valid hourly samples at monitor
+`06-073-0077-88101-03` beginning at `:26`. They are retained with exact times
+and `is_hour_aligned=false`; they are not malformed or silently shifted.
+The separate hour bucket implements the requested monitor-hour grain.
+When sampling windows matter, downstream comparisons must inspect alignment
+instead of assuming every hourly-duration measurement starts on the hour.
 
 When rows share a curated key, first apply the EPA PM2.5 advisory preference
 described below, then prefer the greatest `date_of_last_change`, newest
@@ -215,6 +243,15 @@ stays null. A changed concentration or AQI for the same logical key is a
 revision, not a second current observation. Keep negative raw concentrations
 for audit, with downstream quality flags.
 
+S09 selects U.S. sites within the Chicago bounding box (41.3–42.5° N,
+88.5–87.0° W). It stores immutable content-addressed raw snapshots, retaining
+the exact GCS generation on every observation. Repeated retrievals refresh
+lineage without duplicating the logical key. If a later valid snapshot omits
+a previously observed key within the selected area, its current value and
+AQI become null and the old value is archived. S14 must propagate these
+withdrawals. See [`airnow_collect.md`](airnow_collect.md) for revision and
+restart behavior.
+
 ## Storage paths and handoffs
 
 Object names are relative to `gs://<AIR_QUALITY_GCS_BUCKET>/`. Raw paths are
@@ -225,7 +262,7 @@ and record its GCS generation. Use UTC dates and hours in live prefixes.
 | --- | --- | --- |
 | EPA raw | `raw/epa/{year}/{file}.zip` (`{file}` excludes `.zip`) | S06 -> S10 |
 | AQS listings | `raw/aqs/{listing}/{sha256}.zip` | S07 -> S13/S17/S18; immutable published ZIP |
-| EPA staging | `staging/epa/{param}/{year}/*.csv` | S10 -> S11/S12; `{param}` is ZIP group suffix |
+| EPA staging | `staging/epa/{param}/{year}/hourly_{param}_{year}__g{raw_generation}.csv` | S10 -> S11/S12; `{param}` is ZIP group suffix and the generation binds the CSV to its raw ZIP |
 | EPA curated | `curated/epa_hourly/year={YYYY}/pollutant={code}/*.parquet` | S12 -> S13; pollutant is observed parameter code |
 | PurpleAir raw | `raw/purpleair/dt=YYYY-MM-DD/hh=HH/*.json` | S08 -> S14/S16 |
 | AirNow raw | `raw/airnow/dt=YYYY-MM-DD/hh=HH/*.dat` | S09 -> S14 |
@@ -238,6 +275,11 @@ SCD2 dimension rows use half-open `[valid_from_utc, valid_to_utc)` intervals;
 facts resolve to the version valid at their observation hour. If an AQS
 listing only supplies current metadata, do not invent earlier effective
 dates; mark unknown history and state the limit of point-in-time joins.
+The S13 implementation and its exact committed-file loading protocol are
+documented in [warehouse_model.md](warehouse_model.md). Snowflake preserves
+UTC in `TIMESTAMP_NTZ(6)` and uses surrogate `'0'` when dated dimension evidence
+is unavailable. The GCS and warehouse commit ledgers determine processed
+scope; Cloud SQL processing flags are not changed by this loader.
 
 ## Source specifications
 

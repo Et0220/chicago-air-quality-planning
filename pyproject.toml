@@ -12,9 +12,16 @@ dependencies = ["PyYAML>=6,<7", "pg8000>=1.31,<2", "sqlparse>=0.5,<1"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+spark = ["pyspark==3.5.3"]
+warehouse = ["snowflake-connector-python==5.2.0", "google-cloud-storage>=3.1,<4"]
 cloudsql = ["cloud-sql-python-connector[pg8000]>=1.18,<2"]
 gcp = ["google-cloud-storage>=2.18,<4"]
 epa = [
+  "google-cloud-storage>=3.1,<4",
+  "cloud-sql-python-connector[pg8000]>=1.18,<2",
+  "requests>=2.32,<3",
+]
+airnow = [
   "google-cloud-storage>=3.1,<4",
   "cloud-sql-python-connector[pg8000]>=1.18,<2",
   "requests>=2.32,<3",

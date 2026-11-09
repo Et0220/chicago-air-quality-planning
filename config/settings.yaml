@@ -42,3 +42,8 @@ purpleair:
 airnow:
   product: HourlyAQObs
   revision_lookback_hours: 72
+  # Same Chicago metro bounding box as PurpleAir discovery; WGS84 coordinates.
+  south: 41.3
+  north: 42.5
+  west: -88.5
+  east: -87.0

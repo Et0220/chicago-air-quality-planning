@@ -4,6 +4,14 @@ resource "google_compute_network" "spark" {
   depends_on              = [google_project_service.api]
 }
 
+# S12 custom Python 3.15 runtime: read only this project's image repository.
+resource "google_artifact_registry_repository_iam_member" "spark_image_reader" {
+  location   = var.region
+  repository = google_artifact_registry_repository.images.repository_id
+  role       = "roles/artifactregistry.reader"
+  member     = "serviceAccount:${google_service_account.worker["spark"].email}"
+}
+
 resource "google_compute_subnetwork" "spark" {
   name                     = "aq-spark"
   region                   = var.region

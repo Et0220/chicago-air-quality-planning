@@ -3,7 +3,8 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 TF="${TERRAFORM:-terraform}"
-PY="${PYTHON:-python3}"
+PY="${PYTHON:-python3.15}"
+SPARK_IMAGE="${AIR_QUALITY_SPARK_IMAGE:?Set a digest-pinned Python 3.15 Spark image; see docs/spark_normalization.md}"
 command -v gcloud >/dev/null
 command -v "$TF" >/dev/null
 project=$("$TF" -chdir=infra output -raw project_id)
@@ -33,6 +34,7 @@ gcloud scheduler jobs list --location="$region" --project="$project" --format='t
 
 gcloud dataproc batches submit pyspark infra/smoke_spark.py \
   --project="$project" --region="$region" --batch="$batch" --version=2.2 \
+  --container-image="$SPARK_IMAGE" \
   --service-account="$worker" --subnet="$subnet" --tags=aq-spark \
   --staging-bucket="$scratch" --deps-bucket="gs://$scratch" --ttl=10m \
   --properties=spark.dynamicAllocation.enabled=false,spark.executor.instances=2,spark.executor.cores=4,spark.driver.cores=4 \
