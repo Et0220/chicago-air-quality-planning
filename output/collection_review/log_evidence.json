@@ -1,0 +1,1148 @@
+[
+  {
+    "timestamp": "2026-11-09T07:39:32.786508Z",
+    "text": "poll outcome=success http=200 latency_ms=180 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=07/purpleair_20261109T073930Z_e5edcce9.json",
+    "execution": "aq-purpleair-poll-zq9vx",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T07:41:06.197789Z",
+    "text": "poll outcome=success http=200 latency_ms=180 sensors=131 inserted=102 duplicates=29 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=07/purpleair_20261109T074103Z_4486d1cb.json",
+    "execution": "aq-purpleair-poll-dft7l",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T08:01:23.168714Z",
+    "text": "poll outcome=success http=200 latency_ms=186 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=08/purpleair_20261109T080120Z_3d99cb97.json",
+    "execution": "aq-purpleair-poll-c8wws",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T09:03:42.456122Z",
+    "text": "poll outcome=success http=200 latency_ms=263 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=09/purpleair_20261109T090330Z_2e03bfcf.json",
+    "execution": "aq-purpleair-poll-gsl4z",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T10:01:25.907006Z",
+    "text": "poll outcome=success http=200 latency_ms=164 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=10/purpleair_20261109T100122Z_592d5568.json",
+    "execution": "aq-purpleair-poll-lh4rk",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T11:02:41.125663Z",
+    "text": "poll outcome=success http=200 latency_ms=300 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=11/purpleair_20261109T110238Z_8cff92c1.json",
+    "execution": "aq-purpleair-poll-rptxp",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T12:02:24.726319Z",
+    "text": "poll outcome=success http=200 latency_ms=254 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=12/purpleair_20261109T120221Z_1d6633c9.json",
+    "execution": "aq-purpleair-poll-fkh6j",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T13:02:48.984284Z",
+    "text": "poll outcome=success http=200 latency_ms=186 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=13/purpleair_20261109T130241Z_612681c9.json",
+    "execution": "aq-purpleair-poll-4b5mv",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T14:02:14.842804Z",
+    "text": "poll outcome=success http=200 latency_ms=303 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=14/purpleair_20261109T140211Z_fd0187f3.json",
+    "execution": "aq-purpleair-poll-jxrkf",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T15:02:01.301851Z",
+    "text": "poll outcome=success http=200 latency_ms=176 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=15/purpleair_20261109T150158Z_d1ce1995.json",
+    "execution": "aq-purpleair-poll-sd45q",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T16:02:02.062358Z",
+    "text": "poll outcome=success http=200 latency_ms=858 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=16/purpleair_20261109T160158Z_3b4c3bf1.json",
+    "execution": "aq-purpleair-poll-rqmzq",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T17:02:08.739168Z",
+    "text": "poll outcome=success http=200 latency_ms=286 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=17/purpleair_20261109T170205Z_7bc83086.json",
+    "execution": "aq-purpleair-poll-whd4x",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T18:02:21.408706Z",
+    "text": "poll outcome=success http=200 latency_ms=273 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=18/purpleair_20261109T180218Z_197513ed.json",
+    "execution": "aq-purpleair-poll-sm85p",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T19:02:46.146032Z",
+    "text": "poll outcome=success http=200 latency_ms=250 sensors=130 inserted=130 duplicates=0 late=0 stale=1 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=19/purpleair_20261109T190242Z_1d9d9e91.json",
+    "execution": "aq-purpleair-poll-kql76",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T20:02:49.975619Z",
+    "text": "poll outcome=success http=200 latency_ms=312 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=20/purpleair_20261109T200247Z_b6f2080c.json",
+    "execution": "aq-purpleair-poll-5vzck",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T21:02:17.667842Z",
+    "text": "poll outcome=success http=200 latency_ms=177 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=21/purpleair_20261109T210214Z_00755907.json",
+    "execution": "aq-purpleair-poll-vgw7z",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T21:30:31.172154Z",
+    "text": "poll outcome=success http=200 latency_ms=258 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=21/purpleair_20261109T213028Z_cb0d0b79.json",
+    "execution": "aq-purpleair-poll-7n78b",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T22:02:39.139802Z",
+    "text": "poll outcome=success http=200 latency_ms=294 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=22/purpleair_20261109T220234Z_bc649757.json",
+    "execution": "aq-purpleair-poll-c7zxf",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-09T23:01:53.671360Z",
+    "text": "poll outcome=success http=200 latency_ms=323 sensors=128 inserted=128 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=23/purpleair_20261109T230151Z_1a4b03dd.json",
+    "execution": "aq-purpleair-poll-q254p",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T00:01:43.519696Z",
+    "text": "poll outcome=success http=200 latency_ms=253 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=00/purpleair_20261110T000140Z_a794fb6a.json",
+    "execution": "aq-purpleair-poll-5nxdj",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T01:01:41.902903Z",
+    "text": "poll outcome=success http=200 latency_ms=459 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=01/purpleair_20261110T010139Z_76203ad5.json",
+    "execution": "aq-purpleair-poll-s2t85",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T02:01:29.783501Z",
+    "text": "poll outcome=success http=200 latency_ms=214 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=02/purpleair_20261110T020126Z_8409ef24.json",
+    "execution": "aq-purpleair-poll-2ftb6",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T03:01:27.655471Z",
+    "text": "poll outcome=success http=200 latency_ms=208 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=03/purpleair_20261110T030123Z_f318c166.json",
+    "execution": "aq-purpleair-poll-gqp87",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T04:03:16.853966Z",
+    "text": "poll outcome=success http=200 latency_ms=204 sensors=131 inserted=131 duplicates=0 late=0 stale=1 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=04/purpleair_20261110T040313Z_74831c88.json",
+    "execution": "aq-purpleair-poll-k9ckx",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T05:02:19.836606Z",
+    "text": "poll outcome=success http=200 latency_ms=384 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=05/purpleair_20261110T050208Z_957ed21a.json",
+    "execution": "aq-purpleair-poll-krhpb",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T06:01:44.836752Z",
+    "text": "poll outcome=success http=200 latency_ms=208 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=06/purpleair_20261110T060142Z_4a467d77.json",
+    "execution": "aq-purpleair-poll-rkvcz",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T07:01:54.882121Z",
+    "text": "poll outcome=success http=200 latency_ms=324 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=07/purpleair_20261110T070151Z_a8bfb30d.json",
+    "execution": "aq-purpleair-poll-s64z2",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T08:01:54.092706Z",
+    "text": "poll outcome=success http=200 latency_ms=222 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=08/purpleair_20261110T080151Z_97ec3dc3.json",
+    "execution": "aq-purpleair-poll-6xl2n",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T09:01:49.999015Z",
+    "text": "poll outcome=success http=200 latency_ms=119 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=09/purpleair_20261110T090148Z_bdf1cf47.json",
+    "execution": "aq-purpleair-poll-p5glx",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T10:01:54.422671Z",
+    "text": "poll outcome=success http=200 latency_ms=290 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=10/purpleair_20261110T100151Z_910d584e.json",
+    "execution": "aq-purpleair-poll-7mjc6",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T11:01:54.000558Z",
+    "text": "poll outcome=success http=200 latency_ms=226 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=11/purpleair_20261110T110151Z_24ad5301.json",
+    "execution": "aq-purpleair-poll-n29zx",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T12:01:58.342805Z",
+    "text": "poll outcome=success http=200 latency_ms=236 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=12/purpleair_20261110T120153Z_c8e0f41a.json",
+    "execution": "aq-purpleair-poll-9q7sf",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T13:01:56.196775Z",
+    "text": "poll outcome=success http=200 latency_ms=660 sensors=132 inserted=132 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=13/purpleair_20261110T130152Z_8e141a28.json",
+    "execution": "aq-purpleair-poll-gslvh",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T14:01:42.942243Z",
+    "text": "poll outcome=success http=200 latency_ms=181 sensors=132 inserted=132 duplicates=0 late=0 stale=1 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=14/purpleair_20261110T140139Z_37e84658.json",
+    "execution": "aq-purpleair-poll-nb7wb",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T15:01:45.154514Z",
+    "text": "poll outcome=success http=200 latency_ms=229 sensors=132 inserted=132 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=15/purpleair_20261110T150141Z_aec93276.json",
+    "execution": "aq-purpleair-poll-8tn9d",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T16:01:54.662781Z",
+    "text": "poll outcome=success http=200 latency_ms=180 sensors=133 inserted=133 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=16/purpleair_20261110T160150Z_5358dc8b.json",
+    "execution": "aq-purpleair-poll-bt64h",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T17:01:55.120679Z",
+    "text": "poll outcome=success http=200 latency_ms=171 sensors=132 inserted=132 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=17/purpleair_20261110T170151Z_55dc72ad.json",
+    "execution": "aq-purpleair-poll-g47kp",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T18:02:01.860040Z",
+    "text": "poll outcome=success http=200 latency_ms=255 sensors=133 inserted=133 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=18/purpleair_20261110T180156Z_a9ffc566.json",
+    "execution": "aq-purpleair-poll-z4kxf",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T19:01:37.850962Z",
+    "text": "poll outcome=success http=200 latency_ms=227 sensors=134 inserted=134 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=19/purpleair_20261110T190135Z_22973daf.json",
+    "execution": "aq-purpleair-poll-srhws",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T20:01:46.907199Z",
+    "text": "poll outcome=success http=200 latency_ms=262 sensors=134 inserted=134 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=20/purpleair_20261110T200144Z_41533294.json",
+    "execution": "aq-purpleair-poll-n8c7q",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T21:01:59.882532Z",
+    "text": "poll outcome=success http=200 latency_ms=176 sensors=134 inserted=134 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=21/purpleair_20261110T210156Z_42d81c33.json",
+    "execution": "aq-purpleair-poll-k5767",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T22:01:55.629795Z",
+    "text": "poll outcome=success http=200 latency_ms=305 sensors=133 inserted=133 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=22/purpleair_20261110T220153Z_4269e055.json",
+    "execution": "aq-purpleair-poll-mxkft",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-10T23:02:07.557598Z",
+    "text": "poll outcome=success http=200 latency_ms=269 sensors=132 inserted=132 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=23/purpleair_20261110T230203Z_33b43101.json",
+    "execution": "aq-purpleair-poll-25m76",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T00:02:01.565322Z",
+    "text": "poll outcome=success http=200 latency_ms=389 sensors=132 inserted=132 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=00/purpleair_20261111T000157Z_380de7b0.json",
+    "execution": "aq-purpleair-poll-p86qc",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T01:01:41.448643Z",
+    "text": "poll outcome=success http=200 latency_ms=166 sensors=132 inserted=132 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=01/purpleair_20261111T010137Z_276efcbd.json",
+    "execution": "aq-purpleair-poll-8fq5t",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T02:01:37.349457Z",
+    "text": "poll outcome=success http=200 latency_ms=299 sensors=133 inserted=133 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=02/purpleair_20261111T020133Z_777b3ac7.json",
+    "execution": "aq-purpleair-poll-stn4p",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T03:01:49.684125Z",
+    "text": "poll outcome=success http=200 latency_ms=205 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=03/purpleair_20261111T030147Z_c6203956.json",
+    "execution": "aq-purpleair-poll-6r7nc",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T04:01:47.675764Z",
+    "text": "poll outcome=success http=200 latency_ms=240 sensors=132 inserted=132 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=04/purpleair_20261111T040144Z_a075df29.json",
+    "execution": "aq-purpleair-poll-4jgcd",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T05:02:10.065537Z",
+    "text": "poll outcome=success http=200 latency_ms=202 sensors=132 inserted=132 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=05/purpleair_20261111T050206Z_30fa07d2.json",
+    "execution": "aq-purpleair-poll-s5b5m",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T06:01:46.568201Z",
+    "text": "poll outcome=success http=200 latency_ms=225 sensors=132 inserted=132 duplicates=0 late=0 stale=2 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=06/purpleair_20261111T060144Z_57ddcf4d.json",
+    "execution": "aq-purpleair-poll-888r9",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T07:01:43.850505Z",
+    "text": "poll outcome=success http=200 latency_ms=219 sensors=133 inserted=133 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=07/purpleair_20261111T070140Z_1e21d39a.json",
+    "execution": "aq-purpleair-poll-6g8nw",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T08:01:40.267852Z",
+    "text": "poll outcome=success http=200 latency_ms=241 sensors=132 inserted=132 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=08/purpleair_20261111T080137Z_7a28d748.json",
+    "execution": "aq-purpleair-poll-rsfwm",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T09:01:45.991519Z",
+    "text": "poll outcome=success http=200 latency_ms=289 sensors=132 inserted=132 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=09/purpleair_20261111T090142Z_daf22b0a.json",
+    "execution": "aq-purpleair-poll-lc5hs",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T10:01:35.498147Z",
+    "text": "poll outcome=success http=200 latency_ms=389 sensors=133 inserted=133 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=10/purpleair_20261111T100133Z_653eaac8.json",
+    "execution": "aq-purpleair-poll-zfc8j",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T11:02:33.872072Z",
+    "text": "poll outcome=success http=200 latency_ms=203 sensors=133 inserted=133 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=11/purpleair_20261111T110229Z_02bda657.json",
+    "execution": "aq-purpleair-poll-2qtd6",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T12:00:35.063930Z",
+    "text": "poll outcome=success http=200 latency_ms=109 sensors=132 inserted=132 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=12/purpleair_20261111T120033Z_643b6edb.json",
+    "execution": "aq-purpleair-poll-2cfgp",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T13:02:22.094666Z",
+    "text": "poll outcome=success http=200 latency_ms=206 sensors=132 inserted=132 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=13/purpleair_20261111T130218Z_e38a4e3d.json",
+    "execution": "aq-purpleair-poll-lx7sl",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T14:02:39.850950Z",
+    "text": "poll outcome=success http=200 latency_ms=200 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=14/purpleair_20261111T140235Z_ebbfdd5b.json",
+    "execution": "aq-purpleair-poll-f68hp",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T15:01:01.014304Z",
+    "text": "poll outcome=success http=200 latency_ms=174 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=15/purpleair_20261111T150057Z_67e02071.json",
+    "execution": "aq-purpleair-poll-v9jrz",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T16:01:19.186461Z",
+    "text": "poll outcome=success http=200 latency_ms=513 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=16/purpleair_20261111T160112Z_ec46dfb6.json",
+    "execution": "aq-purpleair-poll-97f5b",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T17:01:14.521505Z",
+    "text": "poll outcome=success http=200 latency_ms=258 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=17/purpleair_20261111T170111Z_bc74d750.json",
+    "execution": "aq-purpleair-poll-27j8l",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T18:01:23.459797Z",
+    "text": "poll outcome=success http=200 latency_ms=194 sensors=130 inserted=130 duplicates=0 late=0 stale=1 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=18/purpleair_20261111T180119Z_afc64cad.json",
+    "execution": "aq-purpleair-poll-sndlq",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T19:01:11.624804Z",
+    "text": "poll outcome=success http=200 latency_ms=306 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=19/purpleair_20261111T190108Z_595afce7.json",
+    "execution": "aq-purpleair-poll-c958h",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T20:01:09.839595Z",
+    "text": "poll outcome=success http=200 latency_ms=172 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=20/purpleair_20261111T200106Z_eb9af432.json",
+    "execution": "aq-purpleair-poll-724xw",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T21:01:08.050573Z",
+    "text": "poll outcome=success http=200 latency_ms=180 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=21/purpleair_20261111T210104Z_e8b32c6a.json",
+    "execution": "aq-purpleair-poll-7rpxc",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T22:01:09.090287Z",
+    "text": "poll outcome=success http=200 latency_ms=427 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=22/purpleair_20261111T220105Z_332a65ab.json",
+    "execution": "aq-purpleair-poll-6f6mq",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-11T23:02:37.272171Z",
+    "text": "poll outcome=success http=200 latency_ms=215 sensors=131 inserted=131 duplicates=0 late=0 stale=1 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=23/purpleair_20261111T230233Z_66072335.json",
+    "execution": "aq-purpleair-poll-kn58d",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T00:00:51.265871Z",
+    "text": "poll outcome=success http=200 latency_ms=675 sensors=131 inserted=131 duplicates=0 late=0 stale=1 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=00/purpleair_20261112T000046Z_c65452d4.json",
+    "execution": "aq-purpleair-poll-gxwv4",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T01:02:28.970965Z",
+    "text": "poll outcome=success http=200 latency_ms=205 sensors=131 inserted=131 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=01/purpleair_20261112T010225Z_2c63e2b2.json",
+    "execution": "aq-purpleair-poll-bbvhm",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T02:02:47.720323Z",
+    "text": "poll outcome=success http=200 latency_ms=235 sensors=130 inserted=130 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=02/purpleair_20261112T020245Z_be0dfaed.json",
+    "execution": "aq-purpleair-poll-95pcl",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T03:01:14.127560Z",
+    "text": "poll outcome=success http=200 latency_ms=215 sensors=129 inserted=129 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=03/purpleair_20261112T030109Z_d2e2a753.json",
+    "execution": "aq-purpleair-poll-pfkq9",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T04:01:14.112493Z",
+    "text": "poll outcome=success http=200 latency_ms=294 sensors=129 inserted=129 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=04/purpleair_20261112T040112Z_ed37e27f.json",
+    "execution": "aq-purpleair-poll-6d4n7",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T05:01:27.054300Z",
+    "text": "poll outcome=success http=200 latency_ms=627 sensors=128 inserted=128 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=05/purpleair_20261112T050122Z_a221b6d8.json",
+    "execution": "aq-purpleair-poll-t22jp",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T06:01:29.746718Z",
+    "text": "poll outcome=success http=200 latency_ms=214 sensors=129 inserted=129 duplicates=0 late=0 stale=0 raw=gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=06/purpleair_20261112T060126Z_821ef9d5.json",
+    "execution": "aq-purpleair-poll-76xld",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T07:01:14.749214Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-zk9jg",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T08:01:20.710093Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-n4wmg",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T09:01:15.959803Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-j2dtp",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T10:01:14.174351Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-tzcxh",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T11:01:07.939667Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-pf2jm",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T12:01:07.756583Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-pffv9",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T13:01:04.748386Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-cbhxg",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T14:01:24.783173Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-ksdvd",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T15:01:39.351672Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-vtffx",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T16:01:35.354750Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-2xqjx",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T17:01:35.693085Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-thrd5",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T18:01:26.531264Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-lc99j",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T19:01:46.207375Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-xfz4k",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T20:01:48.106076Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-qgh5g",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T21:01:44.249795Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-r8spx",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T22:01:28.888522Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-z7sm7",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-12T23:01:36.499195Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-jvgsd",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T00:01:40.509522Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-pnkzv",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T01:01:41.663203Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-krmhs",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T02:01:49.406702Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-k9vsd",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T03:01:41.629661Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-fm5tb",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T04:01:27.340693Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-xm8zb",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T05:01:44.127690Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-jhtwc",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T06:01:44.302033Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-dqxfx",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T07:01:52.544687Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-gm524",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T08:01:54.103752Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-xwrss",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T09:01:59.214289Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-bwd8l",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T10:01:58.502170Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-6mn49",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T11:01:54.251528Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-64bnh",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T12:02:11.933135Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-spjmp",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T13:02:08.711372Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-sx58j",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T14:02:05.508985Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-2qrsb",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T15:02:16.367789Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-mtgfl",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T16:02:05.949161Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-jf5pj",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T17:02:07.738205Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-sss9v",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T18:02:09.304622Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-fggkq",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T19:02:16.897184Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-jv8dl",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T20:02:05.847062Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-qm7rp",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T21:02:10.810343Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-f6xnt",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T22:02:09.520345Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-znxlf",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-13T23:02:21.113892Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-2zhnx",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T00:02:20.502134Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-25n8g",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T01:02:20.276765Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-l5rwq",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T02:02:33.681370Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-c45k7",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T03:02:29.435450Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-xnhts",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T04:00:50.049202Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-znbbj",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T05:00:52.191805Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-6s9r6",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T06:02:14.017462Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-hsvzv",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T07:02:22.954205Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-6tk4n",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T08:02:26.545281Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-ffbxm",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T09:00:47.184004Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-m769p",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T10:02:28.259224Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-fcwpk",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T11:02:20.434047Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-xklw8",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T12:01:57.942326Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-6qwxm",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T13:01:59.686172Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-2mj8c",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T14:02:10.042191Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-7kqx8",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T15:02:03.801457Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-c2nfk",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T16:02:03.998282Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-54kgf",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T17:02:06.253968Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-vl86b",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T18:01:50.027785Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-j2bvx",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T19:01:43.373931Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-d6tl2",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T20:01:42.274325Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-mqb9s",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T21:01:58.060060Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-hh656",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T22:01:46.947731Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-6lskm",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-14T23:01:01.180425Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-kjtp9",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T00:01:16.247754Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-9mzqj",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T01:01:08.731522Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-kr8lc",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T02:01:07.725062Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-gvxjf",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T03:01:02.927626Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-vg8pc",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T04:00:54.046727Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-q87cr",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T05:02:22.835341Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-dsqz8",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T06:00:56.174359Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-khvnv",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T07:00:56.915146Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-85z9p",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T08:01:20.416069Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-qxwzh",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T09:01:04.857120Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-72ng8",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T10:01:05.213304Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-crx2l",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T11:00:55.156309Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-mvxwc",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T12:01:08.915432Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-j478z",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T13:01:06.463166Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-rtbfz",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T14:01:10.262095Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-zq4f4",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T15:01:05.175778Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-t6l4t",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T16:01:03.154970Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-mb8fs",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T17:02:27.781937Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-w6jgt",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T18:01:00.034903Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-j6qkj",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T19:02:19.484252Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-j2ww9",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T20:02:05.451558Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-z9jg7",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T21:02:04.305337Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-z82n9",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T22:01:50.998747Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-spvxw",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-15T23:02:00.363232Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-hzqzk",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T00:02:15.095527Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-b8n2s",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T01:02:16.738789Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-97m68",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T02:02:26.504646Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-ksrrw",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T03:02:23.347005Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-797nj",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T04:02:11.466131Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-65xr2",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T05:02:11.761530Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-xg6hj",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T06:02:11.654607Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-72wqx",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T07:02:17.397708Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-gffxr",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T08:02:52.554143Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-2c97r",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T09:02:20.404800Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-jqbmr",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T10:02:15.931629Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-pmqd7",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T11:02:20.791480Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-lzspw",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T12:02:08.832437Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-kk9hj",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T13:02:08.164431Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-9wzml",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T14:02:15.554840Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-7vmnr",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T15:02:19.323691Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-r4kv7",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T16:02:10.750906Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-8c65z",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T17:02:13.793214Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-gsn94",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T18:02:06.802283Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-tns9d",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T19:02:00.662910Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-b94kw",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T20:02:08.453520Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-f7d5h",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T21:01:52.073233Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-mkcq5",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T22:01:47.720501Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-tm7zt",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-16T23:01:41.434050Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-tntd9",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-17T00:01:39.385488Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-bcp7t",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-17T01:01:48.129758Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-mrkt9",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-17T02:01:59.843871Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-rwwqs",
+    "severity": null
+  },
+  {
+    "timestamp": "2026-11-17T03:02:03.027635Z",
+    "text": "poll skipped: AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC has passed; no request made",
+    "execution": "aq-purpleair-poll-7gv2f",
+    "severity": null
+  }
+]

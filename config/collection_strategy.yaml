@@ -1,0 +1,136 @@
+# Proposed collection campaign; this file does not change the deployed jobs.
+status: proposed_not_deployed
+python: '3.15'
+reviewed_at_utc: '2026-11-17T04:10:09.995433+00:00'
+evidence: output/collection_review/summary.json
+purpleair:
+  sensor_ids:
+  - 164317
+  - 175417
+  - 287190
+  - 192837
+  - 185079
+  - 101643
+  - 310731
+  - 195219
+  - 175455
+  - 254189
+  - 312091
+  - 304088
+  - 244039
+  - 325302
+  - 288452
+  - 314513
+  - 271809
+  - 87741
+  - 247067
+  - 280642
+  backup_sensor_ids:
+  - 185237
+  - 249139
+  - 182281
+  - 309644
+  maximum_active_sensors: 20
+  interval_seconds: 600
+  cron: 5,15,25,35,45,55 * * * *
+  scheduler_timezone: Etc/UTC
+  planned_first_poll_utc: null
+  activation_rule: Set the next future cron slot only after deployment preflight passes;
+    never enable a campaign solely because the former November 17 target has arrived.
+  stop_after_utc: '2026-12-10T06:00:00Z'
+  fields:
+  - last_seen
+  - latitude
+  - longitude
+  - location_type
+  - pm2.5_cf_1_a
+  - pm2.5_cf_1_b
+  - humidity
+  sensor_index_returned_automatically: true
+  show_only_required: true
+  max_age_seconds: 300
+  client_max_response_age_seconds: 180
+  outdoor_only: true
+  cloud_run_retries: 0
+  measured_points_per_full_call: 165
+  calls_per_day: 144
+  points_per_day: 23760
+  planning_days: 23
+  base_points: 546480
+  contingency_fraction: 0.1
+  points_with_contingency: 601128
+  campaign_point_limit: 610000
+  minimum_remaining_points: 250000
+  first_review_after_hours: 72
+  minimum_call_success_fraction: 0.95
+  first_review_expected_calls: 432
+  first_review_minimum_successful_calls: 411
+quality:
+  retain_all_raw: true
+  dedupe_key:
+  - sensor_id
+  - report_ts_utc
+  hour_key: UTC hour containing last_seen; never the request hour
+  minimum_distinct_samples_per_hour: 5
+  expected_samples_per_hour: 6
+  minimum_distinct_10minute_bins: 5
+  minimum_sample_span_minutes: 35
+  require_both_pm_channels: true
+  require_humidity: true
+  humidity_range_percent:
+  - 0
+  - 100
+  ab_gap_limit: max(5 micrograms/m3, 20% of A/B mean); provisional project screen
+  maximum_age_seconds: 180
+  reject_negative_channels_for_analytical_mean: true
+  hourly_estimate_label: sampled hourly estimate, not a continuous hourly mean
+replacement:
+  consecutive_unusable_polls_to_alert: 3
+  daily_availability_minimum: 0.95
+  daily_valid_hour_fraction_minimum: 0.9
+  first_review_minimum_valid_hours: 65
+  mapping_file: output/collection_review/replacement_plan.json
+  require_fresh_backup_check: true
+  automatic_replacement: false
+  no_same_stratum_backup: Hold the affected slot, keep collecting other devices,
+    and document the reduced cohort; never silently widen geography or QC limits.
+  backup_collision_policy: One backup may replace only one active sensor at a time.
+  selection: prefer a healthy backup near the same reference area; keep at most 20
+    active; record effective time
+airnow:
+  cron: 40 * * * *
+  scheduler_timezone: Etc/UTC
+  revision_lookback_hours: 72
+  use_for_matching: raw hourly PM25 concentration, not NowCast AQI
+  is_preliminary: true
+  stop_after_utc: '2026-12-10T06:00:00Z'
+deployment_requirements:
+- Build and pin a new Python 3.15 image containing the tested fixed-cohort poller.
+- Apply the prepared Terraform configuration with the existing scheduler paused;
+  use the same scheduler resource, never a parallel second schedule.
+- Manually execute one preflight cycle, verify exact IDs, client QC, committed database
+  writes, raw bytes and settled point consumption before enabling the schedule.
+- Set a future activation time after preflight; recompute available collection days
+  and the 72-hour review window without extending the final cutoff.
+- Run analysis.collection_gate after the first 72 complete UTC hours and daily
+  for completed 24-hour windows; investigate a nonzero exit status.
+- Pause both schedulers at the end and record the final data/points audit.
+study_scope:
+  objective: Reliable longitudinal comparisons near eligible reference sites, with
+    secondary redundancy; no balanced seven-county representation claim.
+  selection_decision: Keep the reviewed 20 IDs; do not relax the 95% historical QC
+    or 10 km distance limits merely to add reference-site names.
+  historical_evidence_days: 3
+  forecast_guarantee: false
+  coverage_audit_file: output/collection_review/coverage_gaps.json
+  primary_pair_distance_km_max: 5
+  exploratory_pair_distance_km_max: 10
+  exploratory_sensor_ids:
+  - 304088
+  - 244039
+  - 325302
+  report_distance_strata_separately: true
+  reference_level_summary: Aggregate within reference site and hour before regional
+    comparisons; co-paired sensors are not independent reference-site replicates.
+final_review_date_local: '2026-12-10'
+daily_review_time_local: 09:00 America/Chicago

@@ -1,0 +1,216 @@
+[
+  {
+    "active_sensor_id": 164317,
+    "reference_site_id": "170434002",
+    "reference_name": "Naperville",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 175417,
+    "reference_site_id": "170313103",
+    "reference_name": "SCHILPRK",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 287190,
+    "reference_site_id": "171971002",
+    "reference_name": "Joliet",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [
+      249139
+    ],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 192837,
+    "reference_site_id": "170310057",
+    "reference_name": "CHI_SP",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [
+      185237
+    ],
+    "exploratory_only_candidates_require_reclassification": [
+      182281,
+      309644
+    ],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 185079,
+    "reference_site_id": "840180890034",
+    "reference_name": "East Chicago - Marina",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 101643,
+    "reference_site_id": "840170310052",
+    "reference_name": "CHI_MAYFAIR",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 310731,
+    "reference_site_id": "170314007",
+    "reference_name": "DESPLNS",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 195219,
+    "reference_site_id": "170316005",
+    "reference_name": "Cicero Liberty",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 175455,
+    "reference_site_id": "170310022",
+    "reference_name": "CHI_WASH",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 254189,
+    "reference_site_id": "840170311016",
+    "reference_name": "McCook",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 312091,
+    "reference_site_id": "840170890007",
+    "reference_name": "Aurora",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 304088,
+    "reference_site_id": "170314201",
+    "reference_name": "NORTHBRK",
+    "analysis_stratum": "exploratory_5to10km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 244039,
+    "reference_site_id": "170310076",
+    "reference_name": "CHI_COM",
+    "analysis_stratum": "exploratory_5to10km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 325302,
+    "reference_site_id": "170310001",
+    "reference_name": "ALSIP",
+    "analysis_stratum": "exploratory_5to10km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 288452,
+    "reference_site_id": "171971002",
+    "reference_name": "Joliet",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [
+      249139
+    ],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 314513,
+    "reference_site_id": "170434002",
+    "reference_name": "Naperville",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 271809,
+    "reference_site_id": "840170310052",
+    "reference_name": "CHI_MAYFAIR",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 87741,
+    "reference_site_id": "170310057",
+    "reference_name": "CHI_SP",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [
+      185237
+    ],
+    "exploratory_only_candidates_require_reclassification": [
+      182281,
+      309644
+    ],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 247067,
+    "reference_site_id": "170314007",
+    "reference_name": "DESPLNS",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  },
+  {
+    "active_sensor_id": 280642,
+    "reference_site_id": "170316005",
+    "reference_name": "Cicero Liberty",
+    "analysis_stratum": "primary_le5km",
+    "backup_order_same_stratum": [],
+    "exploratory_only_candidates_require_reclassification": [],
+    "requires_current_health_recheck": true,
+    "on_failure": "Use first healthy, unassigned same-stratum backup; otherwise hold this slot and document reduced coverage."
+  }
+]

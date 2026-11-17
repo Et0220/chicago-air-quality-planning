@@ -1,0 +1,410 @@
+{
+  "input_scope": "Saved three-day trial and November 16 Chicago-time health checks; not a 23-day reliability forecast.",
+  "eligible_references": 19,
+  "covered_primary_references": 14,
+  "uncovered_eligible_references": [
+    {
+      "reference_site_id": "171110001",
+      "reference_name": "CARY",
+      "valid_pm25_hours": 72,
+      "reference_eligible": true,
+      "nearest_sensors": [
+        {
+          "sensor_id": 219201,
+          "distance_km": 1.683,
+          "historical_quality_eligible": false,
+          "trial_qc_pass_fraction": 0.6338,
+          "already_selected": false,
+          "primary_reference": "CARY",
+          "health_check_pass_at_review": null
+        },
+        {
+          "sensor_id": 308638,
+          "distance_km": 4.666,
+          "historical_quality_eligible": false,
+          "trial_qc_pass_fraction": 0.22535,
+          "already_selected": false,
+          "primary_reference": "CARY",
+          "health_check_pass_at_review": null
+        },
+        {
+          "sensor_id": 169713,
+          "distance_km": 11.283,
+          "historical_quality_eligible": false,
+          "trial_qc_pass_fraction": 0.0,
+          "already_selected": false,
+          "primary_reference": "CARY",
+          "health_check_pass_at_review": null
+        }
+      ],
+      "nearest_historically_qualified_sensor": {
+        "sensor_id": 156751,
+        "distance_km": 13.311,
+        "historical_quality_eligible": true,
+        "trial_qc_pass_fraction": 0.98592,
+        "already_selected": false,
+        "primary_reference": "CARY",
+        "health_check_pass_at_review": null
+      },
+      "qualified_candidates_within_10km": [],
+      "unselected_candidates_within_10km": []
+    },
+    {
+      "reference_site_id": "180890036",
+      "reference_name": "Hammond-167th St",
+      "valid_pm25_hours": 72,
+      "reference_eligible": true,
+      "nearest_sensors": [
+        {
+          "sensor_id": 185079,
+          "distance_km": 5.892,
+          "historical_quality_eligible": true,
+          "trial_qc_pass_fraction": 0.98592,
+          "already_selected": true,
+          "primary_reference": "East Chicago - Marina",
+          "health_check_pass_at_review": true
+        },
+        {
+          "sensor_id": 146110,
+          "distance_km": 8.828,
+          "historical_quality_eligible": false,
+          "trial_qc_pass_fraction": 0.94366,
+          "already_selected": false,
+          "primary_reference": "CHI_WASH",
+          "health_check_pass_at_review": null
+        },
+        {
+          "sensor_id": 193801,
+          "distance_km": 12.069,
+          "historical_quality_eligible": false,
+          "trial_qc_pass_fraction": 0.0,
+          "already_selected": false,
+          "primary_reference": "CHI_WASH",
+          "health_check_pass_at_review": null
+        }
+      ],
+      "nearest_historically_qualified_sensor": {
+        "sensor_id": 185079,
+        "distance_km": 5.892,
+        "historical_quality_eligible": true,
+        "trial_qc_pass_fraction": 0.98592,
+        "already_selected": true,
+        "primary_reference": "East Chicago - Marina",
+        "health_check_pass_at_review": true
+      },
+      "qualified_candidates_within_10km": [
+        {
+          "sensor_id": 185079,
+          "distance_km": 5.892,
+          "historical_quality_eligible": true,
+          "trial_qc_pass_fraction": 0.98592,
+          "already_selected": true,
+          "primary_reference": "East Chicago - Marina",
+          "health_check_pass_at_review": true
+        }
+      ],
+      "unselected_candidates_within_10km": []
+    },
+    {
+      "reference_site_id": "840170310119",
+      "reference_name": "Kingery Near-road #1",
+      "valid_pm25_hours": 72,
+      "reference_eligible": true,
+      "nearest_sensors": [
+        {
+          "sensor_id": 185079,
+          "distance_km": 10.531,
+          "historical_quality_eligible": true,
+          "trial_qc_pass_fraction": 0.98592,
+          "already_selected": true,
+          "primary_reference": "East Chicago - Marina",
+          "health_check_pass_at_review": true
+        },
+        {
+          "sensor_id": 146110,
+          "distance_km": 11.516,
+          "historical_quality_eligible": false,
+          "trial_qc_pass_fraction": 0.94366,
+          "already_selected": false,
+          "primary_reference": "CHI_WASH",
+          "health_check_pass_at_review": null
+        },
+        {
+          "sensor_id": 193801,
+          "distance_km": 13.32,
+          "historical_quality_eligible": false,
+          "trial_qc_pass_fraction": 0.0,
+          "already_selected": false,
+          "primary_reference": "CHI_WASH",
+          "health_check_pass_at_review": null
+        }
+      ],
+      "nearest_historically_qualified_sensor": {
+        "sensor_id": 185079,
+        "distance_km": 10.531,
+        "historical_quality_eligible": true,
+        "trial_qc_pass_fraction": 0.98592,
+        "already_selected": true,
+        "primary_reference": "East Chicago - Marina",
+        "health_check_pass_at_review": true
+      },
+      "qualified_candidates_within_10km": [],
+      "unselected_candidates_within_10km": []
+    },
+    {
+      "reference_site_id": "840170313301",
+      "reference_name": "Summit",
+      "valid_pm25_hours": 72,
+      "reference_eligible": true,
+      "nearest_sensors": [
+        {
+          "sensor_id": 323909,
+          "distance_km": 4.457,
+          "historical_quality_eligible": false,
+          "trial_qc_pass_fraction": 0.84507,
+          "already_selected": false,
+          "primary_reference": "McCook",
+          "health_check_pass_at_review": null
+        },
+        {
+          "sensor_id": 254189,
+          "distance_km": 5.439,
+          "historical_quality_eligible": true,
+          "trial_qc_pass_fraction": 0.95775,
+          "already_selected": true,
+          "primary_reference": "McCook",
+          "health_check_pass_at_review": true
+        },
+        {
+          "sensor_id": 282198,
+          "distance_km": 6.051,
+          "historical_quality_eligible": false,
+          "trial_qc_pass_fraction": 0.98077,
+          "already_selected": false,
+          "primary_reference": "McCook",
+          "health_check_pass_at_review": null
+        }
+      ],
+      "nearest_historically_qualified_sensor": {
+        "sensor_id": 254189,
+        "distance_km": 5.439,
+        "historical_quality_eligible": true,
+        "trial_qc_pass_fraction": 0.95775,
+        "already_selected": true,
+        "primary_reference": "McCook",
+        "health_check_pass_at_review": true
+      },
+      "qualified_candidates_within_10km": [
+        {
+          "sensor_id": 254189,
+          "distance_km": 5.439,
+          "historical_quality_eligible": true,
+          "trial_qc_pass_fraction": 0.95775,
+          "already_selected": true,
+          "primary_reference": "McCook",
+          "health_check_pass_at_review": true
+        },
+        {
+          "sensor_id": 195219,
+          "distance_km": 8.246,
+          "historical_quality_eligible": true,
+          "trial_qc_pass_fraction": 0.98592,
+          "already_selected": true,
+          "primary_reference": "Cicero Liberty",
+          "health_check_pass_at_review": true
+        },
+        {
+          "sensor_id": 269072,
+          "distance_km": 8.789,
+          "historical_quality_eligible": true,
+          "trial_qc_pass_fraction": 0.98592,
+          "already_selected": false,
+          "primary_reference": "McCook",
+          "health_check_pass_at_review": null
+        }
+      ],
+      "unselected_candidates_within_10km": [
+        {
+          "sensor_id": 269072,
+          "distance_km": 8.789,
+          "historical_quality_eligible": true,
+          "trial_qc_pass_fraction": 0.98592,
+          "already_selected": false,
+          "primary_reference": "McCook",
+          "health_check_pass_at_review": null
+        }
+      ]
+    },
+    {
+      "reference_site_id": "840170890124",
+      "reference_name": "Elgin_DMV",
+      "valid_pm25_hours": 72,
+      "reference_eligible": true,
+      "nearest_sensors": [
+        {
+          "sensor_id": 308960,
+          "distance_km": 16.029,
+          "historical_quality_eligible": true,
+          "trial_qc_pass_fraction": 1.0,
+          "already_selected": false,
+          "primary_reference": "Elgin_DMV",
+          "health_check_pass_at_review": null
+        },
+        {
+          "sensor_id": 308470,
+          "distance_km": 16.586,
+          "historical_quality_eligible": false,
+          "trial_qc_pass_fraction": 0.67606,
+          "already_selected": false,
+          "primary_reference": "Aurora",
+          "health_check_pass_at_review": null
+        },
+        {
+          "sensor_id": 308638,
+          "distance_km": 19.342,
+          "historical_quality_eligible": false,
+          "trial_qc_pass_fraction": 0.22535,
+          "already_selected": false,
+          "primary_reference": "CARY",
+          "health_check_pass_at_review": null
+        }
+      ],
+      "nearest_historically_qualified_sensor": {
+        "sensor_id": 308960,
+        "distance_km": 16.029,
+        "historical_quality_eligible": true,
+        "trial_qc_pass_fraction": 1.0,
+        "already_selected": false,
+        "primary_reference": "Elgin_DMV",
+        "health_check_pass_at_review": null
+      },
+      "qualified_candidates_within_10km": [],
+      "unselected_candidates_within_10km": []
+    }
+  ],
+  "other_ineligible_references": [
+    {
+      "reference_site_id": "180890022",
+      "reference_name": "Gary-IITRI",
+      "valid_pm25_hours": 61,
+      "reference_eligible": false,
+      "nearest_sensors": [
+        {
+          "sensor_id": 281108,
+          "distance_km": 5.164,
+          "historical_quality_eligible": true,
+          "trial_qc_pass_fraction": 0.98592,
+          "already_selected": false,
+          "primary_reference": "East Chicago - Marina",
+          "health_check_pass_at_review": null
+        },
+        {
+          "sensor_id": 281504,
+          "distance_km": 9.213,
+          "historical_quality_eligible": false,
+          "trial_qc_pass_fraction": 0.94366,
+          "already_selected": false,
+          "primary_reference": "East Chicago - Marina",
+          "health_check_pass_at_review": null
+        },
+        {
+          "sensor_id": 299591,
+          "distance_km": 10.702,
+          "historical_quality_eligible": true,
+          "trial_qc_pass_fraction": 0.98592,
+          "already_selected": false,
+          "primary_reference": "East Chicago - Marina",
+          "health_check_pass_at_review": true
+        }
+      ],
+      "nearest_historically_qualified_sensor": {
+        "sensor_id": 281108,
+        "distance_km": 5.164,
+        "historical_quality_eligible": true,
+        "trial_qc_pass_fraction": 0.98592,
+        "already_selected": false,
+        "primary_reference": "East Chicago - Marina",
+        "health_check_pass_at_review": null
+      },
+      "qualified_candidates_within_10km": [
+        {
+          "sensor_id": 281108,
+          "distance_km": 5.164,
+          "historical_quality_eligible": true,
+          "trial_qc_pass_fraction": 0.98592,
+          "already_selected": false,
+          "primary_reference": "East Chicago - Marina",
+          "health_check_pass_at_review": null
+        }
+      ],
+      "unselected_candidates_within_10km": [
+        {
+          "sensor_id": 281108,
+          "distance_km": 5.164,
+          "historical_quality_eligible": true,
+          "trial_qc_pass_fraction": 0.98592,
+          "already_selected": false,
+          "primary_reference": "East Chicago - Marina",
+          "health_check_pass_at_review": null
+        }
+      ]
+    }
+  ],
+  "same_reference_pairs": [
+    {
+      "reference_name": "Naperville",
+      "sensor_ids": [
+        164317,
+        314513
+      ],
+      "sensor_separation_km": 2.941,
+      "interpretation": "Within-reference redundancy; not independent geographic replicates."
+    },
+    {
+      "reference_name": "Joliet",
+      "sensor_ids": [
+        287190,
+        288452
+      ],
+      "sensor_separation_km": 1.894,
+      "interpretation": "Within-reference redundancy; not independent geographic replicates."
+    },
+    {
+      "reference_name": "CHI_SP",
+      "sensor_ids": [
+        192837,
+        87741
+      ],
+      "sensor_separation_km": 4.814,
+      "interpretation": "Within-reference redundancy; not independent geographic replicates."
+    },
+    {
+      "reference_name": "CHI_MAYFAIR",
+      "sensor_ids": [
+        101643,
+        271809
+      ],
+      "sensor_separation_km": 0.722,
+      "interpretation": "Within-reference redundancy; not independent geographic replicates."
+    },
+    {
+      "reference_name": "DESPLNS",
+      "sensor_ids": [
+        310731,
+        247067
+      ],
+      "sensor_separation_km": 3.775,
+      "interpretation": "Within-reference redundancy; not independent geographic replicates."
+    },
+    {
+      "reference_name": "Cicero Liberty",
+      "sensor_ids": [
+        195219,
+        280642
+      ],
+      "sensor_separation_km": 3.69,
+      "interpretation": "Within-reference redundancy; not independent geographic replicates."
+    }
+  ],
+  "decision": "Retain the 20-ID nearest-reference cohort; report gaps and distance strata. A secondary comparison does not create an independent primary location."
+}

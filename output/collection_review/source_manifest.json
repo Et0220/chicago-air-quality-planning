@@ -1,0 +1,967 @@
+{
+  "verified_at_utc": "2026-11-17T04:08:22.286739+00:00",
+  "files": [
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=07/purpleair_20261109T073930Z_e5edcce9.json",
+      "generation": "1794209971355170",
+      "bytes": 7985,
+      "local_sha256": "9e0a8236762fe90467822ead6daabca02c63e155809e16cc9d48ba788e415fc5"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=07/purpleair_20261109T074103Z_4486d1cb.json",
+      "generation": "1794210063737423",
+      "bytes": 7986,
+      "local_sha256": "542384a9fa1288aae2df0e1ff947f8e9e9f1033e778eae9b7553e6ef4ae93f3d"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=08/purpleair_20261109T080120Z_3d99cb97.json",
+      "generation": "1794211280889460",
+      "bytes": 7986,
+      "local_sha256": "dcbab642ca72bd254b8fd2b3ae66d4b16813223b5aaa17efa91f2e2361934d79"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=09/purpleair_20261109T090330Z_2e03bfcf.json",
+      "generation": "1794215017131496",
+      "bytes": 7940,
+      "local_sha256": "f30de0b2a915bb8683160f44aaf43486edb29c5aac98134b29edfb16475300b4"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=10/purpleair_20261109T100122Z_592d5568.json",
+      "generation": "1794218483501058",
+      "bytes": 7944,
+      "local_sha256": "22ba63c9c9b14e63547101a1a3e7a54860dde957be27e7cc8551fc6864c7332c"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=11/purpleair_20261109T110238Z_8cff92c1.json",
+      "generation": "1794222159409059",
+      "bytes": 7950,
+      "local_sha256": "cfa7303c860fb6b3302ae74cd49c36bbbee4b27ced07d19a05e6d8e9c6568ba3"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=12/purpleair_20261109T120221Z_1d6633c9.json",
+      "generation": "1794225742212617",
+      "bytes": 7972,
+      "local_sha256": "02e3c4fbb08afce4aa7977c5304354f968bf01e29060dcdf28f379ddffe3bd9e"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=13/purpleair_20261109T130241Z_612681c9.json",
+      "generation": "1794229367363230",
+      "bytes": 8001,
+      "local_sha256": "662da22fef0a55346cd2a810c14448bd2a30108301a60263722e5f9cc348a680"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=14/purpleair_20261109T140211Z_fd0187f3.json",
+      "generation": "1794232933237423",
+      "bytes": 8047,
+      "local_sha256": "2017b31543e3f3f31e0733adf363280f889821413fd36e25d6a5f9abfbf89d7d"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=15/purpleair_20261109T150158Z_d1ce1995.json",
+      "generation": "1794236520035018",
+      "bytes": 8036,
+      "local_sha256": "44f8ec38fda27300bf9081eb57f49003f837fb0194f7acf191e6cd74a1c959e4"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=16/purpleair_20261109T160158Z_3b4c3bf1.json",
+      "generation": "1794240120086141",
+      "bytes": 8032,
+      "local_sha256": "5a3191076ee9ab591b9c72193f858a1399ba02b8d3cc415c2de9b12df761b014"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=17/purpleair_20261109T170205Z_7bc83086.json",
+      "generation": "1794243726990454",
+      "bytes": 7971,
+      "local_sha256": "12c11cdb395072911ef6ab66c0a2ddbf8c23a21375798c4c38edd7c1ad538805"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=18/purpleair_20261109T180218Z_197513ed.json",
+      "generation": "1794247339017969",
+      "bytes": 7916,
+      "local_sha256": "394ec9896a83875a866bdf35e253d2724903e80cea5a6c617ab9174b3c1510ec"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=19/purpleair_20261109T190242Z_1d9d9e91.json",
+      "generation": "1794250963598404",
+      "bytes": 7912,
+      "local_sha256": "fe676448ea5074dcc7a3cade7120bb237a4ead7f3f34e8fabca3460dc660a256"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=20/purpleair_20261109T200247Z_b6f2080c.json",
+      "generation": "1794254569093434",
+      "bytes": 7969,
+      "local_sha256": "768555b25c943836c3511d734ba350a11ab6153794ca3ec7e605709feb7ec6ec"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=21/purpleair_20261109T210214Z_00755907.json",
+      "generation": "1794258135872878",
+      "bytes": 7973,
+      "local_sha256": "6e0d96e2167f37c67e5067c9ab3858d7929b754d6406a452b23f19e60bb97fc5"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=21/purpleair_20261109T213028Z_cb0d0b79.json",
+      "generation": "1794259828896562",
+      "bytes": 7970,
+      "local_sha256": "36072eeae69b3b579b49c1df47d230913f860807745f6a8f9cbefa6e8a98a5f0"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=22/purpleair_20261109T220234Z_bc649757.json",
+      "generation": "1794261757015804",
+      "bytes": 7974,
+      "local_sha256": "f57deb66388cc3d3407d1b06342e91074d1b0b16017252b98f5e45c8a6ebeedc"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-09/hh=23/purpleair_20261109T230151Z_1a4b03dd.json",
+      "generation": "1794265312472137",
+      "bytes": 7829,
+      "local_sha256": "a13778252e1cd7821a952dc0852aee256b244664395b22cd65eb03e3daf393cd"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=00/purpleair_20261110T000140Z_a794fb6a.json",
+      "generation": "1794268901994900",
+      "bytes": 7991,
+      "local_sha256": "98431672b313a94216cfe906a5a94f07f31efe02b0c0cfa861d712b34ab110d0"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=01/purpleair_20261110T010139Z_76203ad5.json",
+      "generation": "1794272500760725",
+      "bytes": 8048,
+      "local_sha256": "7f11aa731673d8f8dcfe8a2e7aef65f6e85f46c1f8704fde103c9a83ab1a9074"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=02/purpleair_20261110T020126Z_8409ef24.json",
+      "generation": "1794276087196553",
+      "bytes": 8113,
+      "local_sha256": "aa3c4ac65f5296d602e025470c73bfcd56de0349d47eb8b271eba3dac05f54ba"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=03/purpleair_20261110T030123Z_f318c166.json",
+      "generation": "1794279684878793",
+      "bytes": 8058,
+      "local_sha256": "fa785572adedfebc69b38dd53b1f7ddb59372c85f23e06dfaee33b6621c15c3f"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=04/purpleair_20261110T040313Z_74831c88.json",
+      "generation": "1794283394000819",
+      "bytes": 8043,
+      "local_sha256": "d7954f4e7704ae50c283f848f9eebdf6a948edae406d8a4fdb8052f99b583e17"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=05/purpleair_20261110T050208Z_957ed21a.json",
+      "generation": "1794286938083552",
+      "bytes": 8006,
+      "local_sha256": "a728a3ef50364977feb1b154f267e940615b76908c07540b576edaefb2b20867"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=06/purpleair_20261110T060142Z_4a467d77.json",
+      "generation": "1794290503786519",
+      "bytes": 7983,
+      "local_sha256": "b3ee4520d1b9c9ff5ff8cb1b3dd79e570da0e9e7fec5ad194f29afe6662fc380"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=07/purpleair_20261110T070151Z_a8bfb30d.json",
+      "generation": "1794294112462889",
+      "bytes": 7923,
+      "local_sha256": "7f69d76384e24f7733c14092e0ba42d7ddb45ca45af25bf3997dfabc01f5c67c"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=08/purpleair_20261110T080151Z_97ec3dc3.json",
+      "generation": "1794297713001578",
+      "bytes": 7981,
+      "local_sha256": "4b3e69df048f7028c678b0602a1a845eb86519b56e5654a0fd9d4b0312467d1a"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=09/purpleair_20261110T090148Z_bdf1cf47.json",
+      "generation": "1794301308833013",
+      "bytes": 8001,
+      "local_sha256": "91bb7c5933b9e704de93bf574276889eb6ff15c38ba94af45c40897aa4f74086"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=10/purpleair_20261110T100151Z_910d584e.json",
+      "generation": "1794304912158154",
+      "bytes": 8036,
+      "local_sha256": "12a078b63f81af9d5d538ddf683b85cf8feba55d8421c4710b66d9d8edaf7475"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=11/purpleair_20261110T110151Z_24ad5301.json",
+      "generation": "1794308512443199",
+      "bytes": 8047,
+      "local_sha256": "3e6fa1f9e0367590c408901d44025168d1fc04bd7bcfb184ae0e372ddadcb387"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=12/purpleair_20261110T120153Z_c8e0f41a.json",
+      "generation": "1794312116337111",
+      "bytes": 8074,
+      "local_sha256": "d01ec072fe4879ac7ab81c2358df48e588e759ea031916e689d7a80f030851e5"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=13/purpleair_20261110T130152Z_8e141a28.json",
+      "generation": "1794315714014092",
+      "bytes": 8147,
+      "local_sha256": "6e0297869f1272d6f525dcc687dda83ecca05dbda600d06c425c41fc0b56b0a6"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=14/purpleair_20261110T140139Z_37e84658.json",
+      "generation": "1794319300400457",
+      "bytes": 8146,
+      "local_sha256": "3d44271c63cd820ba851cf440a33c03d9a364bf5889dca050993ce6ca6f265e2"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=15/purpleair_20261110T150141Z_aec93276.json",
+      "generation": "1794322902335128",
+      "bytes": 8115,
+      "local_sha256": "9c08ee16bb51ce2b95eed4f1b4c59727feeef9c6155efb3424601868f11d225b"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=16/purpleair_20261110T160150Z_5358dc8b.json",
+      "generation": "1794326512302746",
+      "bytes": 8138,
+      "local_sha256": "6bd9c4eb2c1dfe6c06bf50508c9bdaaead488800c431d4030f5727f63d897259"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=17/purpleair_20261110T170151Z_55dc72ad.json",
+      "generation": "1794330113048040",
+      "bytes": 8079,
+      "local_sha256": "139a994d9b0df21913b847797159ca635b1f93ac3ce2f764d00c88d0bc49dc15"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=18/purpleair_20261110T180156Z_a9ffc566.json",
+      "generation": "1794333718900495",
+      "bytes": 8107,
+      "local_sha256": "755abf993a9b6eea4d01acf55e21bc916f090fbed7ea81e9a2a6173609e0ffc2"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=19/purpleair_20261110T190135Z_22973daf.json",
+      "generation": "1794337296463079",
+      "bytes": 8147,
+      "local_sha256": "c8f163f47b41309def52245259344c1cf322dada51faff5f93ed0253c6eaac94"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=20/purpleair_20261110T200144Z_41533294.json",
+      "generation": "1794340905698963",
+      "bytes": 8159,
+      "local_sha256": "20888ca680d1810fa19459d93fc98f8ae38fdf1ecc7a9a8db6826227b34e2847"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=21/purpleair_20261110T210156Z_42d81c33.json",
+      "generation": "1794344517955949",
+      "bytes": 8173,
+      "local_sha256": "5610e5737731fcd391f32b24f995715fd5c6cb701501f8e3679bb681c70ef2fc"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=22/purpleair_20261110T220153Z_4269e055.json",
+      "generation": "1794348114017510",
+      "bytes": 8137,
+      "local_sha256": "0f5dbc82d02513ea70b299818502be083f5b516eaa7df7d7f27fbdde0a7d8c9c"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-10/hh=23/purpleair_20261110T230203Z_33b43101.json",
+      "generation": "1794351724766842",
+      "bytes": 8119,
+      "local_sha256": "473ab74f4b98e9457a77501df7d9407b4b464f73d566f55e1a972077ca3eadd7"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=00/purpleair_20261111T000157Z_380de7b0.json",
+      "generation": "1794355318527195",
+      "bytes": 8205,
+      "local_sha256": "817f3d843ffbf412a0bec4575fb5678d0090245bb92b6f76d7ae339a645a7337"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=01/purpleair_20261111T010137Z_276efcbd.json",
+      "generation": "1794358898604553",
+      "bytes": 8235,
+      "local_sha256": "01c429f2eb12ad6a2e8685f4dd6c6dfb507574b882534bbd01e4869c96225454"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=02/purpleair_20261111T020133Z_777b3ac7.json",
+      "generation": "1794362494681925",
+      "bytes": 8302,
+      "local_sha256": "b9a90c477c1d2c0f9e7ca5ef10abc82b4b5583939e6afded588e269dd4b435d5"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=03/purpleair_20261111T030147Z_c6203956.json",
+      "generation": "1794366108388291",
+      "bytes": 8194,
+      "local_sha256": "451e14d30dc3b4a383a1b2ad624ffdf4881a36e9a23f7d0fe944bd9a7148a14e"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=04/purpleair_20261111T040144Z_a075df29.json",
+      "generation": "1794369705854171",
+      "bytes": 8254,
+      "local_sha256": "dcbc23b50078f5e073ab8c3f9546ada8a123d0e44e1886db999ffd953ee97685"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=05/purpleair_20261111T050206Z_30fa07d2.json",
+      "generation": "1794373327509568",
+      "bytes": 8252,
+      "local_sha256": "9fa0ade3be4633840ea2a1d1478cb24ca6cfc7afcbdde617d8c86e5db68ed838"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=06/purpleair_20261111T060144Z_57ddcf4d.json",
+      "generation": "1794376905450637",
+      "bytes": 8254,
+      "local_sha256": "9ca8832b1ca77ccf5c8c806d4cad92f83ef475dea75ec6f949f5316606547eb8"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=07/purpleair_20261111T070140Z_1e21d39a.json",
+      "generation": "1794380501997139",
+      "bytes": 8314,
+      "local_sha256": "8a21bb19acec9a6ce462aa37021096e8e1fda50b3976b10e98fc29b68a42b0f0"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=08/purpleair_20261111T080137Z_7a28d748.json",
+      "generation": "1794384098605079",
+      "bytes": 8253,
+      "local_sha256": "1455b6c7edbad2feecea1148bdde0b96f3f99ce1216b8f8ef82260a869e038b6"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=09/purpleair_20261111T090142Z_daf22b0a.json",
+      "generation": "1794387703254329",
+      "bytes": 8252,
+      "local_sha256": "dd0233d278d9c1e281bb2f44e49b6ab50780b591ff9aff4e1b0ab6db253846eb"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=10/purpleair_20261111T100133Z_653eaac8.json",
+      "generation": "1794391294364311",
+      "bytes": 8312,
+      "local_sha256": "f55331f32fb6d469b72cff3407f1e9fdaa2290409622402e22a7d59a05867950"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=11/purpleair_20261111T110229Z_02bda657.json",
+      "generation": "1794394950819369",
+      "bytes": 8311,
+      "local_sha256": "c9ed8084e3dcaf148be38313992916b664cf7b4c5bd123d0138466f53d1fc6b3"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=12/purpleair_20261111T120033Z_643b6edb.json",
+      "generation": "1794398434058772",
+      "bytes": 8247,
+      "local_sha256": "5cce2c7693ec483757de546a972d1a8a586e8526828093e4fa516bf20daf503b"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=13/purpleair_20261111T130218Z_e38a4e3d.json",
+      "generation": "1794402139080691",
+      "bytes": 8254,
+      "local_sha256": "a752ee2865c1f52bf8dcc34b9d7e489665d763bc03d30723fe54ffa4d070b127"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=14/purpleair_20261111T140235Z_ebbfdd5b.json",
+      "generation": "1794405757126638",
+      "bytes": 8198,
+      "local_sha256": "5691969aff78b8c79591e0737f9b83b7ecd7040f9ea32ef3b3f8f1e51b916b4c"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=15/purpleair_20261111T150057Z_67e02071.json",
+      "generation": "1794409258147579",
+      "bytes": 8203,
+      "local_sha256": "e25db1dc3fd261ac8505ee932958ee005b3b6731f2de3d970b5453e3b49af1e5"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=16/purpleair_20261111T160112Z_ec46dfb6.json",
+      "generation": "1794412877334357",
+      "bytes": 8196,
+      "local_sha256": "51c7b49f61c529558a8196102c3417c5a5ab605e16899fbc80ce8fd74a5569d6"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=17/purpleair_20261111T170111Z_bc74d750.json",
+      "generation": "1794416473056797",
+      "bytes": 8134,
+      "local_sha256": "99bcd7a058e35e4c7f81f6869f2fc38e7a2bb64dc6d05730c92337e46b83730d"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=18/purpleair_20261111T180119Z_afc64cad.json",
+      "generation": "1794420080520432",
+      "bytes": 8130,
+      "local_sha256": "5dc4474d05e3c0a94d58cede44a7578b82aae78c2e3427ae0a6f7e5db3d81f89"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=19/purpleair_20261111T190108Z_595afce7.json",
+      "generation": "1794423669327146",
+      "bytes": 8117,
+      "local_sha256": "d9c31b3aa811d84424f9f559335c8123c83c802accd360361b842a1e75d51386"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=20/purpleair_20261111T200106Z_eb9af432.json",
+      "generation": "1794427267695998",
+      "bytes": 8046,
+      "local_sha256": "2dae28c4b353590755b5ac975e5d5d33d14809247fe74db98ec1bfad072784e7"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=21/purpleair_20261111T210104Z_e8b32c6a.json",
+      "generation": "1794430865789243",
+      "bytes": 7939,
+      "local_sha256": "56f7efec159412da36d0ebe12026b860b05337a7ea9b7542d3c22c8a1bf208cd"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=22/purpleair_20261111T220105Z_332a65ab.json",
+      "generation": "1794434466633440",
+      "bytes": 7986,
+      "local_sha256": "bb1740fa51489eaf5995bab22102468df849f163995793fb2f329f25c7f403c7"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-11/hh=23/purpleair_20261111T230233Z_66072335.json",
+      "generation": "1794438154800610",
+      "bytes": 7972,
+      "local_sha256": "068109d499d8e6af9b27a4025d3fb05e2f84a9e204ae4ae8620906aa1005bb45"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=00/purpleair_20261112T000046Z_c65452d4.json",
+      "generation": "1794441648504681",
+      "bytes": 7974,
+      "local_sha256": "411d303f608c6a60b9f9f8f84326e977c30654e384aa497588bafafff8cdf04d"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=01/purpleair_20261112T010225Z_2c63e2b2.json",
+      "generation": "1794445346235040",
+      "bytes": 7974,
+      "local_sha256": "54d8b87aab94ae5a31e4ce06efd9f9e3ffc2506acac65da9cbd69ca467cb0bcf"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=02/purpleair_20261112T020245Z_be0dfaed.json",
+      "generation": "1794448966001308",
+      "bytes": 7916,
+      "local_sha256": "a6b59f89a35048a01368be23f418569f1af7959a279d86609c1c71f90b329a27"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=03/purpleair_20261112T030109Z_d2e2a753.json",
+      "generation": "1794452471668952",
+      "bytes": 7861,
+      "local_sha256": "5b67272ce56a0a7201235ea0bf928c76dd1632fdbeaf4cc8bb1b349326bdf227"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=04/purpleair_20261112T040112Z_ed37e27f.json",
+      "generation": "1794456072911024",
+      "bytes": 7862,
+      "local_sha256": "f872e4828ec4e1e96d1346e9d104db8af233d441091890962553d3fbf7577c34"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=05/purpleair_20261112T050122Z_a221b6d8.json",
+      "generation": "1794459684762260",
+      "bytes": 7823,
+      "local_sha256": "1498be944dff70ad8c75b5e8a5856b3ef4ec7c50576515e4d1bbb28d6993ecb2"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/purpleair/dt=2026-11-12/hh=06/purpleair_20261112T060126Z_821ef9d5.json",
+      "generation": "1794463286999568",
+      "bytes": 7933,
+      "local_sha256": "3f59dfacfe9469ec5414dbac3b893694db1f0fc528581c10974e4b5efc850dcc"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=06/HourlyAQObs_2026110906_bf66fc230376f04cc41c177af5a2b54c32fbd81c198847869bb982e96432a257.dat",
+      "generation": "1794235366191826",
+      "bytes": 996524,
+      "hour": "2026-11-09T06:00:00+00:00",
+      "local_sha256": "bf66fc230376f04cc41c177af5a2b54c32fbd81c198847869bb982e96432a257"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=07/HourlyAQObs_2026110907_92a8e0db3114c0d0426811e96aca9c66f3ab4ca4541cc16bda6d66a1e996d0ec.dat",
+      "generation": "1794238949972342",
+      "bytes": 996469,
+      "hour": "2026-11-09T07:00:00+00:00",
+      "local_sha256": "92a8e0db3114c0d0426811e96aca9c66f3ab4ca4541cc16bda6d66a1e996d0ec"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=08/HourlyAQObs_2026110908_3318e248818b3e7c68da46f5014a5c4300bcb339f8607ed9cb96485b39c4fbfb.dat",
+      "generation": "1794238950845013",
+      "bytes": 995919,
+      "hour": "2026-11-09T08:00:00+00:00",
+      "local_sha256": "3318e248818b3e7c68da46f5014a5c4300bcb339f8607ed9cb96485b39c4fbfb"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=09/HourlyAQObs_2026110909_e1101b58cf9cf55586b5914895f08952a369956d3d1fa47e2997b8379acceaed.dat",
+      "generation": "1794242558877731",
+      "bytes": 996594,
+      "hour": "2026-11-09T09:00:00+00:00",
+      "local_sha256": "e1101b58cf9cf55586b5914895f08952a369956d3d1fa47e2997b8379acceaed"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=10/HourlyAQObs_2026110910_b422e6b67dbd4da891ef81edad38104832f6ed4376c1d5aaf16e2372af523cee.dat",
+      "generation": "1794246168212339",
+      "bytes": 996146,
+      "hour": "2026-11-09T10:00:00+00:00",
+      "local_sha256": "b422e6b67dbd4da891ef81edad38104832f6ed4376c1d5aaf16e2372af523cee"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=11/HourlyAQObs_2026110911_09d705aa4809f070b0d99d314f44b51aed944ab7249051f3315544175ad8c817.dat",
+      "generation": "1794253344848400",
+      "bytes": 995956,
+      "hour": "2026-11-09T11:00:00+00:00",
+      "local_sha256": "09d705aa4809f070b0d99d314f44b51aed944ab7249051f3315544175ad8c817"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=12/HourlyAQObs_2026110912_c9f7abe3f6ec3e85b3f3a2558e0a34d278f4449c46455c03b449d2e9bfc1c631.dat",
+      "generation": "1794256965909920",
+      "bytes": 996364,
+      "hour": "2026-11-09T12:00:00+00:00",
+      "local_sha256": "c9f7abe3f6ec3e85b3f3a2558e0a34d278f4449c46455c03b449d2e9bfc1c631"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=13/HourlyAQObs_2026110913_810dc5b14ff2958c4da6d7ea2a709e61a3910d6a5d5fa08422f8e759715f0ddd.dat",
+      "generation": "1794256966774732",
+      "bytes": 997048,
+      "hour": "2026-11-09T13:00:00+00:00",
+      "local_sha256": "810dc5b14ff2958c4da6d7ea2a709e61a3910d6a5d5fa08422f8e759715f0ddd"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=14/HourlyAQObs_2026110914_23d35946f40f8d75f2fda4cca512a25bb2bf50bbc1fd7466299b7f56aec38606.dat",
+      "generation": "1794260563663510",
+      "bytes": 996939,
+      "hour": "2026-11-09T14:00:00+00:00",
+      "local_sha256": "23d35946f40f8d75f2fda4cca512a25bb2bf50bbc1fd7466299b7f56aec38606"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=15/HourlyAQObs_2026110915_0d6d88ec5f45046423cf78cd2cb6c600b93e78dbe6471cf4aac359b88fa553d3.dat",
+      "generation": "1794264160422346",
+      "bytes": 996760,
+      "hour": "2026-11-09T15:00:00+00:00",
+      "local_sha256": "0d6d88ec5f45046423cf78cd2cb6c600b93e78dbe6471cf4aac359b88fa553d3"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=16/HourlyAQObs_2026110916_b86a214662ec778b73b286c929fa3840358a9f7583c8f02b2e3966da5c6c299c.dat",
+      "generation": "1794267729932412",
+      "bytes": 996414,
+      "hour": "2026-11-09T16:00:00+00:00",
+      "local_sha256": "b86a214662ec778b73b286c929fa3840358a9f7583c8f02b2e3966da5c6c299c"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=17/HourlyAQObs_2026110917_1c82c8e7af9088a66d5aff7f1dad41b9387fd23f45df7a078f56cfba044814f5.dat",
+      "generation": "1794267730789803",
+      "bytes": 996685,
+      "hour": "2026-11-09T17:00:00+00:00",
+      "local_sha256": "1c82c8e7af9088a66d5aff7f1dad41b9387fd23f45df7a078f56cfba044814f5"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=18/HourlyAQObs_2026110918_fc4f6ae8dd1d6cfe4b9f6dcb52f61999e99d0084753357cd08666864d40e120d.dat",
+      "generation": "1794267731616666",
+      "bytes": 996811,
+      "hour": "2026-11-09T18:00:00+00:00",
+      "local_sha256": "fc4f6ae8dd1d6cfe4b9f6dcb52f61999e99d0084753357cd08666864d40e120d"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=19/HourlyAQObs_2026110919_4439e54be669b27ed166ebef2649acb1547184d8fd6130d5d55f237793771e3a.dat",
+      "generation": "1794267732455172",
+      "bytes": 996718,
+      "hour": "2026-11-09T19:00:00+00:00",
+      "local_sha256": "4439e54be669b27ed166ebef2649acb1547184d8fd6130d5d55f237793771e3a"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=20/HourlyAQObs_2026110920_f988dc0670427ece12237f484f27fe41ad8876c24866bc16379f1484bf7681e3.dat",
+      "generation": "1794274912126363",
+      "bytes": 996892,
+      "hour": "2026-11-09T20:00:00+00:00",
+      "local_sha256": "f988dc0670427ece12237f484f27fe41ad8876c24866bc16379f1484bf7681e3"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=21/HourlyAQObs_2026110921_79b5bf6ece4c932ba59c991a361e833765f8ede1dcca8032a656b9e63750d7fe.dat",
+      "generation": "1794274912973797",
+      "bytes": 997008,
+      "hour": "2026-11-09T21:00:00+00:00",
+      "local_sha256": "79b5bf6ece4c932ba59c991a361e833765f8ede1dcca8032a656b9e63750d7fe"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=22/HourlyAQObs_2026110922_ceffb6636e9b9dfdafec9d5f2cf29a1f58efec09f8bfd261b5a9388d39849da9.dat",
+      "generation": "1794289334073558",
+      "bytes": 997217,
+      "hour": "2026-11-09T22:00:00+00:00",
+      "local_sha256": "ceffb6636e9b9dfdafec9d5f2cf29a1f58efec09f8bfd261b5a9388d39849da9"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-09/hh=23/HourlyAQObs_2026110923_7312e8c1adae73bcfb29ba3a440c3effe9a8b704bb818b0f4ff0ce4b909f7ff9.dat",
+      "generation": "1794292942299852",
+      "bytes": 997106,
+      "hour": "2026-11-09T23:00:00+00:00",
+      "local_sha256": "7312e8c1adae73bcfb29ba3a440c3effe9a8b704bb818b0f4ff0ce4b909f7ff9"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=00/HourlyAQObs_2026111000_aa5e8801ec1cad797bc3aa793276044b5c9dfb4d8977ebe8cd713a9b0f4281ae.dat",
+      "generation": "1794296549153598",
+      "bytes": 997512,
+      "hour": "2026-11-10T00:00:00+00:00",
+      "local_sha256": "aa5e8801ec1cad797bc3aa793276044b5c9dfb4d8977ebe8cd713a9b0f4281ae"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=01/HourlyAQObs_2026111001_f12021092794c8956cbb7a60513e0ba013b11ad1698d0819abcdc601b9f78b91.dat",
+      "generation": "1794300148678817",
+      "bytes": 997571,
+      "hour": "2026-11-10T01:00:00+00:00",
+      "local_sha256": "f12021092794c8956cbb7a60513e0ba013b11ad1698d0819abcdc601b9f78b91"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=02/HourlyAQObs_2026111002_e884e0b6f4b36e774c077f9e2215c06ec9da459b940bac67f1ead63933c3c314.dat",
+      "generation": "1794303745369344",
+      "bytes": 997527,
+      "hour": "2026-11-10T02:00:00+00:00",
+      "local_sha256": "e884e0b6f4b36e774c077f9e2215c06ec9da459b940bac67f1ead63933c3c314"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=03/HourlyAQObs_2026111003_9c065b6607ac9e3adc9c2c4ea6619060f57849f7c3eae982a28f4007fb48b26f.dat",
+      "generation": "1794307352792360",
+      "bytes": 997318,
+      "hour": "2026-11-10T03:00:00+00:00",
+      "local_sha256": "9c065b6607ac9e3adc9c2c4ea6619060f57849f7c3eae982a28f4007fb48b26f"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=04/HourlyAQObs_2026111004_50b594a366cfe5b5aff4d7acc684c204105530d8355e7a04af3715f2be0d5cd1.dat",
+      "generation": "1794310954865132",
+      "bytes": 997335,
+      "hour": "2026-11-10T04:00:00+00:00",
+      "local_sha256": "50b594a366cfe5b5aff4d7acc684c204105530d8355e7a04af3715f2be0d5cd1"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=05/HourlyAQObs_2026111005_85ab86de4de0b4b18e10dabdc15b397e5f3bc3ca1c4ef8625d2767bd78dc3fb3.dat",
+      "generation": "1794314539633941",
+      "bytes": 997085,
+      "hour": "2026-11-10T05:00:00+00:00",
+      "local_sha256": "85ab86de4de0b4b18e10dabdc15b397e5f3bc3ca1c4ef8625d2767bd78dc3fb3"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=06/HourlyAQObs_2026111006_f1590a9651915ee4b7ca4cd5f59eaeda63c2337730652d42d9d3dca6d43c6f1c.dat",
+      "generation": "1794318121347544",
+      "bytes": 996681,
+      "hour": "2026-11-10T06:00:00+00:00",
+      "local_sha256": "f1590a9651915ee4b7ca4cd5f59eaeda63c2337730652d42d9d3dca6d43c6f1c"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=07/HourlyAQObs_2026111007_1e6fdda59f3e59f1e6799d7a516d0694b6487f38b971080193461c13a2318599.dat",
+      "generation": "1794321745201980",
+      "bytes": 996735,
+      "hour": "2026-11-10T07:00:00+00:00",
+      "local_sha256": "1e6fdda59f3e59f1e6799d7a516d0694b6487f38b971080193461c13a2318599"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=08/HourlyAQObs_2026111008_5f01525ba56eea6cf80ddf9884a0e8d2c147483f93b64e65d0260bb1a637a5da.dat",
+      "generation": "1794325332543938",
+      "bytes": 996688,
+      "hour": "2026-11-10T08:00:00+00:00",
+      "local_sha256": "5f01525ba56eea6cf80ddf9884a0e8d2c147483f93b64e65d0260bb1a637a5da"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=09/HourlyAQObs_2026111009_efccd72654910c11a64ca6998570c17553e15bbe91b4217ced436de7fd5e4257.dat",
+      "generation": "1794328940983969",
+      "bytes": 996794,
+      "hour": "2026-11-10T09:00:00+00:00",
+      "local_sha256": "efccd72654910c11a64ca6998570c17553e15bbe91b4217ced436de7fd5e4257"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=10/HourlyAQObs_2026111010_2d5af0d35902a6f6968fe6c072c2129fb0fdbcb3763d4845c7de41e46aad69d8.dat",
+      "generation": "1794332538923264",
+      "bytes": 996498,
+      "hour": "2026-11-10T10:00:00+00:00",
+      "local_sha256": "2d5af0d35902a6f6968fe6c072c2129fb0fdbcb3763d4845c7de41e46aad69d8"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=11/HourlyAQObs_2026111011_f25fb725143ae3b98b04cefdc76a727c5f97838db196386c8fa1752825963460.dat",
+      "generation": "1794336130218444",
+      "bytes": 996408,
+      "hour": "2026-11-10T11:00:00+00:00",
+      "local_sha256": "f25fb725143ae3b98b04cefdc76a727c5f97838db196386c8fa1752825963460"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=12/HourlyAQObs_2026111012_66c313641353f63fd65a11094979fafe01a974eb92a271191275e2fa502061bc.dat",
+      "generation": "1794339750081771",
+      "bytes": 996812,
+      "hour": "2026-11-10T12:00:00+00:00",
+      "local_sha256": "66c313641353f63fd65a11094979fafe01a974eb92a271191275e2fa502061bc"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=13/HourlyAQObs_2026111013_fe46b5395a1d52fcbd2903a30ac5739ed0fa07c7ff72d9b6e0cc698a7dceb241.dat",
+      "generation": "1794343351221749",
+      "bytes": 997195,
+      "hour": "2026-11-10T13:00:00+00:00",
+      "local_sha256": "fe46b5395a1d52fcbd2903a30ac5739ed0fa07c7ff72d9b6e0cc698a7dceb241"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=14/HourlyAQObs_2026111014_11c2687faecfed4babcdd234e12ac5f2b07bde59b80d46e81999f7ae56f7a40c.dat",
+      "generation": "1794346963016694",
+      "bytes": 997150,
+      "hour": "2026-11-10T14:00:00+00:00",
+      "local_sha256": "11c2687faecfed4babcdd234e12ac5f2b07bde59b80d46e81999f7ae56f7a40c"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=15/HourlyAQObs_2026111015_82572f1e3eec3e7f895f61f72c2bb7f825e2f61a27f0cffb48c2cf4147bc1e3a.dat",
+      "generation": "1794350557662233",
+      "bytes": 996881,
+      "hour": "2026-11-10T15:00:00+00:00",
+      "local_sha256": "82572f1e3eec3e7f895f61f72c2bb7f825e2f61a27f0cffb48c2cf4147bc1e3a"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=16/HourlyAQObs_2026111016_0462c500055f2ced1032b3f6a10c5db354166922c0f5f8648ca0207b23a90662.dat",
+      "generation": "1794354156499658",
+      "bytes": 996749,
+      "hour": "2026-11-10T16:00:00+00:00",
+      "local_sha256": "0462c500055f2ced1032b3f6a10c5db354166922c0f5f8648ca0207b23a90662"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=17/HourlyAQObs_2026111017_07ef82e025224e6c648338b830e4d1778ed17b28a97f41564e7d7b6dab6ba52f.dat",
+      "generation": "1794357752169235",
+      "bytes": 996460,
+      "hour": "2026-11-10T17:00:00+00:00",
+      "local_sha256": "07ef82e025224e6c648338b830e4d1778ed17b28a97f41564e7d7b6dab6ba52f"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=18/HourlyAQObs_2026111018_a052c5ffcdec47b2e32c4d0eb1d881e851179d5b7b9f03e52fde89953d28f48b.dat",
+      "generation": "1794361343716591",
+      "bytes": 996545,
+      "hour": "2026-11-10T18:00:00+00:00",
+      "local_sha256": "a052c5ffcdec47b2e32c4d0eb1d881e851179d5b7b9f03e52fde89953d28f48b"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=19/HourlyAQObs_2026111019_7dcae1c38ad4ffbc2b917c3fa8c5e21d596af81a31a4c6f1e167e5d9365510e3.dat",
+      "generation": "1794364944911947",
+      "bytes": 996596,
+      "hour": "2026-11-10T19:00:00+00:00",
+      "local_sha256": "7dcae1c38ad4ffbc2b917c3fa8c5e21d596af81a31a4c6f1e167e5d9365510e3"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=20/HourlyAQObs_2026111020_27bc7e3991360519a40487995e47f0c812b38193df378958559e83b4fd1f8edf.dat",
+      "generation": "1794364945924517",
+      "bytes": 996643,
+      "hour": "2026-11-10T20:00:00+00:00",
+      "local_sha256": "27bc7e3991360519a40487995e47f0c812b38193df378958559e83b4fd1f8edf"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=21/HourlyAQObs_2026111021_6a962ca617c8ab41d7f8105f89f97c1fbd37228d86e23de86becc0608f765188.dat",
+      "generation": "1794372161763801",
+      "bytes": 996829,
+      "hour": "2026-11-10T21:00:00+00:00",
+      "local_sha256": "6a962ca617c8ab41d7f8105f89f97c1fbd37228d86e23de86becc0608f765188"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=22/HourlyAQObs_2026111022_d471cc483b6da9acad6d021f8b980bdc3b39baa9a7607d4fd20da15cbf058218.dat",
+      "generation": "1794375747910517",
+      "bytes": 996996,
+      "hour": "2026-11-10T22:00:00+00:00",
+      "local_sha256": "d471cc483b6da9acad6d021f8b980bdc3b39baa9a7607d4fd20da15cbf058218"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-10/hh=23/HourlyAQObs_2026111023_db85ac34d43e8a87cb036442f45d2646a0fbb1e31caff5448a6cd17209011f8b.dat",
+      "generation": "1794382931546997",
+      "bytes": 996944,
+      "hour": "2026-11-10T23:00:00+00:00",
+      "local_sha256": "db85ac34d43e8a87cb036442f45d2646a0fbb1e31caff5448a6cd17209011f8b"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=00/HourlyAQObs_2026111100_f9d994f6ec528183993d25ab45dea9d22f2f78041ccfe19d438129aaf8e2aeeb.dat",
+      "generation": "1794382932456870",
+      "bytes": 997634,
+      "hour": "2026-11-11T00:00:00+00:00",
+      "local_sha256": "f9d994f6ec528183993d25ab45dea9d22f2f78041ccfe19d438129aaf8e2aeeb"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=01/HourlyAQObs_2026111101_49f0830af035f8decdba464d0dac450eb7256f4fcdcabfdc6d68b8d5f182ace6.dat",
+      "generation": "1794386538041730",
+      "bytes": 997632,
+      "hour": "2026-11-11T01:00:00+00:00",
+      "local_sha256": "49f0830af035f8decdba464d0dac450eb7256f4fcdcabfdc6d68b8d5f182ace6"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=02/HourlyAQObs_2026111102_debd7edfaaf043a340cdabf831d04f85aed8bc5f5731cad9c7070bf77816dc88.dat",
+      "generation": "1794390131948960",
+      "bytes": 997700,
+      "hour": "2026-11-11T02:00:00+00:00",
+      "local_sha256": "debd7edfaaf043a340cdabf831d04f85aed8bc5f5731cad9c7070bf77816dc88"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=03/HourlyAQObs_2026111103_10533b7812fe34c55ebb5a058e828c8fc3e4d17144d38e0c128ad902c387765d.dat",
+      "generation": "1794390132724192",
+      "bytes": 997475,
+      "hour": "2026-11-11T03:00:00+00:00",
+      "local_sha256": "10533b7812fe34c55ebb5a058e828c8fc3e4d17144d38e0c128ad902c387765d"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=04/HourlyAQObs_2026111104_1c2edb807a552cfccb40f14f320b493a71df585a745f5813e05af07cfdcb5caf.dat",
+      "generation": "1794397284537351",
+      "bytes": 997419,
+      "hour": "2026-11-11T04:00:00+00:00",
+      "local_sha256": "1c2edb807a552cfccb40f14f320b493a71df585a745f5813e05af07cfdcb5caf"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=05/HourlyAQObs_2026111105_7c3947caeafe531f1155520039d7fa140542a399c2955a3c2e909920c3f3c34a.dat",
+      "generation": "1794400969337630",
+      "bytes": 996180,
+      "hour": "2026-11-11T05:00:00+00:00",
+      "local_sha256": "7c3947caeafe531f1155520039d7fa140542a399c2955a3c2e909920c3f3c34a"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=06/HourlyAQObs_2026111106_00050b3aa3979258e461b14088fba096ceed93ce909ea32c07bbec0dce2a471e.dat",
+      "generation": "1794408101637562",
+      "bytes": 995612,
+      "hour": "2026-11-11T06:00:00+00:00",
+      "local_sha256": "00050b3aa3979258e461b14088fba096ceed93ce909ea32c07bbec0dce2a471e"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=07/HourlyAQObs_2026111107_b5a4afac9c7ffe690f3c357f41cdb0eedf78c05bdca04036ec14c043b5fbe18f.dat",
+      "generation": "1794408102579370",
+      "bytes": 995330,
+      "hour": "2026-11-11T07:00:00+00:00",
+      "local_sha256": "b5a4afac9c7ffe690f3c357f41cdb0eedf78c05bdca04036ec14c043b5fbe18f"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=08/HourlyAQObs_2026111108_c45e41a7018486a6cfc92e13e3d27c09c628ad02dc54162edd8adfb78f6c681f.dat",
+      "generation": "1794411681369411",
+      "bytes": 995743,
+      "hour": "2026-11-11T08:00:00+00:00",
+      "local_sha256": "c45e41a7018486a6cfc92e13e3d27c09c628ad02dc54162edd8adfb78f6c681f"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=09/HourlyAQObs_2026111109_0869523552eb8a8cd67d9d37dcd8275c88b287b2516073b92b25bf011e2dbcc0.dat",
+      "generation": "1794415297039375",
+      "bytes": 996160,
+      "hour": "2026-11-11T09:00:00+00:00",
+      "local_sha256": "0869523552eb8a8cd67d9d37dcd8275c88b287b2516073b92b25bf011e2dbcc0"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=10/HourlyAQObs_2026111110_0e95c71308bc963199b1e190f31c5a0dfb872888957b383fae65e862ef5af295.dat",
+      "generation": "1794415297920210",
+      "bytes": 995678,
+      "hour": "2026-11-11T10:00:00+00:00",
+      "local_sha256": "0e95c71308bc963199b1e190f31c5a0dfb872888957b383fae65e862ef5af295"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=11/HourlyAQObs_2026111111_83a17d2836ef26f99950e7f03fcf7c7baff22ae2e51c6291bc6adc1c9d34c43d.dat",
+      "generation": "1794422512880260",
+      "bytes": 995466,
+      "hour": "2026-11-11T11:00:00+00:00",
+      "local_sha256": "83a17d2836ef26f99950e7f03fcf7c7baff22ae2e51c6291bc6adc1c9d34c43d"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=12/HourlyAQObs_2026111112_3e60bbed87507484e1a54f1d91999e0ad539cbf0859e1786078f713ba5d7c3f4.dat",
+      "generation": "1794429708479301",
+      "bytes": 995793,
+      "hour": "2026-11-11T12:00:00+00:00",
+      "local_sha256": "3e60bbed87507484e1a54f1d91999e0ad539cbf0859e1786078f713ba5d7c3f4"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=13/HourlyAQObs_2026111113_66649edd29731bab03329b088c3ea5d5becc6709c4fda6c2444e3df3d445ea6c.dat",
+      "generation": "1794429709473903",
+      "bytes": 996392,
+      "hour": "2026-11-11T13:00:00+00:00",
+      "local_sha256": "66649edd29731bab03329b088c3ea5d5becc6709c4fda6c2444e3df3d445ea6c"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=14/HourlyAQObs_2026111114_2273a3c902f37bdfb51c1c086840f65d6d6bcf742bd2231d26fddae5444f1d9f.dat",
+      "generation": "1794429710550048",
+      "bytes": 996636,
+      "hour": "2026-11-11T14:00:00+00:00",
+      "local_sha256": "2273a3c902f37bdfb51c1c086840f65d6d6bcf742bd2231d26fddae5444f1d9f"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=15/HourlyAQObs_2026111115_96edaf86e02673505ecdaad5e5983a7ffe100ab316c85796d9dd08702669f750.dat",
+      "generation": "1794436885670080",
+      "bytes": 996726,
+      "hour": "2026-11-11T15:00:00+00:00",
+      "local_sha256": "96edaf86e02673505ecdaad5e5983a7ffe100ab316c85796d9dd08702669f750"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=16/HourlyAQObs_2026111116_457c9b8be27b0c3474c24d1bbe628b11ef44359afb36061c874b726e6ba55a2c.dat",
+      "generation": "1794440471589319",
+      "bytes": 996776,
+      "hour": "2026-11-11T16:00:00+00:00",
+      "local_sha256": "457c9b8be27b0c3474c24d1bbe628b11ef44359afb36061c874b726e6ba55a2c"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=17/HourlyAQObs_2026111117_80b48e8cee9bba31be320ac6658effa40cd60992c15e8b9f43edea2b49306677.dat",
+      "generation": "1794440472336556",
+      "bytes": 996769,
+      "hour": "2026-11-11T17:00:00+00:00",
+      "local_sha256": "80b48e8cee9bba31be320ac6658effa40cd60992c15e8b9f43edea2b49306677"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=18/HourlyAQObs_2026111118_fc16258f292f09ecdb8237110ad1faa79e56a2eaf9b95438d2f5b0f2762fd953.dat",
+      "generation": "1794440473171350",
+      "bytes": 996581,
+      "hour": "2026-11-11T18:00:00+00:00",
+      "local_sha256": "fc16258f292f09ecdb8237110ad1faa79e56a2eaf9b95438d2f5b0f2762fd953"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=19/HourlyAQObs_2026111119_7c55f35d28ffced90d1d54013b232348ed914e0b67d3c4c0d11a9961b544289c.dat",
+      "generation": "1794451299681515",
+      "bytes": 996627,
+      "hour": "2026-11-11T19:00:00+00:00",
+      "local_sha256": "7c55f35d28ffced90d1d54013b232348ed914e0b67d3c4c0d11a9961b544289c"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=20/HourlyAQObs_2026111120_0a0c49d469b0eee4383303bc454104b224030e8532a5604a87b01b7081f872f2.dat",
+      "generation": "1794451300584148",
+      "bytes": 996659,
+      "hour": "2026-11-11T20:00:00+00:00",
+      "local_sha256": "0a0c49d469b0eee4383303bc454104b224030e8532a5604a87b01b7081f872f2"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=21/HourlyAQObs_2026111121_7be81c94f8deff9fb1a2c8339f3d56e3153c997170cb273a7c60a56a0552f220.dat",
+      "generation": "1794458520242337",
+      "bytes": 996565,
+      "hour": "2026-11-11T21:00:00+00:00",
+      "local_sha256": "7be81c94f8deff9fb1a2c8339f3d56e3153c997170cb273a7c60a56a0552f220"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=22/HourlyAQObs_2026111122_602962a29b022ac9e0538537b6214a849a57a6d5cde7f4dc80d755399188e4f9.dat",
+      "generation": "1794465711216900",
+      "bytes": 997556,
+      "hour": "2026-11-11T22:00:00+00:00",
+      "local_sha256": "602962a29b022ac9e0538537b6214a849a57a6d5cde7f4dc80d755399188e4f9"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-11/hh=23/HourlyAQObs_2026111123_fe21d5c94445ba549a5075febc2da2b2a088bc755d2e95f37a42f3fecc6db25c.dat",
+      "generation": "1794465712098234",
+      "bytes": 997234,
+      "hour": "2026-11-11T23:00:00+00:00",
+      "local_sha256": "fe21d5c94445ba549a5075febc2da2b2a088bc755d2e95f37a42f3fecc6db25c"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-12/hh=00/HourlyAQObs_2026111200_53134eebf2b76bac8b4a9101e1d5d544d0193fcd75b313292bc0b43438797ead.dat",
+      "generation": "1794472909866477",
+      "bytes": 997532,
+      "hour": "2026-11-12T00:00:00+00:00",
+      "local_sha256": "53134eebf2b76bac8b4a9101e1d5d544d0193fcd75b313292bc0b43438797ead"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-12/hh=01/HourlyAQObs_2026111201_e93220aa88bb96520fac259f98283d8bd5f2b9e6e82d487f7ce8c05010b40d2f.dat",
+      "generation": "1794472910817496",
+      "bytes": 997561,
+      "hour": "2026-11-12T01:00:00+00:00",
+      "local_sha256": "e93220aa88bb96520fac259f98283d8bd5f2b9e6e82d487f7ce8c05010b40d2f"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-12/hh=02/HourlyAQObs_2026111202_a658815094fbde17f52162421817bbc0669909b885050c88112b10c767a6e5dd.dat",
+      "generation": "1794476515909919",
+      "bytes": 997648,
+      "hour": "2026-11-12T02:00:00+00:00",
+      "local_sha256": "a658815094fbde17f52162421817bbc0669909b885050c88112b10c767a6e5dd"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-12/hh=03/HourlyAQObs_2026111203_a513997e9d1a28acb73eb52928be439e63dd7e5fa2616be2039c885ba6b97ec1.dat",
+      "generation": "1794480113326865",
+      "bytes": 997513,
+      "hour": "2026-11-12T03:00:00+00:00",
+      "local_sha256": "a513997e9d1a28acb73eb52928be439e63dd7e5fa2616be2039c885ba6b97ec1"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-12/hh=04/HourlyAQObs_2026111204_82b0806382137a057e059e56508fe438b275df07d03a49ed4fea031f8add8a5c.dat",
+      "generation": "1794483711623820",
+      "bytes": 997453,
+      "hour": "2026-11-12T04:00:00+00:00",
+      "local_sha256": "82b0806382137a057e059e56508fe438b275df07d03a49ed4fea031f8add8a5c"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-12/hh=05/HourlyAQObs_2026111205_617cac95945f8099e26e33e97e546b63eed48a7aec1ec050fd82b50bce6670dd.dat",
+      "generation": "1794490925336363",
+      "bytes": 997219,
+      "hour": "2026-11-12T05:00:00+00:00",
+      "local_sha256": "617cac95945f8099e26e33e97e546b63eed48a7aec1ec050fd82b50bce6670dd"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-12/hh=06/HourlyAQObs_2026111206_beb20ad4f4e956cf43cf9ba7ca0c12ddb3d909e4524e41ae4625849293c63c5c.dat",
+      "generation": "1794490926386372",
+      "bytes": 997184,
+      "hour": "2026-11-12T06:00:00+00:00",
+      "local_sha256": "beb20ad4f4e956cf43cf9ba7ca0c12ddb3d909e4524e41ae4625849293c63c5c"
+    },
+    {
+      "uri": "gs://final-team-514205-air-quality/raw/airnow/dt=2026-11-12/hh=07/HourlyAQObs_2026111207_fe283d21807b68fa0fd97dd56a058328d1dfe6b8f10d76fec48ac0de4dae461f.dat",
+      "generation": "1794490927440514",
+      "bytes": 996804,
+      "hour": "2026-11-12T07:00:00+00:00",
+      "local_sha256": "fe283d21807b68fa0fd97dd56a058328d1dfe6b8f10d76fec48ac0de4dae461f"
+    }
+  ]
+}

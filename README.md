@@ -253,3 +253,20 @@ before and after loading, reconciles each pollutant, and promotes facts and
 dimension versions in one transaction. Replaying the same input verifies the
 warehouse ledger and returns `unchanged`. Live landing tables are defined for
 S14; this pilot does not start live sync or the 1990–2025 backfill.
+
+## Three-day collection review
+
+The November 9–12 PurpleAir trial completed all 71 scheduled calls plus three
+manual checks. GCS data and successful job logs reconcile to 9,672 distinct
+reports and 29 skipped duplicates. AirNow covers every trial hour. See
+[the review](docs/collection_review.md) for quality limits and the proposed
+20-sensor ten-minute campaign. The exact cohort and budget are saved in
+`config/collection_strategy.yaml`; no new collection schedule was deployed.
+
+The follow-up review retains the 20-device cohort and documents the five
+eligible reference-site gaps and per-device replacement actions. The poller
+now supports a strict allowlist and response-time QC; the offline 72-hour
+gate requires 411/432 successful calls and 65/72 accepted hours per retained
+device. [The campaign runbook](docs/collection_campaign.md) gives paused
+deployment, preflight, activation, and daily-review steps. These source changes
+still require a new Python 3.15 image and deployment before taking effect.

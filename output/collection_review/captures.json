@@ -1,0 +1,520 @@
+[
+  {
+    "name": "purpleair_20261109T073930Z_e5edcce9.json",
+    "requested_at": "2026-11-09T07:39:30+00:00",
+    "manual": true,
+    "sensors": 131,
+    "delay_seconds": 2370
+  },
+  {
+    "name": "purpleair_20261109T074103Z_4486d1cb.json",
+    "requested_at": "2026-11-09T07:41:03+00:00",
+    "manual": true,
+    "sensors": 131,
+    "delay_seconds": 2463
+  },
+  {
+    "name": "purpleair_20261109T080120Z_3d99cb97.json",
+    "requested_at": "2026-11-09T08:01:20+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 80
+  },
+  {
+    "name": "purpleair_20261109T090330Z_2e03bfcf.json",
+    "requested_at": "2026-11-09T09:03:30+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 210
+  },
+  {
+    "name": "purpleair_20261109T100122Z_592d5568.json",
+    "requested_at": "2026-11-09T10:01:22+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 82
+  },
+  {
+    "name": "purpleair_20261109T110238Z_8cff92c1.json",
+    "requested_at": "2026-11-09T11:02:38+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 158
+  },
+  {
+    "name": "purpleair_20261109T120221Z_1d6633c9.json",
+    "requested_at": "2026-11-09T12:02:21+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 141
+  },
+  {
+    "name": "purpleair_20261109T130241Z_612681c9.json",
+    "requested_at": "2026-11-09T13:02:41+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 161
+  },
+  {
+    "name": "purpleair_20261109T140211Z_fd0187f3.json",
+    "requested_at": "2026-11-09T14:02:11+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 131
+  },
+  {
+    "name": "purpleair_20261109T150158Z_d1ce1995.json",
+    "requested_at": "2026-11-09T15:01:58+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 118
+  },
+  {
+    "name": "purpleair_20261109T160158Z_3b4c3bf1.json",
+    "requested_at": "2026-11-09T16:01:58+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 118
+  },
+  {
+    "name": "purpleair_20261109T170205Z_7bc83086.json",
+    "requested_at": "2026-11-09T17:02:05+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 125
+  },
+  {
+    "name": "purpleair_20261109T180218Z_197513ed.json",
+    "requested_at": "2026-11-09T18:02:18+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 138
+  },
+  {
+    "name": "purpleair_20261109T190242Z_1d9d9e91.json",
+    "requested_at": "2026-11-09T19:02:42+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 162
+  },
+  {
+    "name": "purpleair_20261109T200247Z_b6f2080c.json",
+    "requested_at": "2026-11-09T20:02:47+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 167
+  },
+  {
+    "name": "purpleair_20261109T210214Z_00755907.json",
+    "requested_at": "2026-11-09T21:02:14+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 134
+  },
+  {
+    "name": "purpleair_20261109T213028Z_cb0d0b79.json",
+    "requested_at": "2026-11-09T21:30:28+00:00",
+    "manual": true,
+    "sensors": 131,
+    "delay_seconds": 1828
+  },
+  {
+    "name": "purpleair_20261109T220234Z_bc649757.json",
+    "requested_at": "2026-11-09T22:02:34+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 154
+  },
+  {
+    "name": "purpleair_20261109T230151Z_1a4b03dd.json",
+    "requested_at": "2026-11-09T23:01:51+00:00",
+    "manual": false,
+    "sensors": 128,
+    "delay_seconds": 111
+  },
+  {
+    "name": "purpleair_20261110T000140Z_a794fb6a.json",
+    "requested_at": "2026-11-10T00:01:40+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 100
+  },
+  {
+    "name": "purpleair_20261110T010139Z_76203ad5.json",
+    "requested_at": "2026-11-10T01:01:39+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 99
+  },
+  {
+    "name": "purpleair_20261110T020126Z_8409ef24.json",
+    "requested_at": "2026-11-10T02:01:26+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 86
+  },
+  {
+    "name": "purpleair_20261110T030123Z_f318c166.json",
+    "requested_at": "2026-11-10T03:01:23+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 83
+  },
+  {
+    "name": "purpleair_20261110T040313Z_74831c88.json",
+    "requested_at": "2026-11-10T04:03:13+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 193
+  },
+  {
+    "name": "purpleair_20261110T050208Z_957ed21a.json",
+    "requested_at": "2026-11-10T05:02:08+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 128
+  },
+  {
+    "name": "purpleair_20261110T060142Z_4a467d77.json",
+    "requested_at": "2026-11-10T06:01:42+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 102
+  },
+  {
+    "name": "purpleair_20261110T070151Z_a8bfb30d.json",
+    "requested_at": "2026-11-10T07:01:51+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 111
+  },
+  {
+    "name": "purpleair_20261110T080151Z_97ec3dc3.json",
+    "requested_at": "2026-11-10T08:01:51+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 111
+  },
+  {
+    "name": "purpleair_20261110T090148Z_bdf1cf47.json",
+    "requested_at": "2026-11-10T09:01:48+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 108
+  },
+  {
+    "name": "purpleair_20261110T100151Z_910d584e.json",
+    "requested_at": "2026-11-10T10:01:51+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 111
+  },
+  {
+    "name": "purpleair_20261110T110151Z_24ad5301.json",
+    "requested_at": "2026-11-10T11:01:51+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 111
+  },
+  {
+    "name": "purpleair_20261110T120153Z_c8e0f41a.json",
+    "requested_at": "2026-11-10T12:01:53+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 113
+  },
+  {
+    "name": "purpleair_20261110T130152Z_8e141a28.json",
+    "requested_at": "2026-11-10T13:01:52+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 112
+  },
+  {
+    "name": "purpleair_20261110T140139Z_37e84658.json",
+    "requested_at": "2026-11-10T14:01:39+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 99
+  },
+  {
+    "name": "purpleair_20261110T150141Z_aec93276.json",
+    "requested_at": "2026-11-10T15:01:41+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 101
+  },
+  {
+    "name": "purpleair_20261110T160150Z_5358dc8b.json",
+    "requested_at": "2026-11-10T16:01:50+00:00",
+    "manual": false,
+    "sensors": 133,
+    "delay_seconds": 110
+  },
+  {
+    "name": "purpleair_20261110T170151Z_55dc72ad.json",
+    "requested_at": "2026-11-10T17:01:51+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 111
+  },
+  {
+    "name": "purpleair_20261110T180156Z_a9ffc566.json",
+    "requested_at": "2026-11-10T18:01:56+00:00",
+    "manual": false,
+    "sensors": 133,
+    "delay_seconds": 116
+  },
+  {
+    "name": "purpleair_20261110T190135Z_22973daf.json",
+    "requested_at": "2026-11-10T19:01:35+00:00",
+    "manual": false,
+    "sensors": 134,
+    "delay_seconds": 95
+  },
+  {
+    "name": "purpleair_20261110T200144Z_41533294.json",
+    "requested_at": "2026-11-10T20:01:44+00:00",
+    "manual": false,
+    "sensors": 134,
+    "delay_seconds": 104
+  },
+  {
+    "name": "purpleair_20261110T210156Z_42d81c33.json",
+    "requested_at": "2026-11-10T21:01:56+00:00",
+    "manual": false,
+    "sensors": 134,
+    "delay_seconds": 116
+  },
+  {
+    "name": "purpleair_20261110T220153Z_4269e055.json",
+    "requested_at": "2026-11-10T22:01:53+00:00",
+    "manual": false,
+    "sensors": 133,
+    "delay_seconds": 113
+  },
+  {
+    "name": "purpleair_20261110T230203Z_33b43101.json",
+    "requested_at": "2026-11-10T23:02:03+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 123
+  },
+  {
+    "name": "purpleair_20261111T000157Z_380de7b0.json",
+    "requested_at": "2026-11-11T00:01:57+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 117
+  },
+  {
+    "name": "purpleair_20261111T010137Z_276efcbd.json",
+    "requested_at": "2026-11-11T01:01:37+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 97
+  },
+  {
+    "name": "purpleair_20261111T020133Z_777b3ac7.json",
+    "requested_at": "2026-11-11T02:01:33+00:00",
+    "manual": false,
+    "sensors": 133,
+    "delay_seconds": 93
+  },
+  {
+    "name": "purpleair_20261111T030147Z_c6203956.json",
+    "requested_at": "2026-11-11T03:01:47+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 107
+  },
+  {
+    "name": "purpleair_20261111T040144Z_a075df29.json",
+    "requested_at": "2026-11-11T04:01:44+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 104
+  },
+  {
+    "name": "purpleair_20261111T050206Z_30fa07d2.json",
+    "requested_at": "2026-11-11T05:02:06+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 126
+  },
+  {
+    "name": "purpleair_20261111T060144Z_57ddcf4d.json",
+    "requested_at": "2026-11-11T06:01:44+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 104
+  },
+  {
+    "name": "purpleair_20261111T070140Z_1e21d39a.json",
+    "requested_at": "2026-11-11T07:01:40+00:00",
+    "manual": false,
+    "sensors": 133,
+    "delay_seconds": 100
+  },
+  {
+    "name": "purpleair_20261111T080137Z_7a28d748.json",
+    "requested_at": "2026-11-11T08:01:37+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 97
+  },
+  {
+    "name": "purpleair_20261111T090142Z_daf22b0a.json",
+    "requested_at": "2026-11-11T09:01:42+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 102
+  },
+  {
+    "name": "purpleair_20261111T100133Z_653eaac8.json",
+    "requested_at": "2026-11-11T10:01:33+00:00",
+    "manual": false,
+    "sensors": 133,
+    "delay_seconds": 93
+  },
+  {
+    "name": "purpleair_20261111T110229Z_02bda657.json",
+    "requested_at": "2026-11-11T11:02:29+00:00",
+    "manual": false,
+    "sensors": 133,
+    "delay_seconds": 149
+  },
+  {
+    "name": "purpleair_20261111T120033Z_643b6edb.json",
+    "requested_at": "2026-11-11T12:00:33+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 33
+  },
+  {
+    "name": "purpleair_20261111T130218Z_e38a4e3d.json",
+    "requested_at": "2026-11-11T13:02:18+00:00",
+    "manual": false,
+    "sensors": 132,
+    "delay_seconds": 138
+  },
+  {
+    "name": "purpleair_20261111T140235Z_ebbfdd5b.json",
+    "requested_at": "2026-11-11T14:02:35+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 155
+  },
+  {
+    "name": "purpleair_20261111T150057Z_67e02071.json",
+    "requested_at": "2026-11-11T15:00:57+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 57
+  },
+  {
+    "name": "purpleair_20261111T160112Z_ec46dfb6.json",
+    "requested_at": "2026-11-11T16:01:12+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 72
+  },
+  {
+    "name": "purpleair_20261111T170111Z_bc74d750.json",
+    "requested_at": "2026-11-11T17:01:11+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 71
+  },
+  {
+    "name": "purpleair_20261111T180119Z_afc64cad.json",
+    "requested_at": "2026-11-11T18:01:19+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 79
+  },
+  {
+    "name": "purpleair_20261111T190108Z_595afce7.json",
+    "requested_at": "2026-11-11T19:01:08+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 68
+  },
+  {
+    "name": "purpleair_20261111T200106Z_eb9af432.json",
+    "requested_at": "2026-11-11T20:01:06+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 66
+  },
+  {
+    "name": "purpleair_20261111T210104Z_e8b32c6a.json",
+    "requested_at": "2026-11-11T21:01:04+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 64
+  },
+  {
+    "name": "purpleair_20261111T220105Z_332a65ab.json",
+    "requested_at": "2026-11-11T22:01:05+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 65
+  },
+  {
+    "name": "purpleair_20261111T230233Z_66072335.json",
+    "requested_at": "2026-11-11T23:02:33+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 153
+  },
+  {
+    "name": "purpleair_20261112T000046Z_c65452d4.json",
+    "requested_at": "2026-11-12T00:00:46+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 46
+  },
+  {
+    "name": "purpleair_20261112T010225Z_2c63e2b2.json",
+    "requested_at": "2026-11-12T01:02:25+00:00",
+    "manual": false,
+    "sensors": 131,
+    "delay_seconds": 145
+  },
+  {
+    "name": "purpleair_20261112T020245Z_be0dfaed.json",
+    "requested_at": "2026-11-12T02:02:45+00:00",
+    "manual": false,
+    "sensors": 130,
+    "delay_seconds": 165
+  },
+  {
+    "name": "purpleair_20261112T030109Z_d2e2a753.json",
+    "requested_at": "2026-11-12T03:01:09+00:00",
+    "manual": false,
+    "sensors": 129,
+    "delay_seconds": 69
+  },
+  {
+    "name": "purpleair_20261112T040112Z_ed37e27f.json",
+    "requested_at": "2026-11-12T04:01:12+00:00",
+    "manual": false,
+    "sensors": 129,
+    "delay_seconds": 72
+  },
+  {
+    "name": "purpleair_20261112T050122Z_a221b6d8.json",
+    "requested_at": "2026-11-12T05:01:22+00:00",
+    "manual": false,
+    "sensors": 128,
+    "delay_seconds": 82
+  },
+  {
+    "name": "purpleair_20261112T060126Z_821ef9d5.json",
+    "requested_at": "2026-11-12T06:01:26+00:00",
+    "manual": false,
+    "sensors": 129,
+    "delay_seconds": 86
+  }
+]

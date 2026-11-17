@@ -1,0 +1,46 @@
+{
+  "checked_at_utc": "2026-11-17T04:05:03.798626+00:00",
+  "requested_sensor_ids": [
+    247067,
+    185237,
+    249139,
+    280642,
+    182281,
+    309644
+  ],
+  "results": [
+    {
+      "sensor_id": 280642,
+      "quality_pass": true,
+      "response_age_seconds": 80
+    },
+    {
+      "sensor_id": 309644,
+      "quality_pass": true,
+      "response_age_seconds": 110
+    },
+    {
+      "sensor_id": 182281,
+      "quality_pass": true,
+      "response_age_seconds": 64
+    },
+    {
+      "sensor_id": 185237,
+      "quality_pass": true,
+      "response_age_seconds": 101
+    },
+    {
+      "sensor_id": 247067,
+      "quality_pass": true,
+      "response_age_seconds": 114
+    },
+    {
+      "sensor_id": 249139,
+      "quality_pass": true,
+      "response_age_seconds": 22
+    }
+  ],
+  "remaining_before": 919751,
+  "remaining_after_settled": 919698,
+  "measured_cost": 53
+}

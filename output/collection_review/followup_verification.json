@@ -1,0 +1,40 @@
+{
+  "reviewed_at_utc": "2026-11-17T04:56:11.705899+00:00",
+  "python_version": "3.15.2",
+  "scope": "Saved-trial coverage audit, local fixed-cohort poller, offline review gate, and mocked infrastructure checks",
+  "python_tests": {
+    "passed": 53,
+    "skipped": 2,
+    "skip_reason": "Local PostgreSQL integration DSN was not configured",
+    "files": [
+      "tests/test_purpleair_poll.py",
+      "tests/test_collection_gate.py",
+      "tests/test_purpleair_check.py",
+      "tests/test_scaffold.py",
+      "tests/test_cloudsql.py"
+    ]
+  },
+  "terraform": {
+    "version": "1.13.5",
+    "validate": "passed",
+    "mock_tests_passed": 18,
+    "live_cloud_apply": false
+  },
+  "lint": "passed",
+  "format_check": "passed",
+  "diff_whitespace_check": "passed",
+  "active_roster_changes": 0,
+  "additional_purpleair_api_calls": 0,
+  "cloud_configuration_changes": false,
+  "still_required_before_activation": [
+    "Build and pin the new Python 3.15 image",
+    "Pause/replace the existing scheduler using the reviewed Terraform plan",
+    "Run one marked preflight and check actual IDs, raw data, SQL commit and settled points",
+    "Choose a future activation time and verify the first scheduled cycle"
+  ],
+  "evidence": {
+    "coverage": "coverage_gaps.json",
+    "replacement_rules": "replacement_plan.json",
+    "paused_deployment_overlay": "campaign.tfvars.json"
+  }
+}

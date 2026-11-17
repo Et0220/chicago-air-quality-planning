@@ -26,3 +26,6 @@ Final Project Submission.pdf
 
 # Reproducible Spark submission bundle; source and JSON evidence are retained.
 output/spark/**/epa_spark.zip
+
+# Local reports and presentation
+/doc and ppt/

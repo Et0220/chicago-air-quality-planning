@@ -2,10 +2,30 @@
 
 **Status: deployed 2026-11-09 UTC; hourly schedule enabled for a 72-hour test.**
 
-`ingestion/purpleair_poll.py` makes one `/v1/sensors` call per run for the whole
-Chicago bounding box (outdoor sensors, 7 columns), stores the response unchanged
+**Follow-up, November 16 (Chicago time):** the trial finished at its cutoff.
+All 71 eligible scheduled calls and three manual calls succeeded; raw records
+reconcile to 9,672 inserted reports and 29 skipped duplicates in job logs.
+The scheduler remains enabled but the stop guard prevents new sensor calls.
+See [the complete review and proposed next campaign](collection_review.md).
+The proposed 20-sensor ten-minute campaign has not been deployed.
+
+The deployed trial image makes one `/v1/sensors` call per run for the whole
+Chicago bounding box (outdoor sensors, 7 requested fields plus sensor ID), stores the response unchanged
 under `raw/purpleair/dt=YYYY-MM-DD/hh=HH/`, upserts `pa_sensor`,
 `pa_sensor_history` and `pa_reading`, and writes one `pa_poll_log` row.
+
+**Prepared locally, not deployed:** the current source also accepts an exact
+fixed roster with `--sensor-ids` / `AIR_QUALITY_PURPLEAIR_SENSOR_IDS`. Fixed-roster
+requests use `show_only`, omit the discovery bounding box, and cap freshness at
+180 seconds relative to response `time_stamp`. Missing/indoor status, invalid
+humidity, negative/missing PM channels and provisional A/B disagreement are
+flagged. Raw responses and flagged readings are retained; they do not count
+toward accepted analytical coverage. Unexpected IDs fail before SQL writes.
+Quality details are stored in `ingest_run.details.quality` and emitted as
+structured Cloud Logging records. See [deployment and review steps](collection_campaign.md).
+Rows with unknown indoor/outdoor status or future report timestamps stay raw-only,
+with explicit flags, so they cannot overwrite sensor metadata/history with a
+guessed status or advance the operational last-seen timestamp into the future.
 
 ## Test configuration
 
@@ -67,6 +87,13 @@ passed with `--update-secrets` for a single execution, then deleted.
 `..._TARGET_POLL_SECONDS` override `config/settings.yaml` (CLI flags win over
 both). `TARGET_POLL_SECONDS` is only recorded in the poll details; the actual
 cadence is the Cloud Scheduler cron (`0 * * * *`).
+
+The new `purpleair_poll_schedule` Terraform variable can switch that cron to
+`5,15,25,35,45,55 * * * *`. This requires a fixed roster and cutoff. Use
+`AIR_QUALITY_PURPLEAIR_NOT_BEFORE_UTC` to prevent calls before activation and
+`--run-kind preflight` (or `AIR_QUALITY_PURPLEAIR_RUN_KIND=preflight`) to exclude
+manual checks from scheduled-window acceptance. The historical trial remains
+the deployed behavior until the image is rebuilt and the reviewed plan applied.
 
 ## Operate
 

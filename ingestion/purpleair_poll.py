@@ -1,4 +1,4 @@
-"""S08: PurpleAir poller (provisional: hourly, whole Chicago bounding box).
+"""S08: PurpleAir poller with optional fixed-cohort collection.
 
 One run is one ``/v1/sensors`` call. The response is saved unchanged, readings
 are upserted (with ``--db``), and one poll record is written. Schedule runs
@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import os
 import socket
 import sys
@@ -29,7 +30,7 @@ import urllib.request
 import uuid
 from collections.abc import Callable
 from contextlib import nullcontext
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -50,11 +51,13 @@ class Reading:
     report_ts: datetime
     latitude: float | None
     longitude: float | None
-    is_outdoor: bool
+    is_outdoor: bool | None
     pm25_a: float | None
     pm25_b: float | None
     humidity: float | None
     stale: bool
+    quality_flags: tuple[str, ...] = ()
+    response_age_seconds: float | None = None
 
 
 @dataclass
@@ -69,19 +72,49 @@ class Stats:
     stale_reports: int = 0
     raw_uri: str | None = None
     error_message: str | None = None
+    missing_sensor_ids: list[int] = field(default_factory=list)
+    unexpected_sensor_ids: list[int] = field(default_factory=list)
+    valid_sensor_ids: list[int] = field(default_factory=list)
+    quality_flags: dict[int, list[str]] = field(default_factory=dict)
+    raw_only_reports: int = 0
 
 
 # --- request / parse --------------------------------------------------------
 
 
-def make_fetch(key: str, fields: list[str], max_age: int, timeout: int = 60) -> Fetch:
+def sensor_allowlist(value: str | list[int] | None) -> list[int] | None:
+    """An omitted roster means discovery; an empty/invalid roster never does."""
+    if value is None:
+        return None
+    parts = value.split(",") if isinstance(value, str) else value
+    if not parts or any(not str(v).strip().isdigit() for v in parts):
+        raise ValueError("Sensor allowlist must contain positive integer IDs")
+    ids = [int(v) for v in parts]
+    if min(ids) <= 0 or len(ids) != len(set(ids)) or len(ids) > 20:
+        raise ValueError("Sensor allowlist must contain 1–20 distinct positive IDs")
+    return ids
+
+
+def make_fetch(
+    key: str,
+    fields: list[str],
+    max_age: int,
+    timeout: int = 60,
+    *,
+    sensor_ids: list[int] | None = None,
+) -> Fetch:
+    sensor_ids = sensor_allowlist(sensor_ids)
+
     def fetch() -> tuple[int, int, bytes]:
         params = {
             "fields": ",".join(fields),
             "location_type": 0,  # outdoor only
             "max_age": max_age,
-            **pa.BBOX,
         }
+        if sensor_ids is None:
+            params.update(pa.BBOX)
+        else:
+            params["show_only"] = ",".join(map(str, sensor_ids))
         url = f"{pa.API}/sensors?{urllib.parse.urlencode(params)}"
         request = urllib.request.Request(url, headers={"X-API-Key": key})
         started = time.monotonic()
@@ -125,16 +158,24 @@ def _num(value: object) -> float | None:
 def readings_from(payload: dict, stale_after: int) -> tuple[list[Reading], int]:
     """Return usable readings and the count of rows without sensor id/report time.
 
-    A reading is *stale* when the snapshot is more than ``stale_after`` seconds
-    newer than its ``last_seen``. Stale readings are kept; S16 decides on QC.
+    Freshness uses response ``time_stamp``, never the older cached snapshot.
+    Invalid/future ages and missing QC fields fail closed. All raw readings
+    remain stored; only unflagged readings count toward analytical coverage.
     """
     columns = payload["fields"]
-    snapshot = payload.get("data_time_stamp") or payload.get("time_stamp")
+    response_time = payload.get("time_stamp")
+    if (
+        not isinstance(response_time, (int, float))
+        or isinstance(response_time, bool)
+        or not math.isfinite(response_time)
+        or response_time <= 0
+    ):
+        raise ValueError("Response lacks a valid time_stamp for freshness checks")
     readings: list[Reading] = []
     unusable = 0
     for raw in payload["data"]:
         row = dict(zip(columns, raw))
-        if len(raw) < len(columns) or None in (
+        if len(raw) != len(columns) or None in (
             row.get("sensor_index"),
             row.get("last_seen"),
         ):
@@ -142,18 +183,37 @@ def readings_from(payload: dict, stale_after: int) -> tuple[list[Reading], int]:
             continue
         last_seen = int(row["last_seen"])
         location_type = row.get("location_type")
+        age = response_time - last_seen
+        stale = not 0 <= age <= stale_after
+        a, b, humidity = (
+            _num(row.get(k)) for k in ("pm2.5_cf_1_a", "pm2.5_cf_1_b", "humidity")
+        )
+        flags = []
+        if stale:
+            flags.append("future_report" if age < 0 else "stale_response")
+        if location_type != 0:
+            flags.append("not_confirmed_outdoor")
+        if a is None or b is None:
+            flags.append("missing_pm_channel")
+        elif not all(math.isfinite(v) and v >= 0 for v in (a, b)):
+            flags.append("invalid_pm_channel")
+        elif abs(a - b) > max(5, 0.2 * ((a + b) / 2)):
+            flags.append("ab_disagreement")
+        if humidity is None or not math.isfinite(humidity) or not 0 <= humidity <= 100:
+            flags.append("invalid_humidity")
         readings.append(
             Reading(
                 sensor_id=int(row["sensor_index"]),
                 report_ts=datetime.fromtimestamp(last_seen, UTC),
                 latitude=_num(row.get("latitude")),
                 longitude=_num(row.get("longitude")),
-                # The request filters to outdoor sensors, so absent means outdoor.
-                is_outdoor=True if location_type is None else location_type == 0,
-                pm25_a=_num(row.get("pm2.5_cf_1_a")),
-                pm25_b=_num(row.get("pm2.5_cf_1_b")),
-                humidity=_num(row.get("humidity")),
-                stale=bool(snapshot) and snapshot - last_seen > stale_after,
+                is_outdoor=location_type == 0 if location_type in (0, 1) else None,
+                pm25_a=a,
+                pm25_b=b,
+                humidity=humidity,
+                stale=stale,
+                quality_flags=tuple(flags),
+                response_age_seconds=age,
             )
         )
     return readings, unusable
@@ -235,7 +295,7 @@ def _changed(old: tuple, reading: Reading) -> bool:
     return (
         differs(lat, reading.latitude)
         or differs(lon, reading.longitude)
-        or outdoor != reading.is_outdoor
+        or (reading.is_outdoor is not None and outdoor != reading.is_outdoor)
     )
 
 
@@ -243,6 +303,16 @@ def store_readings(
     cur, readings: list[Reading], arrival: datetime, raw_uri: str, poll_id: str
 ) -> tuple[int, int, int]:
     """Upsert sensors, history intervals and readings; return (new, dup, late)."""
+    # Unknown status cannot safely populate the NOT NULL metadata/history fields.
+    # Future reports must not advance last_seen and poison subsequent history.
+    # Both remain in the immutable raw response and quality audit.
+    readings = [
+        r
+        for r in readings
+        if r.is_outdoor is not None and "future_report" not in r.quality_flags
+    ]
+    if not readings:
+        return 0, 0, 0
     ids = sorted({r.sensor_id for r in readings})
     cur.execute(
         "SELECT sensor_id, last_seen_at_utc FROM pa_sensor WHERE sensor_id = ANY(%s)",
@@ -344,7 +414,8 @@ def _log_poll(cur, poll_id, run_id, requested_at, completed_at, stats: Stats) ->
 def _finish_run(cur, run_id, finished_at, stats: Stats) -> None:
     cur.execute(
         """UPDATE ingest_run SET status = %s, finished_at_utc = %s,
-           input_count = %s, output_count = %s, error_message = %s
+           input_count = %s, output_count = %s, error_message = %s,
+           details = details || CAST(%s AS jsonb)
            WHERE run_id = %s""",
         (
             "succeeded" if stats.outcome == "success" else "failed",
@@ -352,9 +423,23 @@ def _finish_run(cur, run_id, finished_at, stats: Stats) -> None:
             stats.sensors_seen,
             stats.rows_inserted,
             stats.error_message,
+            json.dumps({"quality": quality_summary(stats)}),
             run_id,
         ),
     )
+
+
+def quality_summary(stats: Stats) -> dict:
+    return {
+        key: getattr(stats, key)
+        for key in (
+            "missing_sensor_ids",
+            "unexpected_sensor_ids",
+            "valid_sensor_ids",
+            "quality_flags",
+            "raw_only_reports",
+        )
+    }
 
 
 # --- one poll ---------------------------------------------------------------
@@ -372,6 +457,9 @@ def poll(
     now: Callable[[], datetime] = lambda: datetime.now(UTC),
 ) -> Stats:
     """Run one poll. ``conn`` is a DB-API connection or None (raw files only)."""
+    expected = sensor_allowlist(details.get("sensor_ids"))
+    if expected is not None:
+        stale_after = min(stale_after, 180)
     stats = Stats()
     poll_id, run_id = str(uuid.uuid4()), str(uuid.uuid4())
     requested_at = now()
@@ -390,13 +478,33 @@ def poll(
         status, latency_ms, body = fetch()
         stats.http_status, stats.latency_ms = status, latency_ms
         completed_at = now()
+        # Retain the exact response even if its shape, timestamps or IDs fail QC.
+        stats.raw_uri = write_raw(
+            raw_key(raw_prefix, requested_at, poll_id), body, bucket, local_dir
+        )
         payload = parse_payload(body)
         readings, unusable = readings_from(payload, stale_after)
         stats.sensors_seen = len(payload["data"])
         stats.stale_reports = unusable + sum(r.stale for r in readings)
-        stats.raw_uri = write_raw(
-            raw_key(raw_prefix, requested_at, poll_id), body, bucket, local_dir
+        seen = {r.sensor_id for r in readings}
+        stats.raw_only_reports = unusable + sum(
+            r.is_outdoor is None or "future_report" in r.quality_flags for r in readings
         )
+        if expected is not None:
+            stats.missing_sensor_ids = sorted(set(expected) - seen)
+            stats.unexpected_sensor_ids = sorted(seen - set(expected))
+        stats.valid_sensor_ids = sorted(
+            {r.sensor_id for r in readings if not r.quality_flags}
+        )
+        stats.quality_flags = {
+            r.sensor_id: list(r.quality_flags) for r in readings if r.quality_flags
+        }
+        if stats.unexpected_sensor_ids:
+            raise ValueError(
+                "Response contains sensors outside the configured allowlist"
+            )
+        if len(seen) != len(readings):
+            raise ValueError("Response contains duplicate sensor IDs")
         if conn is not None:
             cur = conn.cursor()
             try:
@@ -427,9 +535,17 @@ def poll(
             _finish_run(cur, run_id, now(), stats)
             conn.commit()
             cur.close()
+    record = {
+        "event": "purpleair_poll",
+        "poll_id": poll_id,
+        "requested_at_utc": requested_at.isoformat(),
+        "completed_at_utc": completed_at.isoformat(),
+        "details": details,
+        **asdict(stats),
+    }
+    # Cloud Logging ingests this as jsonPayload; offline review uses the same record.
+    print(json.dumps(record))
     if conn is None:
-        record = {"poll_id": poll_id, "requested_at_utc": requested_at.isoformat()}
-        record.update(asdict(stats))
         log = local_dir / "poll_log.jsonl"
         log.parent.mkdir(parents=True, exist_ok=True)
         with log.open("a", encoding="utf-8") as handle:
@@ -438,6 +554,8 @@ def poll(
 
 
 STOP_AFTER_VAR = "AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC"
+NOT_BEFORE_VAR = "AIR_QUALITY_PURPLEAIR_NOT_BEFORE_UTC"
+SENSOR_IDS_VAR = "AIR_QUALITY_PURPLEAIR_SENSOR_IDS"
 
 
 def window_closed(stop_after: str | None, now: datetime) -> bool:
@@ -472,6 +590,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--fixture", type=Path, help="saved response; no network")
     parser.add_argument("--max-age", type=int)
     parser.add_argument("--stale-after", type=int)
+    parser.add_argument("--sensor-ids", help="comma-separated fixed roster; max 20")
+    parser.add_argument("--run-kind", choices=("scheduled", "preflight"))
     args = parser.parse_args(argv)
 
     pa.load_env()
@@ -490,12 +610,31 @@ def main(argv: list[str] | None = None) -> int:
     poll_seconds = _setting(
         None, "PURPLEAIR_TARGET_POLL_SECONDS", section, "target_poll_seconds"
     )
+    try:
+        sensor_ids = sensor_allowlist(
+            args.sensor_ids
+            if args.sensor_ids is not None
+            else os.environ.get(SENSOR_IDS_VAR)
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
+    if sensor_ids is not None:
+        stale_after = min(stale_after, 180)
+    run_kind = args.run_kind or os.environ.get(
+        "AIR_QUALITY_PURPLEAIR_RUN_KIND", "scheduled"
+    )
+    if run_kind not in ("scheduled", "preflight"):
+        parser.error("Run kind must be scheduled or preflight")
     raw_prefix = (
         os.environ.get("AIR_QUALITY_GCS_RAW_PURPLEAIR_PREFIX")
         or settings["gcs"]["raw_purpleair_prefix"]
     ).strip("/")
     if window_closed(os.environ.get(STOP_AFTER_VAR), datetime.now(UTC)):
         print(f"poll skipped: {STOP_AFTER_VAR} has passed; no request made")
+        return 0
+    not_before = os.environ.get(NOT_BEFORE_VAR)
+    if not_before and not window_closed(not_before, datetime.now(UTC)):
+        print(f"poll skipped: {NOT_BEFORE_VAR} has not arrived; no request made")
         return 0
     if args.fixture:
         body = args.fixture.read_bytes()
@@ -505,7 +644,7 @@ def main(argv: list[str] | None = None) -> int:
         if not key:
             print(f"{pa.KEY_VAR} is not set (put it in .env).", file=sys.stderr)
             return 2
-        fetch = make_fetch(key, section["fields"], max_age)
+        fetch = make_fetch(key, section["fields"], max_age, sensor_ids=sensor_ids)
     bucket = None
     if args.raw_store == "gcs":
         bucket = os.environ.get("AIR_QUALITY_GCS_BUCKET")
@@ -517,7 +656,10 @@ def main(argv: list[str] | None = None) -> int:
         "max_age_seconds": max_age,
         "stale_after_seconds": stale_after,
         "poll_seconds": poll_seconds,
-        "bbox": pa.BBOX,
+        "sensor_ids": sensor_ids,
+        "run_kind": run_kind,
+        "freshness_clock": "response_time_stamp",
+        "bbox": pa.BBOX if sensor_ids is None else None,
     }
     with db.connect() if args.db else nullcontext(None) as conn:
         stats = poll(

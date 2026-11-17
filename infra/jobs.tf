@@ -31,7 +31,7 @@ locals {
     "purpleair-poll" = var.purpleair_poll_enabled
   }
   schedules = {
-    "purpleair-poll" = "0 * * * *" # hourly, on the hour (UTC)
+    "purpleair-poll" = var.purpleair_poll_schedule
     "airnow-collect" = "40 * * * *"
     "live-sync"      = "*/5 * * * *"
   }
@@ -94,6 +94,21 @@ resource "google_cloud_run_v2_job" "placeholder" {
           for_each = each.key == "purpleair-poll" && local.deployed[each.key] && var.purpleair_poll_stop_after_utc != null ? [var.purpleair_poll_stop_after_utc] : []
           content {
             name  = "AIR_QUALITY_PURPLEAIR_STOP_AFTER_UTC"
+            value = env.value
+          }
+        }
+        dynamic "env" {
+          for_each = each.key == "purpleair-poll" && local.deployed[each.key] ? merge({
+            AIR_QUALITY_PURPLEAIR_MAX_AGE_SECONDS     = tostring(var.purpleair_poll_max_age_seconds)
+            AIR_QUALITY_PURPLEAIR_STALE_AFTER_SECONDS = tostring(var.purpleair_poll_stale_after_seconds)
+            AIR_QUALITY_PURPLEAIR_TARGET_POLL_SECONDS = var.purpleair_poll_schedule == "0 * * * *" ? "3600" : "600"
+            }, var.purpleair_poll_sensor_ids == null ? {} : {
+            AIR_QUALITY_PURPLEAIR_SENSOR_IDS = join(",", [for id in var.purpleair_poll_sensor_ids : tostring(id)])
+            }, var.purpleair_poll_not_before_utc == null ? {} : {
+            AIR_QUALITY_PURPLEAIR_NOT_BEFORE_UTC = var.purpleair_poll_not_before_utc
+          }) : {}
+          content {
+            name  = env.key
             value = env.value
           }
         }

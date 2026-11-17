@@ -12,3 +12,12 @@ spark_submitter_members = [] # e.g. ["user:you@example.com"]
 # S09: deploy and verify the backfill before enabling the hourly schedule.
 # airnow_collect_image = "us-central1-docker.pkg.dev/PROJECT/air-quality/airnow-collect@sha256:DIGEST"
 airnow_schedule_enabled = false
+# Fixed-cohort proposal: apply only after rebuilding/pinning the poller image.
+# The generated output/collection_review/campaign.tfvars.json overlay remains paused.
+purpleair_poll_enabled = false
+# purpleair_poll_schedule = "5,15,25,35,45,55 * * * *"
+# purpleair_poll_sensor_ids = [164317, 175417] # Replace with the complete reviewed roster.
+# purpleair_poll_max_age_seconds = 300
+# purpleair_poll_stale_after_seconds = 180
+# purpleair_poll_stop_after_utc = "2026-12-10T06:00:00Z"
+# purpleair_poll_not_before_utc = "SET_A_FUTURE_RFC3339_TIME_AFTER_PREFLIGHT"

@@ -1,5 +1,10 @@
 # PurpleAir feasibility (S04)
 
+The historical snapshot and trial rationale below are retained as evidence.
+The [November 16 collection review](collection_review.md) now provides the
+complete three-day results, a measured current points balance, and a specific
+20-sensor ten-minute follow-up strategy. That strategy is proposed, not live.
+
 Generated 2026-11-09 05:38 UTC from one live `/v1/sensors` call.
 
 ## Request

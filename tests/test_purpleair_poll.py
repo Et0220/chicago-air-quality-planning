@@ -3,8 +3,10 @@
 import json
 import os
 import urllib.error
+import urllib.parse
 import uuid
 from datetime import UTC, datetime, timedelta
+from pathlib import Path
 
 import pytest
 
@@ -398,3 +400,181 @@ def test_environment_overrides_beat_settings(monkeypatch):
     monkeypatch.setenv("AIR_QUALITY_PURPLEAIR_MAX_AGE_SECONDS", "0")
     with pytest.raises(ValueError):
         pp._setting(None, "PURPLEAIR_MAX_AGE_SECONDS", section, "max_age_seconds")
+
+
+@pytest.mark.parametrize(
+    "value", ["", [], "1,1", "0", "1,-2", "1,", list(range(1, 22))]
+)
+def test_invalid_allowlist_never_falls_back_to_discovery(value):
+    with pytest.raises(ValueError, match="allowlist"):
+        pp.sensor_allowlist(value)
+
+
+def test_fixed_request_uses_exact_ids_and_never_bbox(monkeypatch):
+    requests = []
+
+    class Response:
+        status = 200
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            pass
+
+        def read(self):
+            return b"{}"
+
+    def open_request(request, timeout):
+        requests.append(request)
+        return Response()
+
+    monkeypatch.setattr(pp.urllib.request, "urlopen", open_request)
+    pp.make_fetch("private", ["humidity", "last_seen"], 300, sensor_ids=[2, 7])()
+    query = urllib.parse.parse_qs(urllib.parse.urlsplit(requests[0].full_url).query)
+    assert query == {
+        "fields": ["humidity,last_seen"],
+        "location_type": ["0"],
+        "max_age": ["300"],
+        "show_only": ["2,7"],
+    }
+    assert "private" not in requests[0].full_url
+    pp.make_fetch("private", ["last_seen"], 900)()
+    discovery = urllib.parse.parse_qs(urllib.parse.urlsplit(requests[1].full_url).query)
+    assert "show_only" not in discovery and set(pa.BBOX) <= discovery.keys()
+
+
+def test_response_age_overrules_cached_snapshot_and_server_filters():
+    data = payload(
+        [row(279109, age=82441), row(1, age=180), row(2, age=181), row(3, age=-1)]
+    )
+    data["data_time_stamp"] = SNAPSHOT - 82440
+    readings, _ = pp.readings_from(data, stale_after=180)
+    assert [r.stale for r in readings] == [True, False, True, True]
+    assert readings[0].quality_flags == ("stale_response",)
+    assert readings[3].quality_flags == ("future_report",)
+
+
+@pytest.mark.parametrize("timestamp", [None, 0, float("nan"), "yesterday", True])
+def test_missing_or_invalid_response_clock_fails_closed(timestamp):
+    data = payload([row(1)])
+    data["time_stamp"] = timestamp
+    with pytest.raises(ValueError, match="time_stamp"):
+        pp.readings_from(data, 180)
+
+
+def test_quality_flags_keep_invalid_rows_visible():
+    readings, _ = pp.readings_from(
+        payload(
+            [
+                row(1, humidity=None),
+                row(2, a=None),
+                row(3, a=-1),
+                row(4, a=1, b=20),
+                row(5, loc=None),
+                row(6, loc=1),
+            ]
+        ),
+        180,
+    )
+    assert len(readings) == 6
+    assert [r.quality_flags for r in readings] == [
+        ("invalid_humidity",),
+        ("missing_pm_channel",),
+        ("invalid_pm_channel",),
+        ("ab_disagreement",),
+        ("not_confirmed_outdoor",),
+        ("not_confirmed_outdoor",),
+    ]
+    assert readings[4].is_outdoor is None
+
+
+def test_unknown_location_or_future_time_cannot_change_sensor_history():
+    readings, _ = pp.readings_from(payload([row(7, loc=None), row(7, age=-1)]), 180)
+
+    class NoDatabaseWrites:
+        def execute(self, *args):
+            raise AssertionError("Raw-only observations must not mutate SQL metadata")
+
+    assert pp.store_readings(
+        NoDatabaseWrites(), readings, datetime.now(UTC), "uri", "poll"
+    ) == (0, 0, 0)
+
+
+def test_quality_evidence_is_persisted_with_the_database_run():
+    calls = []
+
+    class Cursor:
+        def execute(self, sql, params):
+            calls.append((sql, params))
+
+    stats = pp.Stats(missing_sensor_ids=[2], valid_sensor_ids=[1], raw_only_reports=1)
+    pp._finish_run(Cursor(), "run", datetime.now(UTC), stats)
+    sql, params = calls[0]
+    assert "details = details || CAST(%s AS jsonb)" in sql
+    assert len(params) == sql.count("%s")
+    assert json.loads(params[-2])["quality"]["missing_sensor_ids"] == [2]
+    assert json.loads(params[-2])["quality"]["raw_only_reports"] == 1
+
+
+def test_cohort_poll_records_missing_and_stale_without_losing_raw(tmp_path):
+    kw = kwargs(tmp_path)
+    kw.update(
+        stale_after=180, details={"sensor_ids": [1, 2, 3], "run_kind": "scheduled"}
+    )
+    data = body([row(1), row(2, age=82441)])
+    result = pp.poll(None, fetcher(data), **kw)
+    assert result.outcome == "success"
+    assert result.missing_sensor_ids == [3] and result.valid_sensor_ids == [1]
+    assert result.quality_flags == {2: ["stale_response"]}
+    assert Path(result.raw_uri).read_bytes() == data
+
+
+def test_unexpected_sensor_invalidates_poll_but_retains_raw(tmp_path):
+    kw = kwargs(tmp_path)
+    kw["details"] = {"sensor_ids": [1]}
+    data = body([row(1), row(999)])
+    result = pp.poll(None, fetcher(data), **kw)
+    assert result.outcome == "invalid_response"
+    assert result.unexpected_sensor_ids == [999]
+    assert Path(result.raw_uri).read_bytes() == data
+
+
+def test_not_before_makes_no_request(monkeypatch, capsys):
+    monkeypatch.setattr(pa, "load_env", lambda: None)
+    monkeypatch.delenv(pp.STOP_AFTER_VAR, raising=False)
+    monkeypatch.setenv(pp.NOT_BEFORE_VAR, "2099-01-01T00:00:00Z")
+    monkeypatch.delenv(pa.KEY_VAR, raising=False)
+    assert pp.main([]) == 0
+    assert "not arrived; no request made" in capsys.readouterr().out
+
+
+def test_fixed_cohort_caps_freshness_and_marks_preflight(tmp_path, monkeypatch):
+    monkeypatch.setattr(pa, "load_env", lambda: None)
+    monkeypatch.delenv(pp.STOP_AFTER_VAR, raising=False)
+    monkeypatch.delenv(pp.NOT_BEFORE_VAR, raising=False)
+    fixture = tmp_path / "fixture.json"
+    fixture.write_bytes(body([row(1, age=181)]))
+    out = tmp_path / "out"
+    assert (
+        pp.main(
+            [
+                "--fixture",
+                str(fixture),
+                "--raw-dir",
+                str(out),
+                "--sensor-ids",
+                "1",
+                "--stale-after",
+                "600",
+                "--run-kind",
+                "preflight",
+            ]
+        )
+        == 0
+    )
+    record = json.loads((out / "poll_log.jsonl").read_text())
+    assert record["details"]["stale_after_seconds"] == 180
+    assert record["details"]["run_kind"] == "preflight"
+    assert record["valid_sensor_ids"] == []
+    assert record["quality_flags"] == {"1": ["stale_response"]}

@@ -1,0 +1,47 @@
+{
+  "scope": "preliminary; one partial archive year; not the S19 analysis",
+  "parameter": "88101",
+  "windows_local": {
+    "morning": "06-09",
+    "afternoon": "16-19"
+  },
+  "elevated_threshold_ug_m3": 35.0,
+  "min_window_hours": 2,
+  "min_region_monitors": 3,
+  "rows": {
+    "rows_read": 1979862,
+    "chicago_rows": 65040,
+    "null_values": 0,
+    "replaced": 0
+  },
+  "monitor_hours": 65040,
+  "monitors": 23,
+  "first_local_date": "2026-01-01",
+  "last_local_date": "2026-05-01",
+  "paired_monitor_days": 2710,
+  "paired_monitors": 23,
+  "monitor_day_diff_median": -0.45,
+  "monitor_day_diff_mean": -0.967,
+  "monitor_day_afternoon_lower": 0.5635,
+  "regional_days": 120,
+  "regional_diff_median": -0.729,
+  "regional_diff_mean": -0.965,
+  "regional_diff_stdev": 4.607,
+  "regional_afternoon_lower": 0.6167,
+  "windows": {
+    "morning": {
+      "valid_hours": 8142,
+      "elevated_hours": 31,
+      "elevated_share": 0.0038,
+      "mean": 8.75
+    },
+    "afternoon": {
+      "valid_hours": 8152,
+      "elevated_hours": 27,
+      "elevated_share": 0.0033,
+      "mean": 7.779
+    }
+  },
+  "profile_mean_morning": 8.75,
+  "profile_mean_afternoon": 7.779
+}

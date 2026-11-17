@@ -276,6 +276,53 @@ run "purpleair_enable_requires_image" {
   expect_failures = [var.purpleair_poll_enabled]
 }
 
+run "purpleair_fixed_cohort_stays_paused_for_preflight" {
+  command = apply
+  variables {
+    purpleair_poll_image               = "us-central1-docker.pkg.dev/air-quality-test/air-quality/purpleair-poll@sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    purpleair_poll_schedule            = "5,15,25,35,45,55 * * * *"
+    purpleair_poll_sensor_ids          = [164317, 175417]
+    purpleair_poll_max_age_seconds     = 300
+    purpleair_poll_stale_after_seconds = 180
+    purpleair_poll_stop_after_utc      = "2026-12-10T06:00:00Z"
+    purpleair_poll_not_before_utc      = "2026-11-17T06:05:00Z"
+  }
+  assert {
+    condition = (
+      google_cloud_scheduler_job.collector["purpleair-poll"].paused &&
+      google_cloud_scheduler_job.collector["purpleair-poll"].schedule == "5,15,25,35,45,55 * * * *" &&
+      google_cloud_run_v2_job.placeholder["purpleair-poll"].template[0].template[0].max_retries == 0
+    )
+    error_message = "A new fixed-cohort deployment must stay paused until explicitly enabled."
+  }
+  assert {
+    condition = alltrue([
+      for name, value in {
+        AIR_QUALITY_PURPLEAIR_SENSOR_IDS          = "164317,175417"
+        AIR_QUALITY_PURPLEAIR_MAX_AGE_SECONDS     = "300"
+        AIR_QUALITY_PURPLEAIR_STALE_AFTER_SECONDS = "180"
+        AIR_QUALITY_PURPLEAIR_TARGET_POLL_SECONDS = "600"
+        AIR_QUALITY_PURPLEAIR_NOT_BEFORE_UTC      = "2026-11-17T06:05:00Z"
+        } : anytrue([
+          for e in google_cloud_run_v2_job.placeholder["purpleair-poll"].template[0].template[0].containers[0].env : e.name == name && e.value == value
+      ])
+    ])
+    error_message = "The deployed job must receive the roster, freshness threshold, cadence, and activation time."
+  }
+}
+
+run "purpleair_fast_schedule_requires_roster_and_cutoff" {
+  command = plan
+  variables { purpleair_poll_schedule = "5,15,25,35,45,55 * * * *" }
+  expect_failures = [var.purpleair_poll_schedule]
+}
+
+run "purpleair_roster_rejects_empty_or_duplicate_ids" {
+  command = plan
+  variables { purpleair_poll_sensor_ids = [164317, 164317] }
+  expect_failures = [var.purpleair_poll_sensor_ids]
+}
+
 run "purpleair_image_must_be_pinned" {
   command = plan
   variables { purpleair_poll_image = "us-central1-docker.pkg.dev/air-quality-test/air-quality/purpleair-poll:latest" }
